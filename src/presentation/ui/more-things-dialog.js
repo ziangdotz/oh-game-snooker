@@ -212,7 +212,6 @@ export default function createMoreThingsDialog(dependencies) {
           card.dataset.hotseatSetup = '';
         }
         card.className = 'interior-more-option';
-        card.classList.toggle('is-featured', mode === 'SAME COMPUTER');
         const label = document.createElement('span');
         label.className = 'interior-more-eyebrow';
         label.textContent = mode;

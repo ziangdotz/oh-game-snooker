@@ -1,0 +1,47 @@
+{
+  "generatedAt": "2026-10-21T15:13:21.4922171Z",
+  "scope": "play-together-entry-ui-unification",
+  "passed": true,
+  "changes": [
+    "Use the same left-aligned layout, padding, gradient surface, gold border and top accent for both mode entries",
+    "Share pointer hover and visible keyboard focus styling across both native buttons",
+    "Remove the hotseat-only featured class"
+  ],
+  "files": [
+    {
+      "path": "src/presentation/styles/interior-more-things.css",
+      "sha256": "23197992ac4b96e35a8889d7a0070d1bfc6150b8e0936bb478f8f73f18c4e4eb"
+    },
+    {
+      "path": "src/presentation/ui/more-things-dialog.js",
+      "sha256": "9933f16ec4e30cdca3579eb0007122f6841c55cc8fb34fd83fb82ec6748da94b"
+    }
+  ],
+  "validation": [
+    {
+      "command": "node scripts/check-project.mjs --browser",
+      "passed": true,
+      "unitIntegrationTests": 197
+    },
+    {
+      "command": "node tests/e2e/interior-ui.test.mjs",
+      "passed": true,
+      "targets": 6,
+      "viewportsPerTarget": 3
+    },
+    {
+      "scope": "Live UI equality, hover, focus, Enter/Space navigation and 360px mobile layout",
+      "passed": true,
+      "browsers": [
+        "chrome",
+        "edge"
+      ],
+      "report": "artifacts/testing/play-together-entry-unification/report.json"
+    }
+  ],
+  "preview": "artifacts/testing/play-together-entry-unification/entries.png",
+  "screenshots": [
+    "artifacts/testing/play-together-entry-unification/chrome-desktop.png",
+    "artifacts/testing/play-together-entry-unification/edge-mobile.png"
+  ]
+}
