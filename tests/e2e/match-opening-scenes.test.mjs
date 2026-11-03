@@ -10,7 +10,7 @@ import {
   inspectRuntimeRoute,
   waitForHome,
 } from '../helpers/runtime-fixture.mjs';
-import { waitForCamera } from './browser-observations.mjs';
+import { waitForCamera } from '../helpers/browser-observations.mjs';
 
 /** Capture actual source Single Play openings; never load the design prototype or mutate src. */
 async function captureMatchOpening() {

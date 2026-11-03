@@ -6,7 +6,7 @@ import { ROOT, BUILD_OUTPUTS } from '../../config/project.config.mjs';
 import { sha256 } from '../../tooling/lib/integrity.mjs';
 import { DESIGN_IDS } from '../../tooling/lib/artifact-paths.mjs';
 import { waitForActiveBasicGuide } from '../helpers/game-ui-actions.mjs';
-import { waitForCamera, captureFailure } from './browser-observations.mjs';
+import { waitForCamera, captureFailure } from '../helpers/browser-observations.mjs';
 import {
   browserCandidates,
   launchTestBrowser,

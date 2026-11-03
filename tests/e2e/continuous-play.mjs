@@ -1,7 +1,7 @@
 import { confirmGameAction, waitForActiveBasicGuide } from '../helpers/game-ui-actions.mjs';
 import assert from 'node:assert/strict';
-import { gameState, assertBallsRestored } from './game-recovery.mjs';
-import { observeFrames, waitForCamera } from './browser-observations.mjs';
+import { gameState, assertBallsRestored } from '../helpers/game-recovery.mjs';
+import { observeFrames, waitForCamera } from '../helpers/browser-observations.mjs';
 import { waitForHumanTurn } from '../helpers/human-turn-readiness.mjs';
 
 async function closeGuide(page) {

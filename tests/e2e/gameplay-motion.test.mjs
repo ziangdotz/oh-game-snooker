@@ -7,7 +7,7 @@ import path from 'node:path';
 import { chromium } from 'playwright';
 import { ROOT } from '../../config/project.config.mjs';
 import { inspectSourceEntry } from '../../tooling/testing/runtime-inspection.mjs';
-import { waitForCamera } from './browser-observations.mjs';
+import { waitForCamera } from '../helpers/browser-observations.mjs';
 
 const probeDpr = 2;
 const reportPath = path.join(ROOT, 'reports/measurement/gameplay-motion-after.json');

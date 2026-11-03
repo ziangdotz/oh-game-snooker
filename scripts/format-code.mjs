@@ -48,7 +48,10 @@ for (const file of files.sort()) {
   const source = await readFile(path.join(ROOT, file), 'utf8');
   const settings = { ...options, filepath: file };
   if (write) {
-    await writeFile(path.join(ROOT, file), await format(source, settings));
+    const formatted = await format(source, settings);
+    if (formatted !== source) {
+      await writeFile(path.join(ROOT, file), formatted);
+    }
   } else if (!(await check(source, settings))) {
     console.error(`Formatting differs: ${file}`);
     failures++;

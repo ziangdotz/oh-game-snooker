@@ -11,7 +11,7 @@ import {
   waitForHome,
 } from '../helpers/runtime-fixture.mjs';
 import { confirmGameAction, waitForActiveBasicGuide } from '../helpers/game-ui-actions.mjs';
-import { gameState } from './game-recovery.mjs';
+import { gameState } from '../helpers/game-recovery.mjs';
 
 const output = path.join(ROOT, 'artifacts/testing/context-restoration');
 await mkdir(output, { recursive: true });

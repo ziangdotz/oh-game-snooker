@@ -1,4 +1,4 @@
-import { confirmGameAction } from '../helpers/game-ui-actions.mjs';
+import { confirmGameAction } from './game-ui-actions.mjs';
 import assert from 'node:assert/strict';
 
 export async function gameState(page) {

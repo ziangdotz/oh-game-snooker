@@ -13,9 +13,9 @@ import { createServer } from '../../tooling/server/static-server.mjs';
 import { ROOT } from '../../tooling/lib/integrity.mjs';
 import { artifactDirectory, designDirectory } from '../../tooling/lib/artifact-paths.mjs';
 import { recordedBallAt } from '../helpers/replay-oracle.mjs';
-import { captureFailure, observeFrames, waitForCamera } from './browser-observations.mjs';
-import { snookerRules } from './snooker-rules.mjs';
-import { gameRecovery, gameState } from './game-recovery.mjs';
+import { captureFailure, observeFrames, waitForCamera } from '../helpers/browser-observations.mjs';
+import { snookerRules } from '../helpers/snooker-rules.mjs';
+import { gameRecovery, gameState } from '../helpers/game-recovery.mjs';
 import { removeBuildPath } from '../../tooling/build/build-transaction.mjs';
 import { waitForActiveBasicGuide } from '../helpers/game-ui-actions.mjs';
 

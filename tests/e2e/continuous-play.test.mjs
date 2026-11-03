@@ -15,7 +15,7 @@ import { ROOT, LAYOUT, BUILD_OUTPUTS } from '../../config/project.config.mjs';
 import { sha256, verifySnapshot } from '../../tooling/lib/integrity.mjs';
 import { verifyBuild } from '../../tooling/build/verify-build.mjs';
 import { createServer } from '../../tooling/server/static-server.mjs';
-import { captureFailure, waitForCamera } from './browser-observations.mjs';
+import { captureFailure, waitForCamera } from '../helpers/browser-observations.mjs';
 import { continuousPlay } from './continuous-play.mjs';
 
 const options = { cycles: 3, shots: 6 };

@@ -11,9 +11,9 @@ import {
   openVenueDrawer,
 } from '../helpers/runtime-fixture.mjs';
 import { waitForActiveBasicGuide, confirmGameAction } from '../helpers/game-ui-actions.mjs';
-import { waitForCamera, observeFrames } from './browser-observations.mjs';
-import { gameState, assertBallsRestored } from './game-recovery.mjs';
-import { snookerRules } from './snooker-rules.mjs';
+import { waitForCamera, observeFrames } from '../helpers/browser-observations.mjs';
+import { gameState, assertBallsRestored } from '../helpers/game-recovery.mjs';
+import { snookerRules } from '../helpers/snooker-rules.mjs';
 
 const args = process.argv.slice(2);
 assert.ok(

@@ -10,7 +10,7 @@ import {
   waitForHome,
 } from '../helpers/runtime-fixture.mjs';
 import { confirmGameAction } from '../helpers/game-ui-actions.mjs';
-import { observeFrames } from './browser-observations.mjs';
+import { observeFrames } from '../helpers/browser-observations.mjs';
 
 const output = path.join(ROOT, 'artifacts/testing/game-ui');
 await mkdir(output, { recursive: true });
