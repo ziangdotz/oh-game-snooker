@@ -12,7 +12,6 @@
       "source": "src/third-party/browser/browser-detector.js",
       "bundle": "bootstrap",
       "dependencies": ["adapters/rendering/amd-guard"],
-      "preservedAlgorithm": false,
       "kind": "factory"
     },
     {
@@ -20,7 +19,6 @@
       "source": "src/adapters/rendering/amd-guard.js",
       "bundle": "bootstrap",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "kind": "factory"
     },
     {
@@ -28,7 +26,6 @@
       "source": "src/third-party/browser/webgl-detector.js",
       "bundle": "bootstrap",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "kind": "factory"
     },
     {
@@ -42,7 +39,6 @@
         "application/interior-transition",
         "presentation/typography/page-fonts"
       ],
-      "preservedAlgorithm": false,
       "kind": "factory"
     },
     {
@@ -50,7 +46,6 @@
       "source": "src/third-party/rendering/babylon-engine.js",
       "bundle": "render-engine",
       "dependencies": ["adapters/rendering/global-object"],
-      "preservedAlgorithm": false,
       "kind": "factory"
     },
     {
@@ -58,7 +53,6 @@
       "source": "src/adapters/rendering/global-object.js",
       "bundle": "render-engine",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "kind": "factory"
     },
     {
@@ -123,7 +117,6 @@
         "presentation/scenes/interior-design-original",
         "application/interior-transition"
       ],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -131,7 +124,6 @@
       "source": "src/domain/math/vector-three.js",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -147,7 +139,6 @@
         "domain/physics/world",
         "domain/physics/world-client"
       ],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -155,7 +146,6 @@
       "source": "src/shared/events/event-emitter.js",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -163,7 +153,6 @@
       "source": "src/domain/game/game-state.js",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -171,7 +160,6 @@
       "source": "src/domain/physics/physics-constants.js",
       "bundle": "snooker-game",
       "dependencies": ["domain/math/vector-three"],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -179,7 +167,6 @@
       "source": "src/domain/math/matrix-three.js",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -187,7 +174,6 @@
       "source": "src/domain/geometry/plane.js",
       "bundle": "snooker-game",
       "dependencies": ["domain/physics/physics-api"],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -195,7 +181,6 @@
       "source": "src/domain/game/game-records.js",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -203,7 +188,6 @@
       "source": "src/shared/diagnostics/physics-monitor.js",
       "bundle": "snooker-game",
       "dependencies": ["shared/diagnostics/metric-definitions"],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -211,7 +195,6 @@
       "source": "src/domain/physics/contact-solver.js",
       "bundle": "snooker-game",
       "dependencies": ["domain/math/vector-three", "shared/diagnostics/physics-monitor"],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -219,7 +202,6 @@
       "source": "src/domain/physics/contact.js",
       "bundle": "snooker-game",
       "dependencies": ["domain/math/matrix-three", "domain/math/vector-three"],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -227,7 +209,6 @@
       "source": "src/domain/math/quaternion.js",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -235,7 +216,6 @@
       "source": "src/shared/data/object-utils.js",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -243,7 +223,6 @@
       "source": "src/infrastructure/assets/resource-paths.js",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "kind": "factory"
     },
     {
@@ -251,7 +230,6 @@
       "source": "src/domain/physics/collision-events.js",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -259,7 +237,6 @@
       "source": "src/domain/simulation/simulation-events.js",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -267,7 +244,6 @@
       "source": "src/domain/simulation/simulation-state.js",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -275,7 +251,6 @@
       "source": "src/domain/scene/scene-definitions.js",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "kind": "factory"
     },
     {
@@ -283,7 +258,6 @@
       "source": "src/domain/rules/foul-codes.js",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -291,7 +265,6 @@
       "source": "src/domain/game/player.js",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -299,7 +272,6 @@
       "source": "src/domain/geometry/geometry-utils.js",
       "bundle": "snooker-game",
       "dependencies": ["domain/physics/physics-api"],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -307,7 +279,6 @@
       "source": "src/adapters/rendering/dynamic-lighting-material.js",
       "bundle": "snooker-game",
       "dependencies": ["adapters/rendering/babylon-engine"],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -319,7 +290,6 @@
         "domain/physics/physics-constants",
         "shared/diagnostics/physics-monitor"
       ],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -332,7 +302,6 @@
         "domain/math/vector-three",
         "domain/physics/physics-constants"
       ],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -344,7 +313,6 @@
         "domain/math/vector-three",
         "domain/physics/rigid-body"
       ],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -356,7 +324,6 @@
         "domain/math/vector-three",
         "domain/physics/contact"
       ],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -364,7 +331,6 @@
       "source": "src/domain/physics/object-pool.js",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -386,7 +352,6 @@
         "domain/physics/rigid-body",
         "shared/diagnostics/physics-monitor"
       ],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -394,7 +359,6 @@
       "source": "src/presentation/templates/match-result.html",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "kind": "template"
     },
     {
@@ -402,7 +366,6 @@
       "source": "src/presentation/templates/scoreboard.html",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "kind": "template"
     },
     {
@@ -410,7 +373,6 @@
       "source": "src/presentation/templates/replay-controls.html",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "kind": "template"
     },
     {
@@ -418,7 +380,6 @@
       "source": "src/presentation/templates/practice-result.html",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "kind": "template"
     },
     {
@@ -426,7 +387,6 @@
       "source": "src/presentation/templates/controls-guide.html",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "kind": "template"
     },
     {
@@ -434,7 +394,6 @@
       "source": "src/presentation/templates/keyboard-shortcuts.html",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "kind": "template"
     },
     {
@@ -442,7 +401,6 @@
       "source": "src/infrastructure/network/local-request.js",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -450,7 +408,6 @@
       "source": "src/infrastructure/assets/asset-queue.js",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -463,7 +420,6 @@
         "infrastructure/assets/resource-paths",
         "infrastructure/network/local-request"
       ],
-      "preservedAlgorithm": false,
       "kind": "factory"
     },
     {
@@ -471,7 +427,6 @@
       "source": "src/domain/simulation/snooker-ball.js",
       "bundle": "snooker-game",
       "dependencies": ["domain/physics/physics-api"],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -488,7 +443,6 @@
         "domain/simulation/snooker-ball",
         "shared/events/event-emitter"
       ],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -496,7 +450,6 @@
       "source": "src/domain/geometry/circle-arc.js",
       "bundle": "snooker-game",
       "dependencies": ["domain/geometry/plane", "domain/physics/physics-api"],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -504,7 +457,6 @@
       "source": "src/domain/geometry/polygon.js",
       "bundle": "snooker-game",
       "dependencies": ["domain/geometry/plane", "domain/physics/physics-api"],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -512,7 +464,6 @@
       "source": "src/domain/rules/base-referee.js",
       "bundle": "snooker-game",
       "dependencies": ["domain/geometry/polygon", "shared/events/event-emitter"],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -527,7 +478,6 @@
         "domain/rules/foul-codes",
         "domain/scene/scene-definitions"
       ],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -535,7 +485,6 @@
       "source": "src/domain/rules/referee-registry.js",
       "bundle": "snooker-game",
       "dependencies": ["domain/rules/snooker-referee"],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -543,7 +492,6 @@
       "source": "src/presentation/templates/about-game.html",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "kind": "template"
     },
     {
@@ -551,7 +499,6 @@
       "source": "src/presentation/templates/ai-difficulty.html",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "kind": "template"
     },
     {
@@ -559,7 +506,6 @@
       "source": "src/assets/textures/cue/cue-color.jpg",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/textures/cue/cue-color.jpg",
       "kind": "asset"
     },
@@ -568,7 +514,6 @@
       "source": "src/assets/textures/cue/cue-gloss.png",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/textures/cue/cue-gloss.png",
       "kind": "asset"
     },
@@ -577,7 +522,6 @@
       "source": "src/assets/models/alpha-cue.babylon",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/models/alpha-cue.babylon",
       "kind": "asset"
     },
@@ -586,7 +530,6 @@
       "source": "src/assets/textures/table/table-ui-atlas.png",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/textures/table/table-ui-atlas.png",
       "kind": "asset"
     },
@@ -595,7 +538,6 @@
       "source": "src/assets/textures/table/pocket-gloss.jpg",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/textures/table/pocket-gloss.jpg",
       "kind": "asset"
     },
@@ -604,7 +546,6 @@
       "source": "src/assets/models/interior-design-original-room.babylon",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/models/interior-design-original-room.babylon",
       "kind": "asset"
     },
@@ -613,7 +554,6 @@
       "source": "src/assets/textures/table/table-mask.png",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/textures/table/table-mask.png",
       "kind": "asset"
     },
@@ -622,7 +562,6 @@
       "source": "src/assets/textures/room/interior-design-original-floor-tile.jpg",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/textures/room/interior-design-original-floor-tile.jpg",
       "kind": "asset"
     },
@@ -631,7 +570,6 @@
       "source": "src/assets/textures/table/frame-roughness.jpg",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/textures/table/frame-roughness.jpg",
       "kind": "asset"
     },
@@ -640,7 +578,6 @@
       "source": "src/assets/environments/frame-reflection.hdr",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/environments/frame-reflection.hdr",
       "kind": "asset"
     },
@@ -649,7 +586,6 @@
       "source": "src/assets/textures/table/frame-normal.png",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/textures/table/frame-normal.png",
       "kind": "asset"
     },
@@ -658,7 +594,6 @@
       "source": "src/assets/textures/table/frame-lightmap.jpg",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/textures/table/frame-lightmap.jpg",
       "kind": "asset"
     },
@@ -667,7 +602,6 @@
       "source": "src/assets/textures/table/frame-diffuse.jpg",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/textures/table/frame-diffuse.jpg",
       "kind": "asset"
     },
@@ -676,7 +610,6 @@
       "source": "src/assets/environments/room-irradiance-secondary.hdr",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/environments/room-irradiance-secondary.hdr",
       "kind": "asset"
     },
@@ -685,7 +618,6 @@
       "source": "src/assets/environments/room-irradiance-primary.hdr",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/environments/room-irradiance-primary.hdr",
       "kind": "asset"
     },
@@ -694,7 +626,6 @@
       "source": "src/assets/textures/table/carpet-tile.jpg",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/textures/table/carpet-tile.jpg",
       "kind": "asset"
     },
@@ -703,7 +634,6 @@
       "source": "src/assets/textures/table/carpet-overlay.png",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/textures/table/carpet-overlay.png",
       "kind": "asset"
     },
@@ -712,7 +642,6 @@
       "source": "src/assets/textures/table/carpet-normal.jpg",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/textures/table/carpet-normal.jpg",
       "kind": "asset"
     },
@@ -721,7 +650,6 @@
       "source": "src/assets/textures/table/carpet-lightmap.jpg",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/textures/table/carpet-lightmap.jpg",
       "kind": "asset"
     },
@@ -730,7 +658,6 @@
       "source": "src/assets/environments/ball-reflection.hdr",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/environments/ball-reflection.hdr",
       "kind": "asset"
     },
@@ -739,7 +666,6 @@
       "source": "src/assets/textures/table/ball-ambient-occlusion.png",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/textures/table/ball-ambient-occlusion.png",
       "kind": "asset"
     },
@@ -748,7 +674,6 @@
       "source": "src/adapters/rendering/light-probe-material.js",
       "bundle": "snooker-game",
       "dependencies": ["adapters/rendering/babylon-engine"],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -756,7 +681,6 @@
       "source": "src/domain/geometry/collision-mesh-decoder.js",
       "bundle": "snooker-game",
       "dependencies": ["domain/math/vector-three"],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -764,7 +688,6 @@
       "source": "src/domain/geometry/mesh-polygon-group.js",
       "bundle": "snooker-game",
       "dependencies": ["domain/physics/physics-constants"],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -772,7 +695,6 @@
       "source": "src/domain/geometry/mesh-polygon.js",
       "bundle": "snooker-game",
       "dependencies": ["domain/math/vector-three"],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -780,7 +702,6 @@
       "source": "src/domain/geometry/mesh-edge.js",
       "bundle": "snooker-game",
       "dependencies": ["domain/math/vector-three"],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -793,7 +714,6 @@
         "domain/geometry/mesh-polygon-group",
         "domain/math/vector-three"
       ],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -801,7 +721,6 @@
       "source": "src/domain/physics/prediction-solver.js",
       "bundle": "snooker-game",
       "dependencies": ["domain/math/vector-three", "domain/physics/contact-solver"],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -813,7 +732,6 @@
         "domain/math/vector-three",
         "domain/physics/ball-surface-contact"
       ],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -821,7 +739,6 @@
       "source": "src/shared/diagnostics/rolling-average.js",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -829,7 +746,6 @@
       "source": "src/presentation/diagnostics/metric-chart.js",
       "bundle": "snooker-game",
       "dependencies": ["shared/diagnostics/rolling-average"],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -837,7 +753,6 @@
       "source": "src/presentation/diagnostics/monitor-view.js",
       "bundle": "snooker-game",
       "dependencies": ["presentation/diagnostics/metric-chart"],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -845,7 +760,6 @@
       "source": "src/shared/diagnostics/metric-definitions.js",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -853,7 +767,6 @@
       "source": "src/domain/physics/collision-stack.js",
       "bundle": "snooker-game",
       "dependencies": ["domain/physics/physics-constants"],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -861,7 +774,6 @@
       "source": "src/domain/physics/ball-contact.js",
       "bundle": "snooker-game",
       "dependencies": ["domain/math/vector-three", "domain/physics/contact"],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -869,7 +781,6 @@
       "source": "src/domain/physics/collision-island.js",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -881,7 +792,6 @@
         "domain/physics/collision-island",
         "domain/physics/object-pool"
       ],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -895,7 +805,6 @@
         "domain/physics/prediction-solver",
         "domain/physics/world"
       ],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -903,7 +812,6 @@
       "source": "src/domain/scene/initial-layout.js",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": true,
       "kind": "factory"
     },
     {
@@ -914,7 +822,6 @@
         "adapters/rendering/babylon-engine",
         "assets/images-interior-design-001-art"
       ],
-      "preservedAlgorithm": false,
       "kind": "factory"
     },
     {
@@ -922,7 +829,6 @@
       "source": "src/assets/images/interior-design-001-art.png",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/images/interior-design-001-art.png",
       "kind": "asset"
     },
@@ -940,7 +846,6 @@
         "assets/images-interior-design-002-preview",
         "assets/images-interior-design-003-preview"
       ],
-      "preservedAlgorithm": false,
       "kind": "factory"
     },
     {
@@ -954,7 +859,6 @@
         "assets/textures-room-warm-plaster",
         "assets/textures-room-interior-design-003-linen"
       ],
-      "preservedAlgorithm": false,
       "kind": "factory"
     },
     {
@@ -962,7 +866,6 @@
       "source": "src/assets/textures/room/interior-design-001-oak.png",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/textures/room/interior-design-001-oak.png",
       "kind": "asset"
     },
@@ -971,7 +874,6 @@
       "source": "src/presentation/scenes/interior-design-builder.js",
       "bundle": "snooker-game",
       "dependencies": ["adapters/rendering/babylon-engine", "assets/textures-room-warm-plaster"],
-      "preservedAlgorithm": false,
       "kind": "factory"
     },
     {
@@ -986,7 +888,6 @@
         "assets/textures-room-warm-limestone",
         "assets/textures-room-interior-design-003-linen"
       ],
-      "preservedAlgorithm": false,
       "kind": "factory"
     },
     {
@@ -994,7 +895,6 @@
       "source": "src/assets/images/interior-design-002-art.png",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/images/interior-design-002-art.png",
       "kind": "asset"
     },
@@ -1010,7 +910,6 @@
         "assets/textures-room-warm-terrazzo",
         "assets/textures-room-interior-design-001-oak"
       ],
-      "preservedAlgorithm": false,
       "kind": "factory"
     },
     {
@@ -1018,7 +917,6 @@
       "source": "src/assets/images/interior-design-003-art.png",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/images/interior-design-003-art.png",
       "kind": "asset"
     },
@@ -1027,7 +925,6 @@
       "source": "src/assets/textures/room/interior-design-002-leather.png",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/textures/room/interior-design-002-leather.png",
       "kind": "asset"
     },
@@ -1036,7 +933,6 @@
       "source": "src/assets/textures/room/interior-design-003-linen.png",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/textures/room/interior-design-003-linen.png",
       "kind": "asset"
     },
@@ -1048,7 +944,6 @@
         "adapters/rendering/babylon-engine",
         "presentation/scenes/interior-design-original-config"
       ],
-      "preservedAlgorithm": false,
       "kind": "factory"
     },
     {
@@ -1056,7 +951,6 @@
       "source": "src/presentation/scenes/interior-design-original-config.js",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "kind": "factory"
     },
     {
@@ -1064,7 +958,6 @@
       "source": "src/application/interior-transition.js",
       "bundle": "bootstrap",
       "dependencies": ["presentation/typography/page-fonts"],
-      "preservedAlgorithm": false,
       "kind": "factory"
     },
     {
@@ -1072,7 +965,6 @@
       "source": "src/assets/images/interior-design-original-preview.jpg",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/images/interior-design-original-preview.jpg",
       "kind": "asset"
     },
@@ -1081,7 +973,6 @@
       "source": "src/assets/images/interior-design-001-preview.jpg",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/images/interior-design-001-preview.jpg",
       "kind": "asset"
     },
@@ -1090,7 +981,6 @@
       "source": "src/assets/images/interior-design-002-preview.jpg",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/images/interior-design-002-preview.jpg",
       "kind": "asset"
     },
@@ -1099,7 +989,6 @@
       "source": "src/assets/images/interior-design-003-preview.jpg",
       "bundle": "snooker-game",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "asset": "assets/images/interior-design-003-preview.jpg",
       "kind": "asset"
     },
@@ -1108,7 +997,6 @@
       "source": "src/presentation/typography/page-fonts.js",
       "bundle": "bootstrap",
       "dependencies": [],
-      "preservedAlgorithm": false,
       "kind": "factory"
     },
     {

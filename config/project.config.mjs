@@ -19,5 +19,7 @@ export const BUILD_OUTPUTS = Object.freeze({
 });
 export const COMPATIBILITY_OUTPUT = 'compatibility';
 export const SERVER = Object.freeze({ host: '127.0.0.1', port: 5173 });
+// Local room service runs as a separate loopback process; the game page may only
+// open WebSockets back to loopback, never to an arbitrary external host.
 export const CSP =
-  "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'";
+  "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' ws://127.0.0.1:* ws://localhost:* wss://127.0.0.1:* wss://localhost:*; worker-src 'self' blob:; object-src 'none'; base-uri 'self'";

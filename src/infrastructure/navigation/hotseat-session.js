@@ -20,6 +20,10 @@ export default function createHotseatSession(host) {
   }
   return {
     config: null,
+    /** Set only when a room match is being launched; handed to the match controller. */
+    room: null,
+    /** Live room session for the running match, so the controller can subscribe. */
+    rooms: null,
     draft: stored ? { names: [...stored.names], venue: stored.venue } : null,
     returnToSetup: stored?.returnTo === 'setup',
     saveDraft(draft, returnTo = 'setup') {

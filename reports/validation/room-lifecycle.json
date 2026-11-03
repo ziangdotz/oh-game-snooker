@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-03T13:42:56.688Z",
+  "browser": {
+    "name": "chrome",
+    "version": "156.0.8078.80"
+  },
+  "contexts": 3,
+  "steps": [
+    "create",
+    "join",
+    "ready",
+    "start",
+    "place-cue-ball",
+    "shot",
+    "resume-with-old-transport-open",
+    "close-old-transport",
+    "leave"
+  ],
+  "match": {
+    "matchId": "641eafce-be4e-4e07-98b3-8230e9efc951",
+    "startVersion": 0,
+    "placedVersion": 1,
+    "shotVersion": 2,
+    "shotPower": 0.25,
+    "firstKissIndex": 11,
+    "nKissed": 1,
+    "score": 0,
+    "foulCode": 0,
+    "turnAfter": 1,
+    "snapshotsEqualBetweenBrowsers": true,
+    "resumedVersion": 2
+  },
+  "seatStayedConnectedAfterOldTransport": true,
+  "passed": true
+}

@@ -119,7 +119,14 @@ export default [
     rules: { 'no-restricted-imports': ['error', { patterns: ['**/scripts/**', '**/tests/**'] }] },
   },
   {
-    files: ['tests/e2e/**/*.mjs', 'tests/helpers/runtime-fixture.mjs'],
+    // Playwright helpers evaluate browser globals inside page callbacks.
+    files: [
+      'tests/e2e/**/*.mjs',
+      'tests/helpers/runtime-fixture.mjs',
+      'tests/helpers/browser-observations.mjs',
+      'tests/helpers/game-recovery.mjs',
+      'tests/helpers/snooker-rules.mjs',
+    ],
     languageOptions: {
       globals: { window: 'readonly', document: 'readonly', CSSStyleSheet: 'readonly' },
     },

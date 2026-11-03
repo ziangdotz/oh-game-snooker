@@ -1,0 +1,203 @@
+{
+  "date": "2026-10-21",
+  "status": "passed",
+  "scope": "Local two-session room lifecycle, authoritative results, rematches and recovery",
+  "fixes": [
+    "Correlate successful ready commands with requestId",
+    "Use authenticated seat identity when recording referee frame results",
+    "Reset snapshot ordering per matchId and reject previous-frame snapshots",
+    "Provide remote controller dialog and application event dependencies",
+    "Restore finished result panels after page reload",
+    "Release menu listeners when ownership transfers to a match",
+    "Reset cached controller readiness and result state for the next room",
+    "Notify opponents when an active room closes and clear seat credentials",
+    "Release replay input locks, reject duplicate replay and dispose timers on exit",
+    "Do not reconnect a replaced seat or let obsolete sockets reject current requests",
+    "Reject lobby commands that bypass the two-seat rematch vote",
+    "Use an explicit temporary OpenSSL config for portable WSS tests",
+    "Wait for the lobby drawer CLOSE event before transferring control; prevent a stranded modal overlay",
+    "Close match-owned help and result dialogs on frame completion and exit",
+    "Retain service errors between controllers and skip leave commands for absent seats",
+    "Only write changed files in the formatter whitelist to avoid unnecessary file locks"
+  ],
+  "validation": [
+    {
+      "passed": true,
+      "targets": [
+        "source",
+        "development",
+        "production"
+      ],
+      "unitIntegrationTests": 197,
+      "command": "node scripts/check-project.mjs --browser",
+      "includes": [
+        "structure",
+        "file naming",
+        "lint",
+        "build",
+        "integrity",
+        "maintenance",
+        "format",
+        "unit/integration",
+        "offline browser regression",
+        "room lifecycle",
+        "rooms lobby",
+        "online match",
+        "result/recovery/reentry",
+        "motion",
+        "full cue",
+        "venue",
+        "capacity"
+      ],
+      "browsers": [
+        "chrome 155.0.8059.85",
+        "edge 155.0.4283.62"
+      ]
+    }
+  ],
+  "limitations": [
+    "Terminal contacts are controlled fixtures with the real referee; no naturally completed full frame is claimed",
+    "Tests use one machine; no real domain, CA certificate chain, cross-device or adverse-network acceptance",
+    "Rooms remain in memory; one disconnected seat alone does not currently expire the room",
+    "Synchronous single-process physics; capacity measurements do not establish sustained multi-match throughput",
+    "Software WebGL does not establish hardware GPU performance"
+  ],
+  "generatedAt": "2026-10-21T14:48:57.3524502Z",
+  "environment": {
+    "node": "v24.19.0",
+    "executable": "C:/Users/ziangdotz/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe",
+    "note": "The PATH-first nvm Node launcher was unavailable; verification used a per-command PATH override to the bundled runtime."
+  },
+  "evidence": [
+    {
+      "scenarios": null,
+      "path": "artifacts/testing/regression/report.json",
+      "passed": true,
+      "sha256": "a4a291b5374e7ad0a1a529ecc36e9d27658993c5463025d191c6c6be667f4b09"
+    },
+    {
+      "scenarios": null,
+      "path": "reports/validation/room-lifecycle.json",
+      "passed": true,
+      "sha256": "78baeec139cd4d6bf880bd9889149ea3ee2ca24f3e2ad07b6a60cb12e5c8d378"
+    },
+    {
+      "scenarios": 6,
+      "path": "artifacts/testing/rooms-ui/rooms-ui.json",
+      "passed": true,
+      "sha256": "93b63642cdeea0faa886d219a99c7bb4b521f1ee3e4671c62521517707e5ea50"
+    },
+    {
+      "scenarios": 6,
+      "path": "artifacts/testing/rooms-match/rooms-match.json",
+      "passed": true,
+      "sha256": "9448398933a1dd03f9494a1c9985615ad725ea74b2791d0171af2214b8f17ea3"
+    },
+    {
+      "scenarios": 6,
+      "path": "artifacts/testing/rooms-result/rooms-result.json",
+      "passed": true,
+      "sha256": "6424c06ff6290846d7809413ff88470b60bf7bc3e83f3a5e5fd781449e4ad26d"
+    },
+    {
+      "scenarios": 6,
+      "path": "artifacts/testing/rooms-motion/rooms-motion.json",
+      "passed": true,
+      "sha256": "12d3bf1aca14be0b4d236a0b96b5b35075d03e833f1bcbef42ab94a5bd1579b5"
+    },
+    {
+      "scenarios": 6,
+      "path": "artifacts/testing/rooms-cue/rooms-cue.json",
+      "passed": true,
+      "sha256": "58d96a994e72e5cb9aeb401b59c06b52fbdb43142407d3b47c132d9fec61c0ba"
+    },
+    {
+      "scenarios": 6,
+      "path": "artifacts/testing/rooms-venue/rooms-venue.json",
+      "passed": true,
+      "sha256": "95c467f67cad0ffefd59877927bd0d0ed1b698bcf534bae1515b6b37896c4e73"
+    },
+    {
+      "scenarios": null,
+      "path": "artifacts/testing/rooms-capacity/rooms-capacity.json",
+      "passed": true,
+      "sha256": "9e4df2be85465032e6cd676eac727ef1994ad0224eadcca47780fbf593ea5090"
+    }
+  ],
+  "roomBrowserScenarios": 36,
+  "protectedFilesUnchanged": true,
+  "visualChecks": [
+    "artifacts/testing/rooms-result/chrome-source-result.png",
+    "artifacts/testing/rooms-result/edge-production-result.png"
+  ],
+  "sources": [
+    {
+      "sha256": "59203c31945c4d9273258fa04f265d970940131db47ffc742e8939b46b9f6aa1",
+      "path": "src/server/rooms/room-server.mjs"
+    },
+    {
+      "sha256": "c52393a0e1796731eef122a72463a6a7569cc969bbaea69663d34cc3fda4ad9b",
+      "path": "src/server/rooms/room-service.mjs"
+    },
+    {
+      "sha256": "b5d16f955a981ae66723c37854030b36eee28823ea01a27601bd7c9f620b11f8",
+      "path": "src/infrastructure/net/room-client.js"
+    },
+    {
+      "sha256": "8d273b7c40e7de5e19ca0320f44aaecd448c49aef01aa3e98cb510067c1bb89f",
+      "path": "src/infrastructure/net/room-session.js"
+    },
+    {
+      "sha256": "dff6d385401c57b874c2e18218e6904885a0ebcb75eafcd97e32773e03e87ce3",
+      "path": "src/infrastructure/net/remote-bridge.js"
+    },
+    {
+      "sha256": "eaa362ab2a22b5edb844c7eac4fdc3cfe4221a9e0d63897e38a8fc0a9e823dc7",
+      "path": "src/application/controllers/remote-match-controller.js"
+    },
+    {
+      "sha256": "2be957abd40a3c38260478ee72b2be6b33fcc53829b7feb5ee53d0f422786c99",
+      "path": "src/application/controllers/interior-menu-controller.js"
+    },
+    {
+      "sha256": "956f51b26f04b90d5059e5eb2e62ebb1c5fb15086d5377e943445f90122d22fd",
+      "path": "src/application/models/hotseat-game-model.js"
+    },
+    {
+      "sha256": "efcb226939fe441437f7f7f432df0d5701f9e57243feb45f2da62c10dcc9064d",
+      "path": "src/application/compose-game.js"
+    },
+    {
+      "sha256": "6dd059413290527b1df55f8f4ec010a2a2865adf1d7bff75cd6d5b32a4029733",
+      "path": "scripts/format-code.mjs"
+    },
+    {
+      "sha256": "c1c39ac495935fe3f925bcbad8dfed5333dd8ee0293ed77e7a42c91a0cddfbbb",
+      "path": "tests/e2e/rooms-result.test.mjs"
+    },
+    {
+      "sha256": "893b7b636bada3994055089011a92bfd73d8546b879dab469743ab92b7d1d3e9",
+      "path": "tests/unit/room-client.test.mjs"
+    },
+    {
+      "sha256": "79d55b6642a50d25bfbf02d63a66d8f0744062ad89de9cbf67d4002314357fde",
+      "path": "tests/unit/motion-replay.test.mjs"
+    },
+    {
+      "sha256": "1c542b566d599bae82e55f67fa78ea10c125a7f317fc7946bc50fb9c82a158d6",
+      "path": "tests/integration/room-client-server.test.mjs"
+    },
+    {
+      "sha256": "96ad5b52eeabfe6698c3effc99afa81904263280db68cb55616cdb3d3a7edc8a",
+      "path": "tests/helpers/room-match-fixture.mjs"
+    },
+    {
+      "sha256": "40005759994bf1f8f92b613053e94d4cdc0f55ec96208dc777949b18b1c6df77",
+      "path": "tests/integration/room-wss.test.mjs"
+    },
+    {
+      "sha256": "096285a8de3d1f994d409a6e28509359f9b0612fe4fbf4b0fdc4237505e45c87",
+      "path": "tests/integration/room-finished.test.mjs"
+    }
+  ]
+}

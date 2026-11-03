@@ -19,7 +19,7 @@
 
 docs记录当前机制与维护方法，reports记录验证输入和结果，artifacts/testing保存浏览器状态及截图。优化先使用[实验模板](../templates/experiment.md)，按[后续方法](optimization-roadmap.md)选择独立范围。
 
-双人功能按[房间与双人对战方案](../development/rooms-and-two-player-plan.md)推进：第一阶段已接入真实同机轮流比赛，模型、输入交接、设置与验证入口见[同机双人](../validation/hotseat-match.md)。权威比赛服务与联网房间留在第二阶段。
+双人功能按[房间与双人对战方案](../development/rooms-and-two-player-plan.md)推进：同机轮流比赛的模型、输入交接、设置与验证入口见[同机双人](../validation/hotseat-match.md)。第二阶段已有本机联网闭环，源码从 `server/rooms`、`server/matches`、`infrastructure/net` 及 `application/controllers/remote-match-controller.js` 进入，协议与验证见[房间服务](../validation/room-service.md)。跨设备与公网仍待验收。
 
 本轮前端面板的[系统设计](../development/rooms-panel-design.md)与[交互预览](../development/rooms-panel-prototype.html)覆盖 PLAY TOGETHER 入口、同机设置、后续联网等待及结果状态。预览是独立设计稿，模拟状态不能作为真实双人功能验收。
 

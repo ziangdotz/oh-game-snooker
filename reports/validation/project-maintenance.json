@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-10-13T02:50:45.412Z",
+  "date": "2026-11-03T13:39:36.971Z",
   "passed": true,
-  "sourceManifestSHA256": "e06a5635fc6841b812fabc7087e6d83639b95adcd869b0060da70420c17ad6b2",
+  "sourceManifestSHA256": "322409df1a6239f702659656783dbf24c2c0e45afc06be48f38f2ebee8504ab0",
   "baselineManifestSHA256": "d0ace5802ce84ee0afea98df0cad204e770aae09376e8354c77adc2234af4681",
   "runtime": {
     "modules": 115,
@@ -10,11 +10,11 @@
     "unreachable": [],
     "passed": true
   },
-  "runtimeSourceFiles": 333,
-  "assetReferences": 91,
+  "runtimeSourceFiles": 351,
+  "assetReferences": 92,
   "unreferencedAssets": [],
   "docs": {
-    "documents": 37,
+    "documents": 40,
     "links": [
       {
         "from": "README.md",
@@ -44,6 +44,16 @@
       {
         "from": "README.md",
         "to": "docs/architecture/composition-root-assessment.md",
+        "generated": false
+      },
+      {
+        "from": "README.md",
+        "to": "docs/validation/headless-match.md",
+        "generated": false
+      },
+      {
+        "from": "README.md",
+        "to": "docs/validation/room-service.md",
         "generated": false
       },
       {
@@ -249,6 +259,11 @@
       {
         "from": "docs/architecture/overview.md",
         "to": "docs/development/modern-wall-study.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "docs/validation/room-service.md",
         "generated": false
       },
       {
@@ -463,6 +478,11 @@
       },
       {
         "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "docs/validation/room-service.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
         "to": "docs/development/rooms-panel-design.md",
         "generated": false
       },
@@ -538,8 +558,68 @@
       },
       {
         "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "docs/validation/room-service.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "docs/validation/headless-match.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "docs/validation/room-service.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "artifacts/testing/rooms-ui/rooms-ui.json",
+        "generated": true
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "artifacts/testing/rooms-match/rooms-match.json",
+        "generated": true
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "artifacts/testing/rooms-result/rooms-result.json",
+        "generated": true
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "artifacts/testing/rooms-motion/rooms-motion.json",
+        "generated": true
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "artifacts/testing/rooms-cue/rooms-cue.json",
+        "generated": true
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "artifacts/testing/rooms-venue/rooms-venue.json",
+        "generated": true
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "artifacts/testing/rooms-capacity/rooms-capacity.json",
+        "generated": true
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "docs/development/rooms-deployment.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
         "to": "docs/development/workflow.md",
         "generated": false
+      },
+      {
+        "from": "docs/development/rooms-deployment.md",
+        "to": "artifacts/testing/rooms-capacity/rooms-capacity.json",
+        "generated": true
       },
       {
         "from": "docs/development/rooms-panel-design.md",
@@ -793,6 +873,11 @@
       },
       {
         "from": "docs/learning/conversation-handoff.md",
+        "to": "docs/validation/room-service.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/conversation-handoff.md",
         "to": "docs/development/rooms-panel-design.md",
         "generated": false
       },
@@ -1003,6 +1088,11 @@
       },
       {
         "from": "docs/learning/guide.md",
+        "to": "docs/validation/room-service.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
         "to": "docs/development/rooms-panel-design.md",
         "generated": false
       },
@@ -1074,6 +1164,21 @@
       {
         "from": "docs/validation/README.md",
         "to": "docs/validation/algorithm-validation.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/README.md",
+        "to": "docs/validation/headless-match.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/README.md",
+        "to": "docs/validation/room-service.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/README.md",
+        "to": "docs/development/rooms-deployment.md",
         "generated": false
       },
       {
@@ -1212,6 +1317,46 @@
         "generated": false
       },
       {
+        "from": "docs/validation/headless-match.md",
+        "to": "docs/validation/room-service.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/headless-match.md",
+        "to": "artifacts/testing/regression/chrome-physics-cold.json",
+        "generated": true
+      },
+      {
+        "from": "docs/validation/headless-match.md",
+        "to": "reports/validation/headless-match.json",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/headless-match.md",
+        "to": "reports/validation/headless-match-snapshot.json",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/headless-match.md",
+        "to": "artifacts/testing/regression/chrome-physics.json",
+        "generated": true
+      },
+      {
+        "from": "docs/validation/headless-match.md",
+        "to": "src/server/matches/headless-match-model.mjs",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/headless-match.md",
+        "to": "tooling/validation/headless-match-model.mjs",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/headless-match.md",
+        "to": "docs/development/rooms-and-two-player-plan.md",
+        "generated": false
+      },
+      {
         "from": "docs/validation/hotseat-match.md",
         "to": "src/application/models/hotseat-game-model.js",
         "generated": false
@@ -1310,6 +1455,21 @@
         "from": "docs/validation/project-normalization.md",
         "to": "docs/development/repository-workflow.md",
         "generated": false
+      },
+      {
+        "from": "docs/validation/room-service.md",
+        "to": "docs/development/rooms-deployment.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/room-service.md",
+        "to": "artifacts/testing/rooms-result/rooms-result.json",
+        "generated": true
+      },
+      {
+        "from": "docs/validation/room-service.md",
+        "to": "reports/validation/room-optimization.json",
+        "generated": false
       }
     ],
     "issues": [],
@@ -1323,6 +1483,14 @@
     {
       "name": "start",
       "entry": "src/start.mjs"
+    },
+    {
+      "name": "rooms:serve",
+      "entry": "scripts/start-room-server.mjs"
+    },
+    {
+      "name": "capture:physics",
+      "entry": "scripts/capture-browser-physics.mjs"
     },
     {
       "name": "dev:built",
@@ -1339,6 +1507,10 @@
     {
       "name": "verify:algorithms",
       "entry": "scripts/verify-algorithms.mjs"
+    },
+    {
+      "name": "verify:headless",
+      "entry": "scripts/verify-headless-match.mjs"
     },
     {
       "name": "lint",
@@ -1371,6 +1543,38 @@
     {
       "name": "test:e2e",
       "entry": "tests/e2e/game.test.mjs"
+    },
+    {
+      "name": "test:e2e:rooms",
+      "entry": "tests/e2e/rooms-ui.test.mjs"
+    },
+    {
+      "name": "test:e2e:rooms-wire",
+      "entry": "tests/e2e/room-lifecycle.test.mjs"
+    },
+    {
+      "name": "test:e2e:rooms-match",
+      "entry": "tests/e2e/rooms-match.test.mjs"
+    },
+    {
+      "name": "test:e2e:rooms-result",
+      "entry": "tests/e2e/rooms-result.test.mjs"
+    },
+    {
+      "name": "test:e2e:rooms-motion",
+      "entry": "tests/e2e/rooms-motion.test.mjs"
+    },
+    {
+      "name": "test:e2e:rooms-cue",
+      "entry": "tests/e2e/rooms-cue.test.mjs"
+    },
+    {
+      "name": "test:e2e:rooms-venue",
+      "entry": "tests/e2e/rooms-venue.test.mjs"
+    },
+    {
+      "name": "test:e2e:rooms-capacity",
+      "entry": "tests/e2e/rooms-capacity.test.mjs"
     },
     {
       "name": "test:e2e:source",
@@ -1432,8 +1636,8 @@
   "packageLock": {
     "file": "package-lock.json",
     "packageManager": "npm@11.19.0",
-    "directDependencies": 6,
-    "lockedPackages": 82,
+    "directDependencies": 7,
+    "lockedPackages": 83,
     "issues": [],
     "passed": true
   },

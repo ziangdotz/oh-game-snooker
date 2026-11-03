@@ -67,6 +67,7 @@ const server = http.createServer(async (request, response) => {
       'Content-Length': bytes?.length ?? metadata.size,
       'Cache-Control': 'no-store',
       'X-Content-Type-Options': 'nosniff',
+      'Referrer-Policy': 'no-referrer',
     });
     response.end(bytes);
   } catch (error) {

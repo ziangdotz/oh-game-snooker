@@ -64,6 +64,9 @@ export async function readBuildInputs({ root = ROOT } = {}) {
         continue;
       } else if (source === `${LAYOUT.compatibility}/browser.js`) {
         addOutput(`${COMPATIBILITY_OUTPUT}/${file.slice('compatibility/'.length)}`, bytes);
+      } else if (source.startsWith('src/server/')) {
+        // Node-only room/session service; never part of the browser runtime bundle.
+        continue;
       } else if (file.endsWith('.js')) {
         sources.set(source, bytes.toString('utf8'));
       } else if (entry?.kind === 'template') {

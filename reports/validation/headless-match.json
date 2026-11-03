@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-19T05:23:29.225Z",
+  "environment": {
+    "node": "v24.20.0",
+    "platform": "win32",
+    "arch": "x64"
+  },
+  "reference": {
+    "file": "artifacts/testing/regression/chrome-physics-cold.json",
+    "sha256": "53ebb0c19c1793255bfa7a59cb25a254a21b45ced0649c9ab3316e89e42f37d4",
+    "coldStart": true,
+    "modifiedAt": "2026-10-19T02:38:24.207Z",
+    "stepSize": 0.0167,
+    "fixtureIsolation": "fresh-page",
+    "note": "Each fixture is captured from a fresh browser page and a newly constructed WorldClient."
+  },
+  "tolerance": {
+    "positionVelocity": 0,
+    "spinOrientation": 0
+  },
+  "table": {
+    "sceneId": "tigerClubSno",
+    "ballCount": 22,
+    "ballRadius": 0.02625,
+    "ballMass": 1.5,
+    "spotY": 0.90625,
+    "groups": [
+      "ground",
+      "side",
+      "tunnel"
+    ],
+    "polygons": 66,
+    "textures": [
+      "../textures/table/collision-atlas.png"
+    ],
+    "stepSize": 0.0167
+  },
+  "fixtures": [
+    {
+      "name": "break-center",
+      "passed": true,
+      "strictPassed": true,
+      "frames": 25,
+      "ballCount": 22,
+      "maxAbsDiff": 0,
+      "maxPositionVelocityDiff": 0,
+      "maxSpinOrientationDiff": 0,
+      "mismatches": [],
+      "contacts": {
+        "ball": 1,
+        "cushion": 3
+      },
+      "expectedContacts": {
+        "ball": 1,
+        "cushion": 3
+      },
+      "removed": [],
+      "expectedRemoved": [],
+      "contactsMatch": true,
+      "removedMatch": true
+    },
+    {
+      "name": "cushion-side-spin",
+      "passed": true,
+      "strictPassed": true,
+      "frames": 25,
+      "ballCount": 22,
+      "maxAbsDiff": 0,
+      "maxPositionVelocityDiff": 0,
+      "maxSpinOrientationDiff": 0,
+      "mismatches": [],
+      "contacts": {
+        "ball": 1,
+        "cushion": 1
+      },
+      "expectedContacts": {
+        "ball": 1,
+        "cushion": 1
+      },
+      "removed": [],
+      "expectedRemoved": [],
+      "contactsMatch": true,
+      "removedMatch": true
+    },
+    {
+      "name": "draw",
+      "passed": true,
+      "strictPassed": true,
+      "frames": 25,
+      "ballCount": 22,
+      "maxAbsDiff": 0,
+      "maxPositionVelocityDiff": 0,
+      "maxSpinOrientationDiff": 0,
+      "mismatches": [],
+      "contacts": {
+        "ball": 19,
+        "cushion": 0
+      },
+      "expectedContacts": {
+        "ball": 19,
+        "cushion": 0
+      },
+      "removed": [],
+      "expectedRemoved": [],
+      "contactsMatch": true,
+      "removedMatch": true
+    },
+    {
+      "name": "follow",
+      "passed": true,
+      "strictPassed": true,
+      "frames": 25,
+      "ballCount": 22,
+      "maxAbsDiff": 0,
+      "maxPositionVelocityDiff": 0,
+      "maxSpinOrientationDiff": 0,
+      "mismatches": [],
+      "contacts": {
+        "ball": 22,
+        "cushion": 2
+      },
+      "expectedContacts": {
+        "ball": 22,
+        "cushion": 2
+      },
+      "removed": [],
+      "expectedRemoved": [],
+      "contactsMatch": true,
+      "removedMatch": true
+    },
+    {
+      "name": "middle-pocket",
+      "passed": true,
+      "strictPassed": true,
+      "frames": 25,
+      "ballCount": 22,
+      "maxAbsDiff": 0,
+      "maxPositionVelocityDiff": 0,
+      "maxSpinOrientationDiff": 0,
+      "mismatches": [],
+      "contacts": {
+        "ball": 0,
+        "cushion": 2
+      },
+      "expectedContacts": {
+        "ball": 0,
+        "cushion": 2
+      },
+      "removed": [
+        0
+      ],
+      "expectedRemoved": [
+        0
+      ],
+      "contactsMatch": true,
+      "removedMatch": true
+    }
+  ],
+  "isolation": {
+    "passed": true,
+    "leftVsSingleMaxAbsDiff": 0,
+    "rightVsSingleMaxAbsDiff": 0,
+    "leftMismatches": [],
+    "rightMismatches": [],
+    "solverInstancesDistinct": true,
+    "predictorSolverInstancesDistinct": true,
+    "worldClassesDistinct": true
+  },
+  "match": {
+    "passed": true,
+    "players": [
+      "Headless One",
+      "Headless Two"
+    ],
+    "rounds": [
+      {
+        "name": "1:1",
+        "accepted": true,
+        "score": 1,
+        "foulCode": 0,
+        "context": {
+          "nRounds": 1,
+          "inHand": 0,
+          "playerIndex": 0,
+          "ballOn": 252
+        },
+        "ballOn": 252,
+        "playerIndex": 0,
+        "activeBalls": 21
+      },
+      {
+        "name": "7:7",
+        "accepted": true,
+        "score": 7,
+        "foulCode": 0,
+        "context": {
+          "nRounds": 2,
+          "inHand": 0,
+          "playerIndex": 0,
+          "ballOn": 2
+        },
+        "ballOn": 2,
+        "playerIndex": 0,
+        "activeBalls": 21
+      },
+      {
+        "name": "1:1",
+        "accepted": true,
+        "score": 1,
+        "foulCode": 0,
+        "context": {
+          "nRounds": 3,
+          "inHand": 0,
+          "playerIndex": 0,
+          "ballOn": 252
+        },
+        "ballOn": 252,
+        "playerIndex": 0,
+        "activeBalls": 20
+      }
+    ],
+    "finalSnapshot": {
+      "context": {
+        "nRounds": 3,
+        "inHand": 0,
+        "playerIndex": 0,
+        "ballOn": 252
+      },
+      "players": [
+        {
+          "id": "hotseat-player-1",
+          "displayName": "Headless One",
+          "type": 0,
+          "pts": 9,
+          "brk": 9,
+          "maxbrk": 9,
+          "penalty": 0,
+          "shootingCount": 3,
+          "scoreCount": 3,
+          "accuracy": 1
+        },
+        {
+          "id": "hotseat-player-2",
+          "displayName": "Headless Two",
+          "type": 0,
+          "pts": 0,
+          "brk": 0,
+          "maxbrk": 0,
+          "penalty": 0,
+          "shootingCount": 0,
+          "scoreCount": 0,
+          "accuracy": 0
+        }
+      ],
+      "referees": {
+        "refId": "std-sno",
+        "sceneId": "tigerClubSno",
+        "reservedBallOn": 65535
+      },
+      "activeBalls": 20
+    },
+    "restoredMatch": true,
+    "postRestoreMatch": true,
+    "postRestoreScore": 7,
+    "originalPostRoundScore": 7
+  },
+  "snapshot": {
+    "file": "reports/validation/headless-match-snapshot.json",
+    "note": "Full serializable match snapshot after red-black-red; used for restore equality."
+  },
+  "strictPassed": true,
+  "passed": true
+}

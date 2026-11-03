@@ -205,8 +205,9 @@ try {
             );
             assert.deepEqual(await morePanel.locator('.interior-more-status').allTextContents(), [
               'SET UP A MATCH ↗',
-              'COMING SOON',
+              'CREATE OR JOIN ↗',
             ]);
+            // Each card is itself the action; no nested button competes for focus.
             assert.equal(await morePanel.locator('.interior-more-option button').count(), 0);
             const moreBounds = await morePanel.boundingBox();
             const expectedMoreWidth =
@@ -231,8 +232,21 @@ try {
                 moreBounds.y + moreBounds.height <= viewport.height + 1,
             );
             const previousUrl = page.url();
+            // ROOMS is a real action now: it opens the online lobby in place.
             await morePanel.locator('.interior-more-option').last().click();
+            await page.waitForFunction(() => {
+              const box = window.__pcolTestGame._currentController._moreDialog;
+              return box?.page === 'rooms' && !box.needsUpdate;
+            });
+            assert.equal(await morePanel.locator('h2').textContent(), 'ROOMS');
+            assert.equal(await page.locator('#room-setup-form').isVisible(), true);
             assert.equal(page.url(), previousUrl);
+            await morePanel.getByRole('button', { name: 'BACK', exact: true }).click();
+            await page.waitForFunction(() => {
+              const box = window.__pcolTestGame._currentController._moreDialog;
+              return box?.page === 'overview' && !box.needsUpdate;
+            });
+            assert.equal(await morePanel.locator('h2').textContent(), 'PLAY TOGETHER');
             await morePanel
               .getByRole('button', { name: 'Close PLAY TOGETHER', exact: true })
               .focus();

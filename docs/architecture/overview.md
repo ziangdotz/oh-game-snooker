@@ -11,6 +11,7 @@
 | `src/application/`     | 启动、组合根、控制器、模型、AI、回放、游戏时钟             | 编排领域、界面与基础设施       |
 | `src/presentation/`    | 相机、输入、渲染、动画、界面、HTML 模板、CSS               | 不被领域层反向引用             |
 | `src/infrastructure/`  | 本地请求、资产队列、碰撞网格加载                           | 隔离浏览器 I/O                 |
+| `src/server/`          | Node 房间传输、席位状态机、无界面权威比赛                  | 不进入浏览器构建               |
 | `src/adapters/`        | PCOL 渲染材质及全局对象适配                                | 隔离引擎集成                   |
 | `src/runtime/`         | 模块清单、源码入口、具名装载、缓存和分包生命周期           | 不包含游戏算法                 |
 | `src/assets/`          | 语义命名的模型、纹理、环境图、字体、图标、碰撞数据和着色器 | 只包含实际资产                 |
@@ -83,6 +84,10 @@ WebGL恢复兼容层接入旧引擎的纹理重建及场景事件，修正HDR纹
 `?wall-study=modern` 可启用一面现代俱乐部墙面的独立视觉试做。实现位于 presentation/scenes，普通页面保留当前场景，领域与物理不依赖试做模块。设计、资源与复现方式见 [墙面试做](../development/modern-wall-study.md)。
 
 ## 本地服务与验证
+
+联网房间复用同一领域物理与裁判：`server/matches` 每局创建独立装载器、模拟器和双人模型；`server/rooms` 管理 WebSocket、席位、准备、开局和重赛。当前物理在 Node 单进程内同步结算，不是 Worker 服务。浏览器的 `infrastructure/net` 处理连接、凭据、请求确认与轨迹回放，`application/controllers/remote-match-controller` 协调输入、HUD 和结果；比分与球权只接受服务端快照。
+
+房间修订号在同一房间内排序，比赛版本在 `matchId` 内排序；新一局从版本零开始，旧局消息不能覆盖新局。结果后必须双方投票，普通准备或开局命令不能绕过重赛。菜单监听只在菜单生命周期内存在；比赛退出释放回放、席位及连接。实现与验证边界见[房间协议](../validation/room-service.md)。
 
 源码服务 `node src/start.mjs` 仅依赖 src 和 Node 内置模块；浏览器直接加载源码 ES 模块、资产与模板，修改后刷新即可。第三方 UMD 的非严格模式行为由单独兼容工厂保留，业务代码依旧使用原生 ES 模块。可只复制 src 独立运行；详见 [源码独立运行](../development/source-runtime.md)。
 

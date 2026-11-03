@@ -43,6 +43,12 @@ import createGameUiController from './controllers/game-ui-controller.js';
 import createHotseatGameModel from './models/hotseat-game-model.js';
 import createHotseatMatchController from './controllers/hotseat-match-controller.js';
 import createHotseatSession from '../infrastructure/navigation/hotseat-session.js';
+import createRoomSession from '../infrastructure/net/room-session.js';
+import createSimulatorRouter from '../infrastructure/net/simulator-router.js';
+import createRemoteBridge from '../infrastructure/net/remote-bridge.js';
+import createRemoteMatchController from './controllers/remote-match-controller.js';
+import roomProtocolFactory from '../shared/net/room-protocol.js';
+import strokePowerFactory from '../shared/net/stroke-power.js';
 import createMenuController from './controllers/menu-controller.js';
 
 import createToolbar from '../presentation/ui/toolbar.js';
@@ -514,6 +520,9 @@ export default function composeGameModule(module, exports, loadModule) {
       return menuTelemetry;
     },
   });
+  // Shared wire protocol plus the original stroke-power curve; used by both the
+  // room lobby and the remote match bridge.
+  const roomProtocol = Object.assign(roomProtocolFactory(), strokePowerFactory());
   const MenuController = createInteriorMenuController({
     MenuController: PreservedMenuController,
     InteriorDesignDialog,
@@ -523,6 +532,9 @@ export default function composeGameModule(module, exports, loadModule) {
     transition: loadModule('application/interior-transition'),
     dialogEvents,
     matchSession,
+    eventEmitter: EventEmitter,
+    createRoomSession,
+    protocol: roomProtocol,
     ApplicationEvents,
   });
   var playerModule = loadModule('domain/game/player'),
@@ -903,11 +915,8 @@ export default function composeGameModule(module, exports, loadModule) {
     false,
   );
   const matchTelemetry = window.gtag || null,
-    localSimulator = new Simulator.a(
-      'local',
-      new physicsApi.a.WorldClient(),
-      collisionMeshLoader.a,
-    ),
+    rawSimulator = new Simulator.a('local', new physicsApi.a.WorldClient(), collisionMeshLoader.a),
+    localSimulator = createSimulatorRouter(rawSimulator),
     localMovieClip = new MovieClip();
   const GameUiController = createGameUiController(
     createMatchController({
@@ -1013,10 +1022,46 @@ export default function composeGameModule(module, exports, loadModule) {
     }),
     GameState.a,
   );
-  const MatchController = createHotseatMatchController(
-    GameUiController,
-    GameState.a,
-    ControllerState,
+  const MatchController = createRemoteMatchController(
+    createHotseatMatchController(GameUiController, GameState.a, ControllerState),
+    {
+      get ApplicationEvents() {
+        return ApplicationEvents;
+      },
+      get dialogEvents() {
+        return dialogEvents;
+      },
+      get GameState() {
+        return GameState;
+      },
+      get ViewState() {
+        return ViewState;
+      },
+      get SimulationState() {
+        return SimulationState;
+      },
+      get session() {
+        return matchSession;
+      },
+      get createRemoteBridge() {
+        return createRemoteBridge;
+      },
+      get ControllerEvents() {
+        return ControllerEvents;
+      },
+      get PropertyTween() {
+        return PropertyTween;
+      },
+      get ViewEvents() {
+        return ViewEvents;
+      },
+      get SimulationEvents() {
+        return SimulationEvents;
+      },
+      get ControllerState() {
+        return ControllerState;
+      },
+    },
   );
   const ToastDialog = createGameToast(
     createToastDialog({

@@ -17,6 +17,14 @@ const steps = [
 ];
 if (args.includes('--browser')) {
   steps.push(['offline browser regression', ['tests/e2e/game.test.mjs']]);
+  steps.push(['two-browser room lifecycle', ['tests/e2e/room-lifecycle.test.mjs']]);
+  steps.push(['two-browser ROOMS lobby', ['tests/e2e/rooms-ui.test.mjs']]);
+  steps.push(['two-browser online match', ['tests/e2e/rooms-match.test.mjs']]);
+  steps.push(['two-browser result and recovery', ['tests/e2e/rooms-result.test.mjs']]);
+  steps.push(['two-browser motion replay', ['tests/e2e/rooms-motion.test.mjs']]);
+  steps.push(['two-browser full cue', ['tests/e2e/rooms-cue.test.mjs']]);
+  steps.push(['two-browser venue consistency', ['tests/e2e/rooms-venue.test.mjs']]);
+  steps.push(['room service capacity', ['tests/e2e/rooms-capacity.test.mjs']]);
 }
 for (const [name, command] of steps) {
   console.log(`\nChecking: ${name}`);

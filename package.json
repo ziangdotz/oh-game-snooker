@@ -19,10 +19,13 @@
   "scripts": {
     "dev": "node src/start.mjs",
     "start": "node src/start.mjs",
+    "rooms:serve": "node scripts/start-room-server.mjs",
+    "capture:physics": "node scripts/capture-browser-physics.mjs",
     "dev:built": "node scripts/dev-server.mjs",
     "build": "node scripts/build.mjs",
     "verify": "node scripts/verify.mjs",
     "verify:algorithms": "node scripts/verify-algorithms.mjs",
+    "verify:headless": "node scripts/verify-headless-match.mjs",
     "lint": "node scripts/lint-code.mjs",
     "lint:fix": "node scripts/lint-code.mjs --fix",
     "format": "node scripts/format-code.mjs --write",
@@ -31,6 +34,14 @@
     "test:unit": "node scripts/test-project.mjs --unit",
     "test:integration": "node scripts/test-project.mjs --integration",
     "test:e2e": "node tests/e2e/game.test.mjs",
+    "test:e2e:rooms": "node tests/e2e/rooms-ui.test.mjs",
+    "test:e2e:rooms-wire": "node tests/e2e/room-lifecycle.test.mjs",
+    "test:e2e:rooms-match": "node tests/e2e/rooms-match.test.mjs",
+    "test:e2e:rooms-result": "node tests/e2e/rooms-result.test.mjs",
+    "test:e2e:rooms-motion": "node tests/e2e/rooms-motion.test.mjs",
+    "test:e2e:rooms-cue": "node tests/e2e/rooms-cue.test.mjs",
+    "test:e2e:rooms-venue": "node tests/e2e/rooms-venue.test.mjs",
+    "test:e2e:rooms-capacity": "node tests/e2e/rooms-capacity.test.mjs",
     "test:e2e:source": "node tests/e2e/source-standalone.test.mjs",
     "test:e2e:continuous": "node tests/e2e/continuous-play.test.mjs",
     "test:e2e:motion": "node tests/e2e/gameplay-motion.test.mjs",
@@ -45,5 +56,8 @@
     "test:e2e:shadows": "node tests/e2e/interior-shadow-cache.test.mjs",
     "measure:interior": "node scripts/measure-interior-performance.mjs",
     "measure:summary": "node scripts/summarize-measurement.mjs"
+  },
+  "dependencies": {
+    "ws": "8.18.3"
   }
 }
