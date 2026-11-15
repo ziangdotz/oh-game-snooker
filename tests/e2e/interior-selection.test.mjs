@@ -32,7 +32,7 @@ async function select(page, id) {
   }
   await page.waitForURL((url) => url.searchParams.get('interior') === id);
   await home(page, id);
-  assert.equal(await page.title(), 'OH MY SNOOKER');
+  assert.equal(await page.title(), 'OH GAME SNOOKER');
   assert.notEqual(page.url(), previous);
 }
 
@@ -77,7 +77,7 @@ try {
         try {
           await page.goto(target.origin + '/');
           await home(page, DESIGN_IDS[0]);
-          assert.equal(await page.title(), 'OH MY SNOOKER');
+          assert.equal(await page.title(), 'OH GAME SNOOKER');
           const initialUrl = page.url();
           await page.screenshot({
             path: path.join(output, candidate.name + '-' + target.name + '-home.png'),

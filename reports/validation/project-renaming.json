@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-07T13:09:55.188Z",
+  "sourceManifestSHA256": "e223f153182aea13add0bdb0af5f00f79eb92edd06091900550e8882a330990f",
+  "baselineManifestSHA256": "d0ace5802ce84ee0afea98df0cad204e770aae09376e8354c77adc2234af4681",
+  "name": "Oh Game Snooker",
+  "identifier": "oh-game-snooker",
+  "legacyStorageMigration": false,
+  "checks": {
+    "projectWithBrowser": "passed",
+    "unitAndIntegration": {
+      "passed": 197,
+      "failed": 0
+    },
+    "interiorSixSuites": "passed",
+    "uiVectorArtwork": "passed",
+    "originalInterior": "passed",
+    "sourceStandalone": "passed",
+    "hotseatMatch": "failed on initial run and independent retry"
+  },
+  "hotseatFailure": {
+    "phase": "Chrome source: refresh restores setup, before real match starts",
+    "cause": "Loading overlay intercepts Close PLAY TOGETHER after setup restoration. Existing interior-menu-controller returns before transition.complete.",
+    "controllerChanged": false,
+    "evidence": "artifacts/testing/hotseat-match/rename-refresh-failure.json",
+    "historicalHotseatReport": "reports/validation/hotseat-match.json",
+    "note": "Historical report retained with its original date; it is not evidence of a passing current run."
+  }
+}

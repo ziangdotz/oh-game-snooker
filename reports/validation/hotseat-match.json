@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-13T02:07:08.713Z",
+  "date": "2026-11-14T14:48:32.194Z",
   "scenarios": [
     {
       "browser": "chrome",
@@ -8,6 +8,109 @@
       "errors": [],
       "refreshRestoresSetupWithoutMatch": true,
       "venueFailureCancelRetry": true,
+      "duplicateNamesRejected": true,
+      "duplicateNameTrace": [
+        {
+          "type": "focusin",
+          "time": 7597.5,
+          "target": "game-view",
+          "names": [
+            "Carol",
+            "Dan"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "focusin",
+          "time": 15871.899999976158,
+          "target": "player-1",
+          "names": [
+            "Carol",
+            "Dan"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "input",
+          "time": 15885.099999964237,
+          "target": "player-1",
+          "names": [
+            " Alice ",
+            "Dan"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "focusin",
+          "time": 15896.699999988079,
+          "target": "player-2",
+          "names": [
+            " Alice ",
+            "Dan"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "input",
+          "time": 15898.399999976158,
+          "target": "player-2",
+          "names": [
+            " Alice ",
+            "alice"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "focusin",
+          "time": 15952.5,
+          "target": "venue",
+          "names": [
+            " Alice ",
+            "alice"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "input",
+          "time": 15953.199999988079,
+          "target": "venue",
+          "names": [
+            " Alice ",
+            "alice"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "focusin",
+          "time": 16026.699999988079,
+          "target": "START MATCH",
+          "names": [
+            " Alice ",
+            "alice"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "submit",
+          "time": 16027.199999988079,
+          "target": "hotseat-setup-form",
+          "names": [
+            " Alice ",
+            "alice"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "focusin",
+          "time": 16027.699999988079,
+          "target": "player-2",
+          "names": [
+            " Alice ",
+            "alice"
+          ],
+          "pendingFocus": false
+        }
+      ],
       "realShots": [
         {
           "owner": 0,
@@ -12992,6 +13095,7 @@
       "target": "source",
       "design": "interior-design-001",
       "errors": [],
+      "duplicateNamesRejected": true,
       "realShots": [
         {
           "owner": 0,
@@ -13023,6 +13127,7 @@
       "target": "source",
       "design": "interior-design-002",
       "errors": [],
+      "duplicateNamesRejected": true,
       "realShots": [
         {
           "owner": 0,
@@ -13054,6 +13159,7 @@
       "target": "source",
       "design": "interior-design-003",
       "errors": [],
+      "duplicateNamesRejected": true,
       "realShots": [
         {
           "owner": 0,
@@ -13087,6 +13193,7 @@
       "errors": [],
       "refreshRestoresSetupWithoutMatch": true,
       "venueFailureCancelRetry": true,
+      "duplicateNamesRejected": true,
       "realShots": [
         {
           "owner": 0,
@@ -13118,6 +13225,7 @@
       "target": "development",
       "design": "interior-design-001",
       "errors": [],
+      "duplicateNamesRejected": true,
       "realShots": [
         {
           "owner": 0,
@@ -13149,6 +13257,7 @@
       "target": "development",
       "design": "interior-design-002",
       "errors": [],
+      "duplicateNamesRejected": true,
       "realShots": [
         {
           "owner": 0,
@@ -13180,6 +13289,7 @@
       "target": "development",
       "design": "interior-design-003",
       "errors": [],
+      "duplicateNamesRejected": true,
       "realShots": [
         {
           "owner": 0,
@@ -13213,6 +13323,7 @@
       "errors": [],
       "refreshRestoresSetupWithoutMatch": true,
       "venueFailureCancelRetry": true,
+      "duplicateNamesRejected": true,
       "realShots": [
         {
           "owner": 0,
@@ -13244,6 +13355,7 @@
       "target": "production",
       "design": "interior-design-001",
       "errors": [],
+      "duplicateNamesRejected": true,
       "realShots": [
         {
           "owner": 0,
@@ -13275,6 +13387,7 @@
       "target": "production",
       "design": "interior-design-002",
       "errors": [],
+      "duplicateNamesRejected": true,
       "realShots": [
         {
           "owner": 0,
@@ -13306,6 +13419,7 @@
       "target": "production",
       "design": "interior-design-003",
       "errors": [],
+      "duplicateNamesRejected": true,
       "realShots": [
         {
           "owner": 0,
@@ -13339,6 +13453,109 @@
       "errors": [],
       "refreshRestoresSetupWithoutMatch": true,
       "venueFailureCancelRetry": true,
+      "duplicateNamesRejected": true,
+      "duplicateNameTrace": [
+        {
+          "type": "focusin",
+          "time": 8077,
+          "target": "game-view",
+          "names": [
+            "Carol",
+            "Dan"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "focusin",
+          "time": 15794.199999988079,
+          "target": "player-1",
+          "names": [
+            "Carol",
+            "Dan"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "input",
+          "time": 15798,
+          "target": "player-1",
+          "names": [
+            " Alice ",
+            "Dan"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "focusin",
+          "time": 15802,
+          "target": "player-2",
+          "names": [
+            " Alice ",
+            "Dan"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "input",
+          "time": 15802.800000011921,
+          "target": "player-2",
+          "names": [
+            " Alice ",
+            "alice"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "focusin",
+          "time": 15830.699999988079,
+          "target": "venue",
+          "names": [
+            " Alice ",
+            "alice"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "input",
+          "time": 15831,
+          "target": "venue",
+          "names": [
+            " Alice ",
+            "alice"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "focusin",
+          "time": 15874.199999988079,
+          "target": "START MATCH",
+          "names": [
+            " Alice ",
+            "alice"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "submit",
+          "time": 15878.800000011921,
+          "target": "hotseat-setup-form",
+          "names": [
+            " Alice ",
+            "alice"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "focusin",
+          "time": 15880.900000035763,
+          "target": "player-2",
+          "names": [
+            " Alice ",
+            "alice"
+          ],
+          "pendingFocus": false
+        }
+      ],
       "realShots": [
         {
           "owner": 0,
@@ -26323,6 +26540,7 @@
       "target": "source",
       "design": "interior-design-001",
       "errors": [],
+      "duplicateNamesRejected": true,
       "realShots": [
         {
           "owner": 0,
@@ -26354,6 +26572,7 @@
       "target": "source",
       "design": "interior-design-002",
       "errors": [],
+      "duplicateNamesRejected": true,
       "realShots": [
         {
           "owner": 0,
@@ -26385,6 +26604,7 @@
       "target": "source",
       "design": "interior-design-003",
       "errors": [],
+      "duplicateNamesRejected": true,
       "realShots": [
         {
           "owner": 0,
@@ -26418,6 +26638,7 @@
       "errors": [],
       "refreshRestoresSetupWithoutMatch": true,
       "venueFailureCancelRetry": true,
+      "duplicateNamesRejected": true,
       "realShots": [
         {
           "owner": 0,
@@ -26449,6 +26670,7 @@
       "target": "development",
       "design": "interior-design-001",
       "errors": [],
+      "duplicateNamesRejected": true,
       "realShots": [
         {
           "owner": 0,
@@ -26480,6 +26702,7 @@
       "target": "development",
       "design": "interior-design-002",
       "errors": [],
+      "duplicateNamesRejected": true,
       "realShots": [
         {
           "owner": 0,
@@ -26511,6 +26734,7 @@
       "target": "development",
       "design": "interior-design-003",
       "errors": [],
+      "duplicateNamesRejected": true,
       "realShots": [
         {
           "owner": 0,
@@ -26544,6 +26768,7 @@
       "errors": [],
       "refreshRestoresSetupWithoutMatch": true,
       "venueFailureCancelRetry": true,
+      "duplicateNamesRejected": true,
       "realShots": [
         {
           "owner": 0,
@@ -26575,6 +26800,7 @@
       "target": "production",
       "design": "interior-design-001",
       "errors": [],
+      "duplicateNamesRejected": true,
       "realShots": [
         {
           "owner": 0,
@@ -26606,6 +26832,7 @@
       "target": "production",
       "design": "interior-design-002",
       "errors": [],
+      "duplicateNamesRejected": true,
       "realShots": [
         {
           "owner": 0,
@@ -26637,6 +26864,7 @@
       "target": "production",
       "design": "interior-design-003",
       "errors": [],
+      "duplicateNamesRejected": true,
       "realShots": [
         {
           "owner": 0,

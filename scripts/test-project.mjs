@@ -1,4 +1,4 @@
-import { spawn } from 'node:child_process';
+import { runNode } from '../tooling/lib/run-node.mjs';
 import path from 'node:path';
 import { ROOT, filesIn } from '../tooling/lib/integrity.mjs';
 
@@ -18,15 +18,5 @@ for (const scope of scopes) {
 if (!files.length) {
   throw new Error('No tests in selected scope');
 }
-const code = await new Promise((resolve, reject) => {
-  const child = spawn(process.execPath, ['--test', ...files], {
-    cwd: ROOT,
-    stdio: 'inherit',
-    shell: false,
-  });
-  child.once('error', reject);
-  child.once('exit', (code, signal) =>
-    signal ? reject(new Error(`Tests stopped: ${signal}`)) : resolve(code),
-  );
-});
+const code = await runNode(['--test', ...files]);
 process.exitCode = code || 0;

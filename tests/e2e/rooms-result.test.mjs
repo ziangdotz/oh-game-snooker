@@ -119,7 +119,7 @@ try {
             );
             const created = await host.page.evaluate(() => {
               const dialog = window.__pcolTestGame._currentController._moreDialog;
-              const raw = window.sessionStorage.getItem('oh-my-snooker:room-seat');
+              const raw = window.sessionStorage.getItem('oh-game-snooker:room-seat');
               return {
                 roomId: dialog._room.roomId,
                 seat: JSON.parse(raw),
@@ -322,7 +322,7 @@ try {
             );
             assert.equal(
               await host.page.evaluate(() =>
-                window.sessionStorage.getItem('oh-my-snooker:room-seat'),
+                window.sessionStorage.getItem('oh-game-snooker:room-seat'),
               ),
               null,
             );

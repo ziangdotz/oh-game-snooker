@@ -1,6 +1,6 @@
 import { writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import { auditFileNames } from '../tooling/lib/file-naming.mjs';
+import { auditFileNames } from '../tooling/validation/file-naming.mjs';
 import { ROOT } from '../config/project.config.mjs';
 
 const report = await auditFileNames();

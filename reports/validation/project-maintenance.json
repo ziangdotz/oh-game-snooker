@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-03T13:39:36.971Z",
+  "date": "2026-11-15T06:15:40.740Z",
   "passed": true,
-  "sourceManifestSHA256": "322409df1a6239f702659656783dbf24c2c0e45afc06be48f38f2ebee8504ab0",
+  "sourceManifestSHA256": "bb25727bacceca82cc7c54209f5b637848202b1b91100c3ae96bcc34cee0d9d6",
   "baselineManifestSHA256": "d0ace5802ce84ee0afea98df0cad204e770aae09376e8354c77adc2234af4681",
   "runtime": {
     "modules": 115,
@@ -10,11 +10,11 @@
     "unreachable": [],
     "passed": true
   },
-  "runtimeSourceFiles": 351,
+  "runtimeSourceFiles": 354,
   "assetReferences": 92,
   "unreferencedAssets": [],
   "docs": {
-    "documents": 40,
+    "documents": 42,
     "links": [
       {
         "from": "README.md",
@@ -74,6 +74,16 @@
       {
         "from": "README.md",
         "to": "docs/validation/project-normalization.md",
+        "generated": false
+      },
+      {
+        "from": "README.md",
+        "to": "docs/validation/frame-time-baseline.md",
+        "generated": false
+      },
+      {
+        "from": "README.md",
+        "to": "docs/validation/entry-optimization.md",
         "generated": false
       },
       {
@@ -198,32 +208,7 @@
       },
       {
         "from": "docs/architecture/overview.md",
-        "to": "docs/development/interior-design-001.md",
-        "generated": false
-      },
-      {
-        "from": "docs/architecture/overview.md",
-        "to": "docs/development/interior-design-original.md",
-        "generated": false
-      },
-      {
-        "from": "docs/architecture/overview.md",
-        "to": "docs/validation/interior-performance.md",
-        "generated": false
-      },
-      {
-        "from": "docs/architecture/overview.md",
-        "to": "docs/development/interior-design-collection.md",
-        "generated": false
-      },
-      {
-        "from": "docs/architecture/overview.md",
-        "to": "docs/development/interior-selection.md",
-        "generated": false
-      },
-      {
-        "from": "docs/architecture/overview.md",
-        "to": "docs/validation/gameplay-motion.md",
+        "to": "docs/development/source-runtime.md",
         "generated": false
       },
       {
@@ -243,7 +228,37 @@
       },
       {
         "from": "docs/architecture/overview.md",
-        "to": "docs/validation/context-restoration.md",
+        "to": "docs/validation/hotseat-match.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "docs/validation/room-service.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "docs/development/rooms-deployment.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "docs/development/interior-selection.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "docs/development/interior-design-collection.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "docs/development/modern-wall-study.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "docs/development/game-ui.md",
         "generated": false
       },
       {
@@ -258,22 +273,12 @@
       },
       {
         "from": "docs/architecture/overview.md",
-        "to": "docs/development/modern-wall-study.md",
+        "to": "docs/validation/gameplay-motion.md",
         "generated": false
       },
       {
         "from": "docs/architecture/overview.md",
-        "to": "docs/validation/room-service.md",
-        "generated": false
-      },
-      {
-        "from": "docs/architecture/overview.md",
-        "to": "docs/development/source-runtime.md",
-        "generated": false
-      },
-      {
-        "from": "docs/architecture/overview.md",
-        "to": "docs/validation/algorithm-validation.md",
+        "to": "docs/validation/context-restoration.md",
         "generated": false
       },
       {
@@ -284,6 +289,26 @@
       {
         "from": "docs/architecture/overview.md",
         "to": "docs/development/repository-workflow.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "reports/validation/project-renaming.json",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "docs/learning/conversation-handoff.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "docs/validation/entry-optimization.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "reports/validation/directory-cleanup.json",
         "generated": false
       },
       {
@@ -439,6 +464,11 @@
       {
         "from": "docs/development/interior-selection.md",
         "to": "reports/measurement/interior-switching-summary.json",
+        "generated": false
+      },
+      {
+        "from": "docs/development/interior-selection.md",
+        "to": "docs/validation/entry-optimization.md",
         "generated": false
       },
       {
@@ -858,11 +888,6 @@
       },
       {
         "from": "docs/learning/conversation-handoff.md",
-        "to": "AGENTS.md",
-        "generated": false
-      },
-      {
-        "from": "docs/learning/conversation-handoff.md",
         "to": "docs/architecture/overview.md",
         "generated": false
       },
@@ -873,22 +898,7 @@
       },
       {
         "from": "docs/learning/conversation-handoff.md",
-        "to": "docs/validation/room-service.md",
-        "generated": false
-      },
-      {
-        "from": "docs/learning/conversation-handoff.md",
-        "to": "docs/development/rooms-panel-design.md",
-        "generated": false
-      },
-      {
-        "from": "docs/learning/conversation-handoff.md",
-        "to": "docs/development/rooms-panel-prototype.html",
-        "generated": false
-      },
-      {
-        "from": "docs/learning/conversation-handoff.md",
-        "to": "docs/validation/hotseat-match.md",
+        "to": "reports/validation/project-renaming.json",
         "generated": false
       },
       {
@@ -898,7 +908,27 @@
       },
       {
         "from": "docs/learning/conversation-handoff.md",
-        "to": "reports/validation/interior-switching.json",
+        "to": "reports/validation/hotseat-lifecycle.json",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/conversation-handoff.md",
+        "to": "docs/architecture/composition-root-assessment.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/conversation-handoff.md",
+        "to": "reports/validation/runtime-cleanup.json",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/conversation-handoff.md",
+        "to": "docs/validation/hotseat-match.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/conversation-handoff.md",
+        "to": "docs/validation/room-service.md",
         "generated": false
       },
       {
@@ -908,22 +938,7 @@
       },
       {
         "from": "docs/learning/conversation-handoff.md",
-        "to": "docs/architecture/cue-composition.md",
-        "generated": false
-      },
-      {
-        "from": "docs/learning/conversation-handoff.md",
-        "to": "docs/architecture/game-composition.md",
-        "generated": false
-      },
-      {
-        "from": "docs/learning/conversation-handoff.md",
-        "to": "reports/validation/game-composition.json",
-        "generated": false
-      },
-      {
-        "from": "docs/learning/conversation-handoff.md",
-        "to": "docs/validation/context-restoration.md",
+        "to": "docs/validation/interior-performance.md",
         "generated": false
       },
       {
@@ -933,22 +948,17 @@
       },
       {
         "from": "docs/learning/conversation-handoff.md",
-        "to": "docs/development/artifacts.md",
+        "to": "docs/validation/context-restoration.md",
         "generated": false
       },
       {
         "from": "docs/learning/conversation-handoff.md",
-        "to": "docs/development/repository-workflow.md",
+        "to": "docs/validation/frame-time-baseline.md",
         "generated": false
       },
       {
         "from": "docs/learning/conversation-handoff.md",
-        "to": "docs/development/rooms-and-two-player-plan.md",
-        "generated": false
-      },
-      {
-        "from": "docs/learning/conversation-handoff.md",
-        "to": "docs/validation/project-normalization.md",
+        "to": "docs/validation/entry-optimization.md",
         "generated": false
       },
       {
@@ -1249,6 +1259,81 @@
       {
         "from": "docs/validation/continuous-play.md",
         "to": "docs/validation/interior-performance.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/entry-optimization.md",
+        "to": "docs/validation/frame-time-baseline.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/entry-optimization.md",
+        "to": "reports/measurement/entry-optimization-summary.json",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/entry-optimization.md",
+        "to": "reports/measurement/entry-trace-analysis-summary.json",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/entry-optimization.md",
+        "to": "src/presentation/animation/entry-motion.js",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/entry-optimization.md",
+        "to": "src/presentation/ui/interior-side-menu.js",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/entry-optimization.md",
+        "to": "src/application/controllers/interior-menu-controller.js",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/entry-optimization.md",
+        "to": "src/application/controllers/game-ui-controller.js",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/entry-optimization.md",
+        "to": "src/presentation/ui/more-things-dialog.js",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/entry-optimization.md",
+        "to": "artifacts/testing/hotseat-lifecycle/entry-focus-before.json",
+        "generated": true
+      },
+      {
+        "from": "docs/validation/entry-optimization.md",
+        "to": "src/presentation/rendering/game-view.js",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/frame-time-baseline.md",
+        "to": "reports/measurement/frame-time-baseline-summary.json",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/frame-time-baseline.md",
+        "to": "src/application/controllers/interior-menu-controller.js",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/frame-time-baseline.md",
+        "to": "src/presentation/ui/interior-dialog.js",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/frame-time-baseline.md",
+        "to": "src/application/controllers/menu-controller.js",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/frame-time-baseline.md",
+        "to": "src/server/matches/match-session.mjs",
         "generated": false
       },
       {

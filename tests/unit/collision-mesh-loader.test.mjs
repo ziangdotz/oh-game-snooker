@@ -12,7 +12,7 @@ function fixture(options = {}) {
   const dependencies = {
     'infrastructure/assets/asset-queue': queueModule.exports,
     'infrastructure/assets/resource-paths': { rgb: '/collision/' },
-    'infrastructure/network/local-request': {
+    'infrastructure/assets/local-request': {
       ajaxGet(url, done) {
         if (options.requestThrows) {
           throw new Error('request failed');

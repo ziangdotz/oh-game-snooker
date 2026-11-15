@@ -323,20 +323,20 @@ test('room session persists its seat and clears it when the room is left', async
     playerId: 'player-1',
     token: 'token-12345678',
   });
-  assert.match(host.sessionStorage.getItem('oh-my-snooker:room-seat'), /token-12345678/);
+  assert.match(host.sessionStorage.getItem('oh-game-snooker:room-seat'), /token-12345678/);
 
   const leaving = session.leave();
   socket.reply({ type: 'room.left', requestId: socket.sent.at(-1).requestId, closed: false });
   await leaving;
   assert.equal(session.seat, null);
-  assert.equal(host.sessionStorage.getItem('oh-my-snooker:room-seat'), null);
+  assert.equal(host.sessionStorage.getItem('oh-game-snooker:room-seat'), null);
 });
 
 test('room session restores a saved seat on resume and drops a stale one', async () => {
   FakeSocket.instances.length = 0;
   const host = createHost();
   host.sessionStorage.setItem(
-    'oh-my-snooker:room-seat',
+    'oh-game-snooker:room-seat',
     JSON.stringify({
       version: 1,
       roomId: 'ABC234',

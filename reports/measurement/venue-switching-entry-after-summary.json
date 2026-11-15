@@ -1,0 +1,1339 @@
+{
+  "date": "2026-11-14T15:17:12.483Z",
+  "target": "development",
+  "runs": 3,
+  "samples": [
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.51",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 1,
+      "design": "interior-design-001",
+      "cached": false,
+      "sceneReadyMs": 1271.9000000357628,
+      "interactiveMs": 1530.5,
+      "resources": [
+        {
+          "path": "/assets/textures/room/interior-design-001-oak.png",
+          "durationMs": 57.299999952316284,
+          "endMs": 501
+        },
+        {
+          "path": "/assets/textures/room/warm-plaster.png",
+          "durationMs": 71.60000002384186,
+          "endMs": 515.4000000357628
+        },
+        {
+          "path": "/assets/textures/room/interior-design-003-linen.png",
+          "durationMs": 71.30000001192093,
+          "endMs": 515.8000000119209
+        },
+        {
+          "path": "/assets/images/interior-design-001-art.png",
+          "durationMs": 60.80000001192093,
+          "endMs": 505.80000001192093
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 12.099999964237213,
+          "endMs": 1282.300000011921
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 6.900000035762787,
+          "endMs": 1294.4000000357628
+        }
+      ]
+    },
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.51",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 1,
+      "design": "interior-design-002",
+      "cached": false,
+      "sceneReadyMs": 1285.5999999642372,
+      "interactiveMs": 1546.800000011921,
+      "resources": [
+        {
+          "path": "/assets/textures/room/interior-design-002-leather.png",
+          "durationMs": 77.59999996423721,
+          "endMs": 624.0999999642372
+        },
+        {
+          "path": "/assets/textures/room/warm-limestone.png",
+          "durationMs": 73.60000002384186,
+          "endMs": 620.3000000119209
+        },
+        {
+          "path": "/assets/images/interior-design-002-art.png",
+          "durationMs": 68.90000003576279,
+          "endMs": 616
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 5.600000023841858,
+          "endMs": 1290.800000011921
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 6,
+          "endMs": 1306
+        }
+      ]
+    },
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.51",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 1,
+      "design": "interior-design-003",
+      "cached": false,
+      "sceneReadyMs": 1007.3999999761581,
+      "interactiveMs": 1263.3999999761581,
+      "resources": [
+        {
+          "path": "/assets/textures/room/warm-terrazzo.png",
+          "durationMs": 55.40000003576279,
+          "endMs": 898.8000000119209
+        },
+        {
+          "path": "/assets/images/interior-design-003-art.png",
+          "durationMs": 63.39999997615814,
+          "endMs": 906.8999999761581
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 14.599999964237213,
+          "endMs": 1022.3999999761581
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 8.300000011920929,
+          "endMs": 1039
+        }
+      ]
+    },
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.51",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 1,
+      "design": "interior-design-original",
+      "cached": true,
+      "sceneReadyMs": 30.399999976158142,
+      "interactiveMs": 282.69999998807907,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 13,
+          "endMs": 36.09999996423721
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 3.899999976158142,
+          "endMs": 42.89999997615814
+        }
+      ]
+    },
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.51",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 1,
+      "design": "interior-design-001",
+      "cached": true,
+      "sceneReadyMs": 23.100000023841858,
+      "interactiveMs": 282.30000001192093,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 5.900000035762787,
+          "endMs": 26.900000035762787
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 6.699999988079071,
+          "endMs": 39.19999998807907
+        }
+      ]
+    },
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.51",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 1,
+      "design": "interior-design-002",
+      "cached": true,
+      "sceneReadyMs": 22.100000023841858,
+      "interactiveMs": 281.69999998807907,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 3.5,
+          "endMs": 25.400000035762787
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 8.399999976158142,
+          "endMs": 35.80000001192093
+        }
+      ]
+    },
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.51",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 1,
+      "design": "interior-design-003",
+      "cached": true,
+      "sceneReadyMs": 23.599999964237213,
+      "interactiveMs": 277.2999999523163,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 6.399999976158142,
+          "endMs": 29.799999952316284
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 2.799999952316284,
+          "endMs": 35.299999952316284
+        }
+      ]
+    },
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.51",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 1,
+      "design": "interior-design-original",
+      "cached": true,
+      "sceneReadyMs": 22.30000001192093,
+      "interactiveMs": 281.4000000357628,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 4.100000023841858,
+          "endMs": 26.700000047683716
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 2.899999976158142,
+          "endMs": 36.80000001192093
+        }
+      ]
+    },
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.51",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 2,
+      "design": "interior-design-001",
+      "cached": false,
+      "sceneReadyMs": 851.8999999761581,
+      "interactiveMs": 1103.5,
+      "resources": [
+        {
+          "path": "/assets/textures/room/interior-design-001-oak.png",
+          "durationMs": 72.20000004768372,
+          "endMs": 504.30000001192093
+        },
+        {
+          "path": "/assets/textures/room/warm-plaster.png",
+          "durationMs": 87.20000004768372,
+          "endMs": 519.3000000119209
+        },
+        {
+          "path": "/assets/textures/room/interior-design-003-linen.png",
+          "durationMs": 90.89999997615814,
+          "endMs": 523.0999999642372
+        },
+        {
+          "path": "/assets/images/interior-design-001-art.png",
+          "durationMs": 79.60000002384186,
+          "endMs": 512
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 10.599999964237213,
+          "endMs": 860.0999999642372
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 6,
+          "endMs": 874.6999999880791
+        }
+      ]
+    },
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.51",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 2,
+      "design": "interior-design-002",
+      "cached": false,
+      "sceneReadyMs": 1190.699999988079,
+      "interactiveMs": 1449.2999999523163,
+      "resources": [
+        {
+          "path": "/assets/textures/room/interior-design-002-leather.png",
+          "durationMs": 128,
+          "endMs": 889
+        },
+        {
+          "path": "/assets/textures/room/warm-limestone.png",
+          "durationMs": 107.89999997615814,
+          "endMs": 869.0999999642372
+        },
+        {
+          "path": "/assets/images/interior-design-002-art.png",
+          "durationMs": 101,
+          "endMs": 862.2999999523163
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 12.699999988079071,
+          "endMs": 1200.8999999761581
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 27.80000001192093,
+          "endMs": 1246.5999999642372
+        }
+      ]
+    },
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.51",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 2,
+      "design": "interior-design-003",
+      "cached": false,
+      "sceneReadyMs": 1262.0999999642372,
+      "interactiveMs": 1513.3999999761581,
+      "resources": [
+        {
+          "path": "/assets/textures/room/warm-terrazzo.png",
+          "durationMs": 81.80000001192093,
+          "endMs": 1121
+        },
+        {
+          "path": "/assets/images/interior-design-003-art.png",
+          "durationMs": 75.29999995231628,
+          "endMs": 1114.5999999642372
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 35.89999997615814,
+          "endMs": 1298.699999988079
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 11.300000011920929,
+          "endMs": 1330.699999988079
+        }
+      ]
+    },
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.51",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 2,
+      "design": "interior-design-original",
+      "cached": true,
+      "sceneReadyMs": 24.399999976158142,
+      "interactiveMs": 279.69999998807907,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 10.300000011920929,
+          "endMs": 34.60000002384186
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 4.100000023841858,
+          "endMs": 42.30000001192093
+        }
+      ]
+    },
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.51",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 2,
+      "design": "interior-design-001",
+      "cached": true,
+      "sceneReadyMs": 24.599999964237213,
+      "interactiveMs": 286.19999998807907,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 8.399999976158142,
+          "endMs": 32.59999996423721
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 3.699999988079071,
+          "endMs": 40.89999997615814
+        }
+      ]
+    },
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.51",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 2,
+      "design": "interior-design-002",
+      "cached": true,
+      "sceneReadyMs": 23.100000023841858,
+      "interactiveMs": 280.80000001192093,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 4.100000023841858,
+          "endMs": 27.100000023841858
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 4,
+          "endMs": 36.30000001192093
+        }
+      ]
+    },
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.51",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 2,
+      "design": "interior-design-003",
+      "cached": true,
+      "sceneReadyMs": 24.399999976158142,
+      "interactiveMs": 287.19999998807907,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 8.600000023841858,
+          "endMs": 32.80000001192093
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 4.300000011920929,
+          "endMs": 42.69999998807907
+        }
+      ]
+    },
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.51",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 2,
+      "design": "interior-design-original",
+      "cached": true,
+      "sceneReadyMs": 23.30000001192093,
+      "interactiveMs": 280.9000000357628,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 5.300000011920929,
+          "endMs": 27.200000047683716
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 4.5,
+          "endMs": 40.5
+        }
+      ]
+    },
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.51",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 3,
+      "design": "interior-design-001",
+      "cached": false,
+      "sceneReadyMs": 703.8000000119209,
+      "interactiveMs": 963.8000000119209,
+      "resources": [
+        {
+          "path": "/assets/textures/room/interior-design-001-oak.png",
+          "durationMs": 27.30000001192093,
+          "endMs": 408.10000002384186
+        },
+        {
+          "path": "/assets/textures/room/warm-plaster.png",
+          "durationMs": 36.89999997615814,
+          "endMs": 417.80000001192093
+        },
+        {
+          "path": "/assets/images/interior-design-001-art.png",
+          "durationMs": 33.10000002384186,
+          "endMs": 414.10000002384186
+        },
+        {
+          "path": "/assets/textures/room/interior-design-003-linen.png",
+          "durationMs": 44.700000047683716,
+          "endMs": 425.7000000476837
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 7.199999988079071,
+          "endMs": 708.9000000357628
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 5.800000011920929,
+          "endMs": 724.1000000238419
+        }
+      ]
+    },
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.51",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 3,
+      "design": "interior-design-002",
+      "cached": false,
+      "sceneReadyMs": 596.6000000238419,
+      "interactiveMs": 844.1000000238419,
+      "resources": [
+        {
+          "path": "/assets/textures/room/interior-design-002-leather.png",
+          "durationMs": 62.5,
+          "endMs": 419
+        },
+        {
+          "path": "/assets/textures/room/warm-limestone.png",
+          "durationMs": 38.69999998807907,
+          "endMs": 395.30000001192093
+        },
+        {
+          "path": "/assets/images/interior-design-002-art.png",
+          "durationMs": 40.19999998807907,
+          "endMs": 396.89999997615814
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 9.599999964237213,
+          "endMs": 605.8999999761581
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 4.300000011920929,
+          "endMs": 618
+        }
+      ]
+    },
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.51",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 3,
+      "design": "interior-design-003",
+      "cached": false,
+      "sceneReadyMs": 821.2000000476837,
+      "interactiveMs": 1079.2000000476837,
+      "resources": [
+        {
+          "path": "/assets/images/interior-design-003-art.png",
+          "durationMs": 35.80000001192093,
+          "endMs": 728.8000000119209
+        },
+        {
+          "path": "/assets/textures/room/warm-terrazzo.png",
+          "durationMs": 37,
+          "endMs": 730
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 9.399999976158142,
+          "endMs": 829.1000000238419
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 6.800000011920929,
+          "endMs": 842.8000000119209
+        }
+      ]
+    },
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.51",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 3,
+      "design": "interior-design-original",
+      "cached": true,
+      "sceneReadyMs": 23.600000023841858,
+      "interactiveMs": 282.10000002384186,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 4.600000023841858,
+          "endMs": 28
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 3.599999964237213,
+          "endMs": 36.89999997615814
+        }
+      ]
+    },
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.51",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 3,
+      "design": "interior-design-001",
+      "cached": true,
+      "sceneReadyMs": 34.80000001192093,
+      "interactiveMs": 279.80000001192093,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 10.900000035762787,
+          "endMs": 46
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 6.400000035762787,
+          "endMs": 60
+        }
+      ]
+    },
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.51",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 3,
+      "design": "interior-design-002",
+      "cached": true,
+      "sceneReadyMs": 28.100000023841858,
+      "interactiveMs": 280.30000001192093,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 16.400000035762787,
+          "endMs": 42.60000002384186
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 17.099999964237213,
+          "endMs": 73.89999997615814
+        }
+      ]
+    },
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.51",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 3,
+      "design": "interior-design-003",
+      "cached": true,
+      "sceneReadyMs": 31.30000001192093,
+      "interactiveMs": 274.10000002384186,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 9.899999976158142,
+          "endMs": 39.30000001192093
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 9.300000011920929,
+          "endMs": 54.40000003576279
+        }
+      ]
+    },
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.51",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 3,
+      "design": "interior-design-original",
+      "cached": true,
+      "sceneReadyMs": 32.19999998807907,
+      "interactiveMs": 279.5999999642372,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 14.599999964237213,
+          "endMs": 46.39999997615814
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 9,
+          "endMs": 61
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "version": "157.0.4341.46",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 1,
+      "design": "interior-design-001",
+      "cached": false,
+      "sceneReadyMs": 1115.699999988079,
+      "interactiveMs": 1365.1000000238419,
+      "resources": [
+        {
+          "path": "/assets/textures/room/interior-design-001-oak.png",
+          "durationMs": 62.59999996423721,
+          "endMs": 383
+        },
+        {
+          "path": "/assets/textures/room/warm-plaster.png",
+          "durationMs": 69.39999997615814,
+          "endMs": 389.80000001192093
+        },
+        {
+          "path": "/assets/textures/room/interior-design-003-linen.png",
+          "durationMs": 70.69999998807907,
+          "endMs": 391.19999998807907
+        },
+        {
+          "path": "/assets/images/interior-design-001-art.png",
+          "durationMs": 66.10000002384186,
+          "endMs": 386.9000000357628
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 6.899999976158142,
+          "endMs": 1123.699999988079
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 5.400000035762787,
+          "endMs": 1136.1000000238419
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "version": "157.0.4341.46",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 1,
+      "design": "interior-design-002",
+      "cached": false,
+      "sceneReadyMs": 1072.9000000357628,
+      "interactiveMs": 1313.199999988079,
+      "resources": [
+        {
+          "path": "/assets/textures/room/interior-design-002-leather.png",
+          "durationMs": 64.80000001192093,
+          "endMs": 466.5
+        },
+        {
+          "path": "/assets/textures/room/warm-limestone.png",
+          "durationMs": 61.30000001192093,
+          "endMs": 463.10000002384186
+        },
+        {
+          "path": "/assets/images/interior-design-002-art.png",
+          "durationMs": 62.19999998807907,
+          "endMs": 464.19999998807907
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 12.099999964237213,
+          "endMs": 1078
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 5.199999988079071,
+          "endMs": 1089.6000000238419
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "version": "157.0.4341.46",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 1,
+      "design": "interior-design-003",
+      "cached": false,
+      "sceneReadyMs": 931.5,
+      "interactiveMs": 1180.199999988079,
+      "resources": [
+        {
+          "path": "/assets/textures/room/warm-terrazzo.png",
+          "durationMs": 38.69999998807907,
+          "endMs": 840
+        },
+        {
+          "path": "/assets/images/interior-design-003-art.png",
+          "durationMs": 37.19999998807907,
+          "endMs": 838.5999999642372
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 23,
+          "endMs": 954
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 5.100000023841858,
+          "endMs": 961.5
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "version": "157.0.4341.46",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 1,
+      "design": "interior-design-original",
+      "cached": true,
+      "sceneReadyMs": 23.899999976158142,
+      "interactiveMs": 282.0999999642372,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 5.900000035762787,
+          "endMs": 29.69999998807907
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 4.199999988079071,
+          "endMs": 37.59999996423721
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "version": "157.0.4341.46",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 1,
+      "design": "interior-design-001",
+      "cached": true,
+      "sceneReadyMs": 23.80000001192093,
+      "interactiveMs": 280.7000000476837,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 3.599999964237213,
+          "endMs": 27.30000001192093
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 3,
+          "endMs": 36.60000002384186
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "version": "157.0.4341.46",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 1,
+      "design": "interior-design-002",
+      "cached": true,
+      "sceneReadyMs": 24.099999964237213,
+      "interactiveMs": 280.69999998807907,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 3.399999976158142,
+          "endMs": 27.299999952316284
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 3.099999964237213,
+          "endMs": 37.09999996423721
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "version": "157.0.4341.46",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 1,
+      "design": "interior-design-003",
+      "cached": true,
+      "sceneReadyMs": 23.5,
+      "interactiveMs": 280.10000002384186,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 3.400000035762787,
+          "endMs": 26.600000023841858
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 4.800000011920929,
+          "endMs": 36.90000003576279
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "version": "157.0.4341.46",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 1,
+      "design": "interior-design-original",
+      "cached": true,
+      "sceneReadyMs": 23,
+      "interactiveMs": 284.30000001192093,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 5.199999988079071,
+          "endMs": 26.80000001192093
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 5,
+          "endMs": 36.69999998807907
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "version": "157.0.4341.46",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 2,
+      "design": "interior-design-001",
+      "cached": false,
+      "sceneReadyMs": 404.69999998807907,
+      "interactiveMs": 663.6999999880791,
+      "resources": [
+        {
+          "path": "/assets/textures/room/interior-design-001-oak.png",
+          "durationMs": 30,
+          "endMs": 243.80000001192093
+        },
+        {
+          "path": "/assets/images/interior-design-001-art.png",
+          "durationMs": 31.400000035762787,
+          "endMs": 245.30000001192093
+        },
+        {
+          "path": "/assets/textures/room/warm-plaster.png",
+          "durationMs": 34.60000002384186,
+          "endMs": 248.5
+        },
+        {
+          "path": "/assets/textures/room/interior-design-003-linen.png",
+          "durationMs": 35.10000002384186,
+          "endMs": 249
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 6.300000011920929,
+          "endMs": 409.10000002384186
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 19.30000001192093,
+          "endMs": 432.10000002384186
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "version": "157.0.4341.46",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 2,
+      "design": "interior-design-002",
+      "cached": false,
+      "sceneReadyMs": 415.89999997615814,
+      "interactiveMs": 663,
+      "resources": [
+        {
+          "path": "/assets/textures/room/interior-design-002-leather.png",
+          "durationMs": 41.39999997615814,
+          "endMs": 292.89999997615814
+        },
+        {
+          "path": "/assets/images/interior-design-002-art.png",
+          "durationMs": 30.80000001192093,
+          "endMs": 282.39999997615814
+        },
+        {
+          "path": "/assets/textures/room/warm-limestone.png",
+          "durationMs": 33.10000002384186,
+          "endMs": 284.69999998807907
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 18,
+          "endMs": 436.0999999642372
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 2.400000035762787,
+          "endMs": 440.5
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "version": "157.0.4341.46",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 2,
+      "design": "interior-design-003",
+      "cached": false,
+      "sceneReadyMs": 640.6000000238419,
+      "interactiveMs": 898,
+      "resources": [
+        {
+          "path": "/assets/textures/room/warm-terrazzo.png",
+          "durationMs": 30.900000035762787,
+          "endMs": 569.7000000476837
+        },
+        {
+          "path": "/assets/images/interior-design-003-art.png",
+          "durationMs": 29.5,
+          "endMs": 568.4000000357628
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 7.099999964237213,
+          "endMs": 647.8000000119209
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 3,
+          "endMs": 658.2000000476837
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "version": "157.0.4341.46",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 2,
+      "design": "interior-design-original",
+      "cached": true,
+      "sceneReadyMs": 23,
+      "interactiveMs": 282.5,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 5.300000011920929,
+          "endMs": 26.600000023841858
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 5.300000011920929,
+          "endMs": 37.60000002384186
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "version": "157.0.4341.46",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 2,
+      "design": "interior-design-001",
+      "cached": true,
+      "sceneReadyMs": 22.899999976158142,
+      "interactiveMs": 283.69999998807907,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 3.5,
+          "endMs": 26.5
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 5.800000011920929,
+          "endMs": 37.30000001192093
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "version": "157.0.4341.46",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 2,
+      "design": "interior-design-002",
+      "cached": true,
+      "sceneReadyMs": 24.399999976158142,
+      "interactiveMs": 280.69999998807907,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 10.399999976158142,
+          "endMs": 35.09999996423721
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 13.100000023841858,
+          "endMs": 54
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "version": "157.0.4341.46",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 2,
+      "design": "interior-design-003",
+      "cached": true,
+      "sceneReadyMs": 30.399999976158142,
+      "interactiveMs": 277.89999997615814,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 4.900000035762787,
+          "endMs": 35.10000002384186
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 2.699999988079071,
+          "endMs": 40
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "version": "157.0.4341.46",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 2,
+      "design": "interior-design-original",
+      "cached": true,
+      "sceneReadyMs": 29,
+      "interactiveMs": 281.5,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 10.100000023841858,
+          "endMs": 33.30000001192093
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 2.599999964237213,
+          "endMs": 38
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "version": "157.0.4341.46",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 3,
+      "design": "interior-design-001",
+      "cached": false,
+      "sceneReadyMs": 403.5,
+      "interactiveMs": 691.5,
+      "resources": [
+        {
+          "path": "/assets/textures/room/interior-design-001-oak.png",
+          "durationMs": 19.30000001192093,
+          "endMs": 235.4000000357628
+        },
+        {
+          "path": "/assets/textures/room/warm-plaster.png",
+          "durationMs": 24.69999998807907,
+          "endMs": 240.80000001192093
+        },
+        {
+          "path": "/assets/images/interior-design-001-art.png",
+          "durationMs": 21.5,
+          "endMs": 237.69999998807907
+        },
+        {
+          "path": "/assets/textures/room/interior-design-003-linen.png",
+          "durationMs": 26,
+          "endMs": 242.19999998807907
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 3.100000023841858,
+          "endMs": 406.4000000357628
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 20.30000001192093,
+          "endMs": 428.80000001192093
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "version": "157.0.4341.46",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 3,
+      "design": "interior-design-002",
+      "cached": false,
+      "sceneReadyMs": 521.5,
+      "interactiveMs": 781,
+      "resources": [
+        {
+          "path": "/assets/textures/room/interior-design-002-leather.png",
+          "durationMs": 35.30000001192093,
+          "endMs": 351.60000002384186
+        },
+        {
+          "path": "/assets/textures/room/warm-limestone.png",
+          "durationMs": 31.80000001192093,
+          "endMs": 348.2000000476837
+        },
+        {
+          "path": "/assets/images/interior-design-002-art.png",
+          "durationMs": 31.099999964237213,
+          "endMs": 347.5
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 3.399999976158142,
+          "endMs": 524.6000000238419
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 4,
+          "endMs": 536.9000000357628
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "version": "157.0.4341.46",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 3,
+      "design": "interior-design-003",
+      "cached": false,
+      "sceneReadyMs": 876.3000000119209,
+      "interactiveMs": 1133.3999999761581,
+      "resources": [
+        {
+          "path": "/assets/textures/room/warm-terrazzo.png",
+          "durationMs": 36.39999997615814,
+          "endMs": 783.8999999761581
+        },
+        {
+          "path": "/assets/images/interior-design-003-art.png",
+          "durationMs": 34.39999997615814,
+          "endMs": 782.1999999880791
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 10.600000023841858,
+          "endMs": 884.6000000238419
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 3.5,
+          "endMs": 891.3999999761581
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "version": "157.0.4341.46",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 3,
+      "design": "interior-design-original",
+      "cached": true,
+      "sceneReadyMs": 30.19999998807907,
+      "interactiveMs": 282.80000001192093,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 4.800000011920929,
+          "endMs": 34.80000001192093
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 3,
+          "endMs": 40.5
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "version": "157.0.4341.46",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 3,
+      "design": "interior-design-001",
+      "cached": true,
+      "sceneReadyMs": 30.5,
+      "interactiveMs": 278.30000001192093,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 4.800000011920929,
+          "endMs": 35
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 3,
+          "endMs": 40.39999997615814
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "version": "157.0.4341.46",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 3,
+      "design": "interior-design-002",
+      "cached": true,
+      "sceneReadyMs": 25.400000035762787,
+      "interactiveMs": 284.2000000476837,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 3.699999988079071,
+          "endMs": 28.80000001192093
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 4.299999952316284,
+          "endMs": 40
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "version": "157.0.4341.46",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 3,
+      "design": "interior-design-003",
+      "cached": true,
+      "sceneReadyMs": 27.299999952316284,
+      "interactiveMs": 278.7999999523163,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 6.100000023841858,
+          "endMs": 32.19999998807907
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 3,
+          "endMs": 37.799999952316284
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "version": "157.0.4341.46",
+      "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "run": 3,
+      "design": "interior-design-original",
+      "cached": true,
+      "sceneReadyMs": 25,
+      "interactiveMs": 283.9000000357628,
+      "resources": [
+        {
+          "path": "/assets/icons/snooker-favicon.svg",
+          "durationMs": 6.600000023841858,
+          "endMs": 31.400000035762787
+        },
+        {
+          "path": "/assets/icons/snooker-favicon.ico",
+          "durationMs": 5.100000023841858,
+          "endMs": 39.60000002384186
+        }
+      ]
+    }
+  ],
+  "passed": true,
+  "limitations": [
+    "Headless hardware WebGL on this machine.",
+    "Click-to-interactive includes automation polling; excludes opening the selection drawer.",
+    "First visit is fresh room decoration; OS/file cache is not cleared."
+  ]
+}

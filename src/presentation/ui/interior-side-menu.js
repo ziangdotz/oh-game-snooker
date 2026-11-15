@@ -6,6 +6,7 @@ export default function createInteriorSideMenu(dependencies) {
   const ENTER_TRAVEL = 8;
   const EXIT_TRAVEL = 3;
   const EXIT_DURATION = 0.16;
+  const RETURN_DURATION = 0.16;
   const REDUCED_DURATION = 0.016;
   return class InteriorSideMenu extends dependencies.SideMenu {
     _createElement() {
@@ -80,6 +81,12 @@ export default function createInteriorSideMenu(dependencies) {
         this._motionDuration,
       );
     }
+    activateFromDialog() {
+      this._returnFromDialog = true;
+      this.activate();
+      this._returnFromDialog = false;
+      return this;
+    }
     _onActivate() {
       super._onActivate();
       this.element.inert = false;
@@ -93,15 +100,18 @@ export default function createInteriorSideMenu(dependencies) {
     _prepareMotion(entering) {
       this._reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       this._motionEntering = entering;
+      this._motionReturning = entering && this._returnFromDialog;
       this._motionStarts = this._motionStates.map((state) => ({
         opacity: state.opacity,
         y: this._reducedMotion ? 0 : entering && state.opacity === 0 ? ENTER_TRAVEL : state.y,
       }));
       this._motionDuration = this._reducedMotion
         ? REDUCED_DURATION
-        : entering
-          ? ITEM_DURATION + ITEM_STAGGER * (this._bns.length - 1)
-          : EXIT_DURATION;
+        : this._motionReturning
+          ? RETURN_DURATION
+          : entering
+            ? ITEM_DURATION + ITEM_STAGGER * (this._bns.length - 1)
+            : EXIT_DURATION;
       // Capture the visible pose, then prepare the inherited forward/reverse lifecycle.
       this._preparingMotion = true;
       this._tween.reset(
@@ -123,12 +133,16 @@ export default function createInteriorSideMenu(dependencies) {
         const time = elapsed * this._motionDuration - index * ITEM_STAGGER;
         const position = this._reducedMotion
           ? elapsed
-          : this._motionEntering
-            ? dependencies.Easing.Power3.easeOut(this._clampMotion(time / ITEM_DURATION))
-            : elapsed * elapsed;
+          : this._motionReturning
+            ? dependencies.Easing.Power3.easeOut(elapsed)
+            : this._motionEntering
+              ? dependencies.Easing.Power3.easeOut(this._clampMotion(time / ITEM_DURATION))
+              : elapsed * elapsed;
         const fade = this._reducedMotion
           ? elapsed
-          : this._smoothFade(this._motionEntering ? time / FADE_DURATION : elapsed);
+          : this._smoothFade(
+              this._motionEntering && !this._motionReturning ? time / FADE_DURATION : elapsed,
+            );
         const targetOpacity = this._motionEntering ? 1 : 0;
         const targetY = this._reducedMotion ? 0 : this._motionEntering ? 0 : start.y - EXIT_TRAVEL;
         const state = this._motionStates[index];

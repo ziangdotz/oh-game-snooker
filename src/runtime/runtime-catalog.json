@@ -397,8 +397,8 @@
       "kind": "template"
     },
     {
-      "id": "infrastructure/network/local-request",
-      "source": "src/infrastructure/network/local-request.js",
+      "id": "infrastructure/assets/local-request",
+      "source": "src/infrastructure/assets/local-request.js",
       "bundle": "snooker-game",
       "dependencies": [],
       "kind": "factory"
@@ -418,7 +418,7 @@
         "domain/physics/physics-api",
         "infrastructure/assets/asset-queue",
         "infrastructure/assets/resource-paths",
-        "infrastructure/network/local-request"
+        "infrastructure/assets/local-request"
       ],
       "kind": "factory"
     },
@@ -1103,7 +1103,7 @@
     "src/domain/simulation/snooker-ball.js",
     "src/infrastructure/assets/asset-queue.js",
     "src/infrastructure/assets/resource-paths.js",
-    "src/infrastructure/network/local-request.js",
+    "src/infrastructure/assets/local-request.js",
     "src/presentation/animation/angular-controller.js",
     "src/presentation/animation/linear-controller.js",
     "src/presentation/animation/number-controller.js",

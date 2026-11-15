@@ -1,3 +1,5 @@
+import limitEntryMotion from '../../presentation/animation/entry-motion.js';
+
 /** Display existing match state; do not introduce another game state machine. */
 export default function createGameUiController(MatchController, GameState) {
   return class GameUiController extends MatchController {
@@ -13,6 +15,10 @@ export default function createGameUiController(MatchController, GameState) {
         this._uiLayer.clearGameNotices();
         quit();
       };
+    }
+    enter() {
+      super.enter();
+      limitEntryMotion(this._enterAnimation, 0.45);
     }
     _onModelGStateChanged(state) {
       super._onModelGStateChanged(state);

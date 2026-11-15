@@ -165,7 +165,7 @@ export async function measureLoading({ label, runs }) {
       await readFile(path.join(ROOT, BUILD_OUTPUTS.development, 'build-manifest.json')),
     ),
     method:
-      'Fresh browser context each run; performance.now markers at observed menu+home scene ready and Practice input ready; original bytes except identical entrypoint inspection handle',
+      'Fresh browser context each run; window.performance.now markers at observed menu+home scene ready and Practice input ready; original bytes except identical entrypoint inspection handle',
     limitations: [
       'Fresh browser contexts do not reset the OS filesystem cache or browser-process JIT.',
       'Headless software WebGL and small repeated samples describe this machine; no GPU/FPS or guaranteed speed claim.',
@@ -249,4 +249,154 @@ export async function measureLoading({ label, runs }) {
   }
   console.log(`Saved reports/measurement/loading-${label}.json`);
   return report;
+}
+
+/** Current built UI, real clicks, fresh context per run; separate from startup. */
+export async function measureVenueSwitching({ label, runs }) {
+  await verifyBuild('development');
+  const server = createServer();
+  await new Promise((resolve) => server.listen(0, '127.0.0.1', resolve));
+  const origin = 'http://127.0.0.1:' + server.address().port;
+  const bootstrap = await readFile(
+    path.join(ROOT, BUILD_OUTPUTS.development, 'scripts/runtime-bootstrap.js'),
+    'utf8',
+  );
+  const report = {
+    date: new Date().toISOString(),
+    target: 'development',
+    runs,
+    samples: [],
+    passed: false,
+    limitations: [
+      'Headless hardware WebGL on this machine.',
+      'Click-to-interactive includes automation polling; excludes opening the selection drawer.',
+      'First visit is fresh room decoration; OS/file cache is not cleared.',
+    ],
+  };
+  try {
+    for (const [name, executablePath] of [
+      ['chrome', 'C:/Program Files/Google/Chrome/Application/chrome.exe'],
+      ['edge', 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'],
+    ]) {
+      const browser = await chromium.launch({ executablePath, headless: true });
+      try {
+        for (let run = 1; run <= runs; run++) {
+          const context = await browser.newContext({
+            viewport: { width: 1440, height: 900 },
+            deviceScaleFactor: 2,
+          });
+          try {
+            const page = await context.newPage();
+            const errors = [];
+            page.on('pageerror', (e) => errors.push(e.message));
+            await page.route('**/*', async (route) => {
+              assert.equal(new URL(route.request().url()).origin, origin);
+              if (new URL(route.request().url()).pathname === '/scripts/runtime-bootstrap.js') {
+                return route.fulfill({
+                  body: inspectRuntimeEntry(bootstrap),
+                  contentType: 'text/javascript',
+                });
+              }
+              await route.continue();
+            });
+            const ready = async (id) => {
+              await page.waitForFunction((expected) => {
+                const game = window.__pcolTestGame;
+                const menu = game?._currentController?._homeMainMenu;
+                return (
+                  menu?.isActive &&
+                  !menu.needsUpdate &&
+                  !menu.element.inert &&
+                  game._gView._scene.isReady() &&
+                  game._gView._scene.metadata.interiorDesign.id === expected &&
+                  document.querySelector('.interior-transition').hidden
+                );
+              }, id);
+            };
+            await page.goto(origin + '/?interior=interior-design-original');
+            await ready('interior-design-original');
+            const renderer = await page.evaluate(() => {
+              const gl = window.__pcolTestGame._engine._gl;
+              const ext = gl.getExtension('WEBGL_debug_renderer_info');
+              return ext ? gl.getParameter(ext.UNMASKED_RENDERER_WEBGL) : null;
+            });
+            assert.ok(renderer);
+            assert.doesNotMatch(renderer, /swiftshader|software|warp|llvmpipe/i);
+            const visits = new Set(['interior-design-original']);
+            for (const suffix of [
+              '001',
+              '002',
+              '003',
+              'original',
+              '001',
+              '002',
+              '003',
+              'original',
+            ]) {
+              const design = 'interior-design-' + suffix;
+              await page.locator('.interior-menu-item').click();
+              await page.waitForFunction(() => {
+                const p = window.__pcolTestGame._currentController._interiorDialog;
+                return p?.isActive && !p.needsUpdate && !p.blocked;
+              });
+              const button = page.locator('[data-design-id="' + design + '"]');
+              await button.evaluate((node) =>
+                node.addEventListener(
+                  'click',
+                  () => {
+                    window.__baselineVenueClick = window.performance.now();
+                  },
+                  { once: true, capture: true },
+                ),
+              );
+              await button.click();
+              await page.waitForURL((url) => url.searchParams.get('interior') === design);
+              const sceneReadyMs = await page.evaluate(
+                () => window.performance.now() - window.__baselineVenueClick,
+              );
+              await ready(design);
+              const timing = await page.evaluate(() => ({
+                interactiveMs: window.performance.now() - window.__baselineVenueClick,
+                resources: window.performance
+                  .getEntriesByType('resource')
+                  .filter((r) => r.startTime >= window.__baselineVenueClick)
+                  .map((r) => ({
+                    path: new URL(r.name).pathname,
+                    durationMs: r.duration,
+                    endMs: r.responseEnd - window.__baselineVenueClick,
+                  })),
+              }));
+              report.samples.push({
+                browser: name,
+                version: browser.version(),
+                renderer,
+                run,
+                design,
+                cached: visits.has(design),
+                sceneReadyMs,
+                ...timing,
+              });
+              visits.add(design);
+            }
+            assert.deepEqual(errors, []);
+            console.log(name + ': venue switching run ' + run + '/' + runs);
+          } finally {
+            await context.close();
+          }
+        }
+      } finally {
+        await browser.close();
+      }
+    }
+    report.passed = true;
+  } finally {
+    server.closeAllConnections();
+    await new Promise((resolve) => server.close(resolve));
+    const directory = path.join(ROOT, 'reports/measurement');
+    await mkdir(directory, { recursive: true });
+    await writeFile(
+      path.join(directory, 'venue-switching-' + label + '-summary.json'),
+      JSON.stringify(report, null, 2) + '\n',
+    );
+  }
 }

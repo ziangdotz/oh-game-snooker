@@ -39,7 +39,7 @@
 
 ```text
 Use case: stylized-concept.
-Asset type: original flat wall artwork texture for the existing Oh My Snooker 3D game.
+Asset type: original flat wall artwork texture for the existing Oh Game Snooker 3D game.
 Primary request: create one professionally art-directed landscape snooker artwork, 3:2 aspect ratio, as a finished print ready to place in a slim gallery frame.
 Style: sophisticated European sports-club editorial art, modernist printmaking with subtle matte paper grain, impeccably balanced abstract geometry, premium restraint.
 Composition: generous warm ivory negative space; an oversized off-centre dark forest-green circular arc suggests a snooker pocket and table geometry; a single small deep red billiard-ball disc creates tension; two extremely fine warm brass lines show a precise rebound trajectory. Cropped charcoal geometric forms along one edge, deliberate asymmetry, quiet hierarchy. The white cue ball may be a clean ivory disc outlined very subtly in graphite. No clutter.

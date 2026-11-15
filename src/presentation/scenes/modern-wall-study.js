@@ -65,7 +65,7 @@ export default function modernWallStudyModule(module, _exports, loadModule) {
     canvas.clearRect(0, 0, 1024, 512);
     canvas.fillStyle = '#e9e1cc';
     canvas.font = '112px Georgia';
-    canvas.fillText('OH MY', 72, 192);
+    canvas.fillText('OH GAME', 72, 192);
     canvas.fillText('SNOOKER', 72, 314);
     canvas.fillStyle = '#b6a480';
     canvas.fillRect(76, 376, 116, 3);

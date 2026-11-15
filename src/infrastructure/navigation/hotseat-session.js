@@ -1,6 +1,6 @@
 /** Persist setup only; reloading never resumes scores or starts a match automatically. */
 export default function createHotseatSession(host) {
-  const key = 'oh-my-snooker:hotseat-draft';
+  const key = 'oh-game-snooker:hotseat-draft';
   let stored = null;
   try {
     const value = JSON.parse(host.sessionStorage.getItem(key));

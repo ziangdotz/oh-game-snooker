@@ -1,6 +1,6 @@
 export default function collisionMeshLoaderModule(module, exports, loadModule) {
   const AssetQueue = loadModule('infrastructure/assets/asset-queue');
-  const LocalRequest = loadModule('infrastructure/network/local-request');
+  const LocalRequest = loadModule('infrastructure/assets/local-request');
   const PhysicsApi = loadModule('domain/physics/physics-api');
   const normalMapApi = PhysicsApi.exts.uv4pg;
   const ResourcePaths = loadModule('infrastructure/assets/resource-paths');

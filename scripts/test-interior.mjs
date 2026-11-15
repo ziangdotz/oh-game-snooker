@@ -1,5 +1,4 @@
-import { spawn } from 'node:child_process';
-import { ROOT } from '../config/project.config.mjs';
+import { runNode } from '../tooling/lib/run-node.mjs';
 import { verifyBuild } from '../tooling/build/verify-build.mjs';
 
 // Existing verified builds are inputs; suites run sequentially and own their servers.
@@ -13,17 +12,7 @@ for (const suite of [
   'interior-switching',
   'startup-recovery',
 ]) {
-  const code = await new Promise((resolve, reject) => {
-    const child = spawn(process.execPath, ['tests/e2e/' + suite + '.test.mjs'], {
-      cwd: ROOT,
-      stdio: 'inherit',
-      windowsHide: true,
-    });
-    child.once('error', reject);
-    child.once('exit', (code, signal) =>
-      signal ? reject(new Error(suite + ' interrupted: ' + signal)) : resolve(code),
-    );
-  });
+  const code = await runNode(['tests/e2e/' + suite + '.test.mjs']);
   if (code !== 0) {
     process.exitCode = code || 1;
     break;

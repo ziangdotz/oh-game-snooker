@@ -79,7 +79,7 @@ export default function interiorDesignTransitionModule(module, _exports, loadMod
   }
   function watch({ handoff = false, quick = false } = {}) {
     stopWatching();
-    const show = () => getView().loading(pending?.name || 'OH MY SNOOKER', { handoff });
+    const show = () => getView().loading(pending?.name || 'OH GAME SNOOKER', { handoff });
     if (quick) {
       revealTimer = setTimeout(show, 150);
     } else {

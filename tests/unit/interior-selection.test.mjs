@@ -83,7 +83,7 @@ test('pending navigation is one-shot and scoped to the exact same-origin deploym
 test('corrupt, expired and foreign recovery records cannot supply a return URL', () => {
   const client = browser();
   const navigation = createNavigation(client);
-  const key = 'oh-my-snooker:interior-transition';
+  const key = 'oh-game-snooker:interior-transition';
   for (const record of [
     '{broken',
     JSON.stringify({

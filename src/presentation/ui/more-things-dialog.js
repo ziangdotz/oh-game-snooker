@@ -670,19 +670,25 @@ export default function createMoreThingsDialog(dependencies) {
       this.element.removeEventListener('submit', this._onRoomsSubmit);
       super._unbindEvents();
     }
+    _focusPanelDefault(target) {
+      // A user may choose another field before the next animation update.
+      if (!this._list.contains(document.activeElement)) {
+        this._focusButton(target);
+      }
+    }
     update(dt) {
       super.update(dt);
       if (this._setupFocusPending && this.isActive && !this._blocked) {
         this._setupFocusPending = false;
-        this._focusButton(this._nameInputs[0]);
+        this._focusPanelDefault(this._nameInputs[0]);
       }
       if (this._roomsFocusPending && this.isActive && !this._blocked) {
         this._roomsFocusPending = false;
-        this._focusButton(this._roomNameInput);
+        this._focusPanelDefault(this._roomNameInput);
       }
       if (this._roomFocusPending && this.isActive && !this._blocked) {
         this._roomFocusPending = false;
-        this._focusButton(this._list.querySelector('[data-room-action]'));
+        this._focusPanelDefault(this._list.querySelector('[data-room-action]'));
       }
       return this.needsUpdate;
     }

@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { fileNamingIssue } from '../../tooling/lib/file-naming.mjs';
+import { fileNamingIssue } from '../../tooling/validation/file-naming.mjs';
 import { artifactDirectory } from '../../tooling/lib/artifact-paths.mjs';
 
 test('naming audit accepts fixed ecosystem names, typed suffixes and design identifiers', () => {

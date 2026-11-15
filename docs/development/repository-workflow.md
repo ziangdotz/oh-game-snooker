@@ -2,6 +2,12 @@
 
 当前工程可以在没有 Git 的目录中运行和验证。本说明用于首次建立仓库及后续提交；工程检查不会初始化真实仓库、配置远程地址或自动提交。
 
+## 当前远程仓库
+
+仓库已更名为 [ziangdotz/oh-game-snooker](https://github.com/ziangdotz/oh-game-snooker)，npm 工程名称同步为 `oh-game-snooker`。本机 `origin` 使用 `git@github.com-work_personal:ziangdotz/oh-game-snooker.git`，其中 `github.com-work_personal` 是本机 SSH 配置别名；其他电脑应使用各自可用的 SSH 或 HTTPS 地址。
+
+2026-11-07 已更新远程地址并执行 `git fetch origin --prune`，当时 `main` 与 `origin/main` 同为 `75fa168`。页面品牌统一为 Oh Game Snooker，浏览器会话存储键统一使用 `oh-game-snooker:` 前缀；旧键不迁移，已有同机草稿和房间恢复凭据不会自动读取。
+
 ## 提交内容
 
 维护源码 src、冻结对照 baselines、配置、命令、tooling、测试、文档、package-lock.json 和 reports/validation 一起提交。架构映射 `reports/validation/architecture-migration-map.json` 是算法检查输入，必须保留。验证报告记录对应日期和源码，不把旧报告当成当前版本复测。

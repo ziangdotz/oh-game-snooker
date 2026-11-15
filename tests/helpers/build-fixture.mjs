@@ -44,6 +44,10 @@ export async function makeBuildFixture(t) {
       '<!doctype html><script src="./compatibility/browser.js"></script><script src="./scripts/runtime-bootstrap.js"></script>',
     'src/assets/texture.bin': resources['res/texture.bin'],
     'src/application/fixture.js': 'export default function (module) { module.exports = true; }',
+    'src/runtime/factory-loader.js': await readFile(
+      path.join(ROOT, 'src/runtime/factory-loader.js'),
+      'utf8',
+    ),
     'src/runtime/module-loader.js': await readFile(
       path.join(ROOT, 'src/runtime/module-loader.js'),
       'utf8',

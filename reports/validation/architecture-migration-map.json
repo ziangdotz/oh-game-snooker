@@ -355,8 +355,8 @@
     },
     {
       "previousId": 46,
-      "id": "infrastructure/network/local-request",
-      "source": "src/infrastructure/network/local-request.js",
+      "id": "infrastructure/assets/local-request",
+      "source": "src/infrastructure/assets/local-request.js",
       "originalFactorySHA256": "00e065496b7c74e60e6d231ad321e3851dd1fe37762bb1bdfc45fcbd09a43867",
       "kind": "factory",
       "status": "maintained"

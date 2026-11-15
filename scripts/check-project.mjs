@@ -1,5 +1,4 @@
-import { spawn } from 'node:child_process';
-import { ROOT } from '../tooling/lib/integrity.mjs';
+import { runNode } from '../tooling/lib/run-node.mjs';
 
 const args = process.argv.slice(2);
 if (args.length > 1 || (args.length && args[0] !== '--browser')) {
@@ -28,13 +27,7 @@ if (args.includes('--browser')) {
 }
 for (const [name, command] of steps) {
   console.log(`\nChecking: ${name}`);
-  const code = await new Promise((resolve, reject) => {
-    const child = spawn(process.execPath, command, { cwd: ROOT, stdio: 'inherit', shell: false });
-    child.once('error', reject);
-    child.once('exit', (code, signal) =>
-      signal ? reject(new Error(`${name} stopped: ${signal}`)) : resolve(code),
-    );
-  });
+  const code = await runNode(command);
   if (code !== 0) {
     process.exitCode = code || 1;
     break;

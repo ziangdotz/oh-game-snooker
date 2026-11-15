@@ -253,7 +253,7 @@ try {
 
             // The seat credential is what a refresh would resume from.
             entry.storedSeat = await host.page.evaluate(() => {
-              const raw = window.sessionStorage.getItem('oh-my-snooker:room-seat');
+              const raw = window.sessionStorage.getItem('oh-game-snooker:room-seat');
               return raw ? JSON.parse(raw).roomId : null;
             });
             assert.equal(entry.storedSeat, created.roomId);

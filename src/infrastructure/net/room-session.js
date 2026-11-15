@@ -6,7 +6,7 @@ import createRoomClient from './room-client.js';
  * nothing here derives match results.
  */
 export default function createRoomSession(host, options = {}) {
-  const STORAGE_KEY = 'oh-my-snooker:room-seat';
+  const STORAGE_KEY = 'oh-game-snooker:room-seat';
   const EventEmitter = options.eventEmitter;
   const emitter = EventEmitter ? new (EventEmitter.a ?? EventEmitter)() : null;
   // Command promises and lastError retain service errors while no controller

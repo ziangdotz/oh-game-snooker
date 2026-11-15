@@ -264,6 +264,31 @@ try {
         const context = await browser.newContext({ viewport: { width: 1440, height: 900 } });
         const page = await context.newPage();
         page.setDefaultTimeout(45000);
+        await page.addInitScript(() => {
+          window.__hotseatFormTrace = [];
+          for (const type of ['focusin', 'input', 'submit']) {
+            document.addEventListener(
+              type,
+              (event) => {
+                const dialog = window.__pcolTestGame?._currentController?._moreDialog;
+                if (dialog?.page !== 'setup') {
+                  return;
+                }
+                window.__hotseatFormTrace.push({
+                  type,
+                  time: window.performance.now(),
+                  target:
+                    event.target.name || event.target.id || event.target.textContent?.slice(0, 40),
+                  names: [...document.querySelectorAll('.hotseat-name-field input')].map(
+                    (input) => input.value,
+                  ),
+                  pendingFocus: dialog._setupFocusPending,
+                });
+              },
+              true,
+            );
+          }
+        });
         page.on('pageerror', (error) => entry.errors.push(error.message));
         await page.route('**/*', async (route) => {
           if (
@@ -312,6 +337,12 @@ try {
           await setup(page, design, [' Alice ', 'alice']);
           await page.getByRole('button', { name: 'START MATCH', exact: true }).click();
           assert.match(await page.locator('#hotseat-error').textContent(), /different name/);
+          entry.duplicateNamesRejected = true;
+          if (target.name === 'source' && suffix === 'original') {
+            entry.duplicateNameTrace = await page.evaluate(() =>
+              window.__hotseatFormTrace.slice(-10),
+            );
+          }
           await page.locator('input[name="player-2"]').fill('Bob');
           if (target.name === 'source' && suffix === 'original') {
             for (const viewport of [
@@ -498,6 +529,7 @@ try {
           console.log('Hotseat passed: ' + candidate.name + ' / ' + target.name + ' / ' + design);
         } catch (error) {
           entry.failure = error.stack;
+          entry.formTrace = await page.evaluate(() => window.__hotseatFormTrace);
           await page.screenshot({
             path: path.join(
               output,
@@ -509,6 +541,7 @@ try {
               body: document.body.innerText,
               state: window.__pcolTestGame?._currentController?.state,
               context: window.__pcolTestGame?._currentController?._model?._gContext,
+              formTrace: window.__hotseatFormTrace,
             })),
           );
           throw error;

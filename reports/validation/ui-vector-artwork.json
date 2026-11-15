@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-12T08:34:09.524Z",
+  "date": "2026-11-07T13:02:27.511Z",
   "targets": [
     {
       "browser": "chrome",
@@ -13,7 +13,7 @@
       ],
       "guide": {
         "background": "none",
-        "mouseAsset": "url(\"http://127.0.0.1:55124/assets/images/ui-sprite-atlas.svg\")",
+        "mouseAsset": "url(\"http://127.0.0.1:53629/assets/images/ui-sprite-atlas.svg\")",
         "liveLettering": [
           "AIMING MODE",
           "LEFT",
@@ -779,7 +779,7 @@
       ],
       "guide": {
         "background": "none",
-        "mouseAsset": "url(\"http://127.0.0.1:55125/assets/images/ui-sprite-atlas.svg\")",
+        "mouseAsset": "url(\"http://127.0.0.1:53630/assets/images/ui-sprite-atlas.svg\")",
         "liveLettering": [
           "AIMING MODE",
           "LEFT",
@@ -1545,7 +1545,7 @@
       ],
       "guide": {
         "background": "none",
-        "mouseAsset": "url(\"http://127.0.0.1:55126/assets/images/ui-sprite-atlas.svg\")",
+        "mouseAsset": "url(\"http://127.0.0.1:53631/assets/images/ui-sprite-atlas.svg\")",
         "liveLettering": [
           "AIMING MODE",
           "LEFT",
@@ -2311,7 +2311,7 @@
       ],
       "guide": {
         "background": "none",
-        "mouseAsset": "url(\"http://127.0.0.1:55124/assets/images/ui-sprite-atlas.svg\")",
+        "mouseAsset": "url(\"http://127.0.0.1:53629/assets/images/ui-sprite-atlas.svg\")",
         "liveLettering": [
           "AIMING MODE",
           "LEFT",
@@ -3077,7 +3077,7 @@
       ],
       "guide": {
         "background": "none",
-        "mouseAsset": "url(\"http://127.0.0.1:55125/assets/images/ui-sprite-atlas.svg\")",
+        "mouseAsset": "url(\"http://127.0.0.1:53630/assets/images/ui-sprite-atlas.svg\")",
         "liveLettering": [
           "AIMING MODE",
           "LEFT",
@@ -3843,7 +3843,7 @@
       ],
       "guide": {
         "background": "none",
-        "mouseAsset": "url(\"http://127.0.0.1:55126/assets/images/ui-sprite-atlas.svg\")",
+        "mouseAsset": "url(\"http://127.0.0.1:53631/assets/images/ui-sprite-atlas.svg\")",
         "liveLettering": [
           "AIMING MODE",
           "LEFT",

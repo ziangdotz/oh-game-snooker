@@ -1,0 +1,1018 @@
+{
+  "date": "2026-11-14T13:48:36.944Z",
+  "options": {
+    "runs": 3,
+    "seconds": 6,
+    "browser": "chrome",
+    "dpr": 2,
+    "label": "runtime-baseline-chrome",
+    "mode": "current",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    }
+  },
+  "method": "Actual D-key orbit; 1.5s warmup, sequential hardware runs. Current maintained settings only; no visual ablations.",
+  "lightingSHA256": "fb695ad6626fb99880dd5768a648509dedc0d2689eceab2dcee5f0f711274dd1",
+  "samples": [
+    {
+      "run": 1,
+      "design": "interior-design-original",
+      "mode": "current",
+      "environment": {
+        "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "vendor": "Google Inc. (Intel)",
+        "webglVersion": 2,
+        "antialias": true,
+        "samples": 4,
+        "hardwareScaling": 0.6666666666666666,
+        "drawingBuffer": [
+          2160,
+          1350
+        ],
+        "devicePixelRatio": 2,
+        "timerQueryAvailable": true,
+        "roomMeshes": 0,
+        "triangles": 53476,
+        "shadowSizes": [],
+        "shadowRefreshRates": []
+      },
+      "intervalsMs": {
+        "samples": 360,
+        "median": 16.69999998807907,
+        "p95": 17.80000001192093,
+        "p99": 19.19999998807907,
+        "max": 28.30000001192093,
+        "mean": 16.663333333366445
+      },
+      "submissionMs": {
+        "samples": 360,
+        "median": 0.699999988079071,
+        "p95": 1.600000023841858,
+        "p99": 4.399999976158142,
+        "max": 20,
+        "mean": 0.8997222208314472
+      },
+      "drawCalls": {
+        "samples": 360,
+        "median": 35,
+        "p95": 36,
+        "p99": 37,
+        "max": 37,
+        "mean": 34.516666666666666
+      },
+      "gpuFrameMs": {
+        "samples": 179,
+        "median": 3.5825,
+        "p95": 5.629947,
+        "p99": 7.072656,
+        "max": 8.523802,
+        "mean": 3.860547122905027
+      },
+      "intervalsOver25Ms": 1,
+      "intervalsOver50Ms": 0,
+      "shadowRenders": [],
+      "positionBefore": [
+        -3.1774999999999998,
+        1.7,
+        2.5105259382520737e-16
+      ],
+      "positionAfter": [
+        3.079537716024437,
+        1.7,
+        0.505105548600539
+      ],
+      "errors": [],
+      "rawFrameCount": 360,
+      "rawGpuSampleCount": 179
+    },
+    {
+      "run": 2,
+      "design": "interior-design-original",
+      "mode": "current",
+      "environment": {
+        "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "vendor": "Google Inc. (Intel)",
+        "webglVersion": 2,
+        "antialias": true,
+        "samples": 4,
+        "hardwareScaling": 0.6666666666666666,
+        "drawingBuffer": [
+          2160,
+          1350
+        ],
+        "devicePixelRatio": 2,
+        "timerQueryAvailable": true,
+        "roomMeshes": 0,
+        "triangles": 53476,
+        "shadowSizes": [],
+        "shadowRefreshRates": []
+      },
+      "intervalsMs": {
+        "samples": 360,
+        "median": 16.69999998807907,
+        "p95": 18.099999964237213,
+        "p99": 19.5,
+        "max": 22.100000023841858,
+        "mean": 16.668888888922
+      },
+      "submissionMs": {
+        "samples": 360,
+        "median": 0.9000000357627869,
+        "p95": 2.100000023841858,
+        "p99": 5,
+        "max": 16.399999976158142,
+        "mean": 1.1486111116078166
+      },
+      "drawCalls": {
+        "samples": 360,
+        "median": 35,
+        "p95": 36,
+        "p99": 37,
+        "max": 37,
+        "mean": 34.519444444444446
+      },
+      "gpuFrameMs": {
+        "samples": 177,
+        "median": 3.559427,
+        "p95": 6.13526,
+        "p99": 10.503072,
+        "max": 11.547864,
+        "mean": 3.897143220338982
+      },
+      "intervalsOver25Ms": 0,
+      "intervalsOver50Ms": 0,
+      "shadowRenders": [],
+      "positionBefore": [
+        -3.1774999999999998,
+        1.7,
+        2.5105259382520737e-16
+      ],
+      "positionAfter": [
+        3.0786490345236937,
+        1.7,
+        0.5073554180034459
+      ],
+      "errors": [],
+      "rawFrameCount": 360,
+      "rawGpuSampleCount": 177
+    },
+    {
+      "run": 3,
+      "design": "interior-design-original",
+      "mode": "current",
+      "environment": {
+        "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "vendor": "Google Inc. (Intel)",
+        "webglVersion": 2,
+        "antialias": true,
+        "samples": 4,
+        "hardwareScaling": 0.6666666666666666,
+        "drawingBuffer": [
+          2160,
+          1350
+        ],
+        "devicePixelRatio": 2,
+        "timerQueryAvailable": true,
+        "roomMeshes": 0,
+        "triangles": 53476,
+        "shadowSizes": [],
+        "shadowRefreshRates": []
+      },
+      "intervalsMs": {
+        "samples": 360,
+        "median": 16.69999998807907,
+        "p95": 18,
+        "p99": 20.19999998807907,
+        "max": 28.700000047683716,
+        "mean": 16.665277777777778
+      },
+      "submissionMs": {
+        "samples": 360,
+        "median": 0.7000000476837158,
+        "p95": 1.7999999523162842,
+        "p99": 4.900000035762787,
+        "max": 9.700000047683716,
+        "mean": 0.9208333330021964
+      },
+      "drawCalls": {
+        "samples": 360,
+        "median": 35,
+        "p95": 36,
+        "p99": 37,
+        "max": 37,
+        "mean": 34.516666666666666
+      },
+      "gpuFrameMs": {
+        "samples": 181,
+        "median": 3.442552,
+        "p95": 5.883333,
+        "p99": 7.670104,
+        "max": 8.372239,
+        "mean": 3.8501558232044215
+      },
+      "intervalsOver25Ms": 2,
+      "intervalsOver50Ms": 0,
+      "shadowRenders": [],
+      "positionBefore": [
+        -3.1774999999999998,
+        1.7,
+        2.5105259382520737e-16
+      ],
+      "positionAfter": [
+        3.079091642012518,
+        1.7,
+        0.50623620242804
+      ],
+      "errors": [],
+      "rawFrameCount": 360,
+      "rawGpuSampleCount": 181
+    },
+    {
+      "run": 1,
+      "design": "interior-design-001",
+      "mode": "current",
+      "environment": {
+        "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "vendor": "Google Inc. (Intel)",
+        "webglVersion": 2,
+        "antialias": true,
+        "samples": 4,
+        "hardwareScaling": 0.6666666666666666,
+        "drawingBuffer": [
+          2160,
+          1350
+        ],
+        "devicePixelRatio": 2,
+        "timerQueryAvailable": true,
+        "roomMeshes": 31,
+        "triangles": 90824,
+        "shadowSizes": [
+          2048,
+          1024
+        ],
+        "shadowRefreshRates": [
+          0,
+          0
+        ]
+      },
+      "intervalsMs": {
+        "samples": 360,
+        "median": 16.69999998807907,
+        "p95": 17.80000001192093,
+        "p99": 18.400000035762787,
+        "max": 20.900000035762787,
+        "mean": 16.666111111144225
+      },
+      "submissionMs": {
+        "samples": 360,
+        "median": 1.0999999642372131,
+        "p95": 2.5,
+        "p99": 5.199999988079071,
+        "max": 7.800000011920929,
+        "mean": 1.2963888901803229
+      },
+      "drawCalls": {
+        "samples": 360,
+        "median": 52,
+        "p95": 55,
+        "p99": 55,
+        "max": 55,
+        "mean": 51.25
+      },
+      "gpuFrameMs": {
+        "samples": 180,
+        "median": 6.479479,
+        "p95": 9.836145,
+        "p99": 11.859166,
+        "max": 13.049427,
+        "mean": 6.811959883333331
+      },
+      "intervalsOver25Ms": 0,
+      "intervalsOver50Ms": 0,
+      "shadowRenders": [
+        {
+          "name": "interior-design-001-floor-light_shadowMap",
+          "count": 0
+        },
+        {
+          "name": "interior-design-001-lounge-wash_shadowMap",
+          "count": 0
+        }
+      ],
+      "positionBefore": [
+        -3.1774999999999998,
+        1.7,
+        2.5105259382520737e-16
+      ],
+      "positionAfter": [
+        3.079092947056353,
+        1.7,
+        0.5062328984844214
+      ],
+      "errors": [],
+      "rawFrameCount": 360,
+      "rawGpuSampleCount": 180
+    },
+    {
+      "run": 2,
+      "design": "interior-design-001",
+      "mode": "current",
+      "environment": {
+        "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "vendor": "Google Inc. (Intel)",
+        "webglVersion": 2,
+        "antialias": true,
+        "samples": 4,
+        "hardwareScaling": 0.6666666666666666,
+        "drawingBuffer": [
+          2160,
+          1350
+        ],
+        "devicePixelRatio": 2,
+        "timerQueryAvailable": true,
+        "roomMeshes": 31,
+        "triangles": 90824,
+        "shadowSizes": [
+          2048,
+          1024
+        ],
+        "shadowRefreshRates": [
+          0,
+          0
+        ]
+      },
+      "intervalsMs": {
+        "samples": 360,
+        "median": 16.69999998807907,
+        "p95": 17.900000035762787,
+        "p99": 18.599999964237213,
+        "max": 19.19999998807907,
+        "mean": 16.665555555456216
+      },
+      "submissionMs": {
+        "samples": 360,
+        "median": 1.300000011920929,
+        "p95": 2.399999976158142,
+        "p99": 3.899999976158142,
+        "max": 5.200000047683716,
+        "mean": 1.4361111106144058
+      },
+      "drawCalls": {
+        "samples": 360,
+        "median": 52,
+        "p95": 55,
+        "p99": 55,
+        "max": 55,
+        "mean": 51.266666666666666
+      },
+      "gpuFrameMs": {
+        "samples": 131,
+        "median": 6.761406,
+        "p95": 9.962864,
+        "p99": 11.540729,
+        "max": 12.210781,
+        "mean": 7.175720763358782
+      },
+      "intervalsOver25Ms": 0,
+      "intervalsOver50Ms": 0,
+      "shadowRenders": [
+        {
+          "name": "interior-design-001-floor-light_shadowMap",
+          "count": 0
+        },
+        {
+          "name": "interior-design-001-lounge-wash_shadowMap",
+          "count": 0
+        }
+      ],
+      "positionBefore": [
+        -3.1774999542981908,
+        1.7,
+        -0.0003476904575041239
+      ],
+      "positionAfter": [
+        3.071998456666457,
+        1.7,
+        0.5238660941450192
+      ],
+      "errors": [],
+      "rawFrameCount": 360,
+      "rawGpuSampleCount": 131
+    },
+    {
+      "run": 3,
+      "design": "interior-design-001",
+      "mode": "current",
+      "environment": {
+        "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "vendor": "Google Inc. (Intel)",
+        "webglVersion": 2,
+        "antialias": true,
+        "samples": 4,
+        "hardwareScaling": 0.6666666666666666,
+        "drawingBuffer": [
+          2160,
+          1350
+        ],
+        "devicePixelRatio": 2,
+        "timerQueryAvailable": true,
+        "roomMeshes": 31,
+        "triangles": 90824,
+        "shadowSizes": [
+          2048,
+          1024
+        ],
+        "shadowRefreshRates": [
+          0,
+          0
+        ]
+      },
+      "intervalsMs": {
+        "samples": 359,
+        "median": 16.600000023841858,
+        "p95": 18,
+        "p99": 18.900000035762787,
+        "max": 46.80000001192093,
+        "mean": 16.711142061314543
+      },
+      "submissionMs": {
+        "samples": 359,
+        "median": 1.399999976158142,
+        "p95": 4,
+        "p99": 5.600000023841858,
+        "max": 13.899999976158142,
+        "mean": 1.7454038991237417
+      },
+      "drawCalls": {
+        "samples": 359,
+        "median": 52,
+        "p95": 55,
+        "p99": 55,
+        "max": 55,
+        "mean": 51.24233983286908
+      },
+      "gpuFrameMs": {
+        "samples": 173,
+        "median": 6.251562,
+        "p95": 9.061718,
+        "p99": 11.644687,
+        "max": 11.810416,
+        "mean": 6.290215705202314
+      },
+      "intervalsOver25Ms": 2,
+      "intervalsOver50Ms": 0,
+      "shadowRenders": [
+        {
+          "name": "interior-design-001-floor-light_shadowMap",
+          "count": 0
+        },
+        {
+          "name": "interior-design-001-lounge-wash_shadowMap",
+          "count": 0
+        }
+      ],
+      "positionBefore": [
+        -3.1774999999999998,
+        1.7,
+        2.5105259382520737e-16
+      ],
+      "positionAfter": [
+        3.079100053273597,
+        1.7,
+        0.5062149074665072
+      ],
+      "errors": [],
+      "rawFrameCount": 359,
+      "rawGpuSampleCount": 173
+    },
+    {
+      "run": 1,
+      "design": "interior-design-002",
+      "mode": "current",
+      "environment": {
+        "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "vendor": "Google Inc. (Intel)",
+        "webglVersion": 2,
+        "antialias": true,
+        "samples": 4,
+        "hardwareScaling": 0.6666666666666666,
+        "drawingBuffer": [
+          2160,
+          1350
+        ],
+        "devicePixelRatio": 2,
+        "timerQueryAvailable": true,
+        "roomMeshes": 32,
+        "triangles": 158992,
+        "shadowSizes": [
+          2048,
+          1024
+        ],
+        "shadowRefreshRates": [
+          0,
+          0
+        ]
+      },
+      "intervalsMs": {
+        "samples": 356,
+        "median": 16.69999998807907,
+        "p95": 18.399999976158142,
+        "p99": 31.399999976158142,
+        "max": 52.59999996423721,
+        "mean": 16.856460674090332
+      },
+      "submissionMs": {
+        "samples": 356,
+        "median": 1.800000011920929,
+        "p95": 4.199999988079071,
+        "p99": 11.100000023841858,
+        "max": 50.700000047683716,
+        "mean": 2.40308989165874
+      },
+      "drawCalls": {
+        "samples": 356,
+        "median": 54,
+        "p95": 58,
+        "p99": 58,
+        "max": 58,
+        "mean": 54.54775280898876
+      },
+      "gpuFrameMs": {
+        "samples": 142,
+        "median": 7.330364,
+        "p95": 10.168125,
+        "p99": 11.802187,
+        "max": 12.18052,
+        "mean": 7.628863957746477
+      },
+      "intervalsOver25Ms": 4,
+      "intervalsOver50Ms": 2,
+      "shadowRenders": [
+        {
+          "name": "interior-design-002-floor-light_shadowMap",
+          "count": 0
+        },
+        {
+          "name": "interior-design-002-lounge-wash_shadowMap",
+          "count": 0
+        }
+      ],
+      "positionBefore": [
+        -3.1774999999999998,
+        1.7,
+        2.5105259382520737e-16
+      ],
+      "positionAfter": [
+        3.0791042581767414,
+        1.7,
+        0.5062042614696309
+      ],
+      "errors": [],
+      "rawFrameCount": 356,
+      "rawGpuSampleCount": 142
+    },
+    {
+      "run": 2,
+      "design": "interior-design-002",
+      "mode": "current",
+      "environment": {
+        "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "vendor": "Google Inc. (Intel)",
+        "webglVersion": 2,
+        "antialias": true,
+        "samples": 4,
+        "hardwareScaling": 0.6666666666666666,
+        "drawingBuffer": [
+          2160,
+          1350
+        ],
+        "devicePixelRatio": 2,
+        "timerQueryAvailable": true,
+        "roomMeshes": 32,
+        "triangles": 158992,
+        "shadowSizes": [
+          2048,
+          1024
+        ],
+        "shadowRefreshRates": [
+          0,
+          0
+        ]
+      },
+      "intervalsMs": {
+        "samples": 360,
+        "median": 16.69999998807907,
+        "p95": 18,
+        "p99": 19.900000035762787,
+        "max": 28.5,
+        "mean": 16.665277777777778
+      },
+      "submissionMs": {
+        "samples": 360,
+        "median": 1.699999988079071,
+        "p95": 3.899999976158142,
+        "p99": 7.5,
+        "max": 17.200000047683716,
+        "mean": 1.9588888898491859
+      },
+      "drawCalls": {
+        "samples": 360,
+        "median": 54,
+        "p95": 58,
+        "p99": 58,
+        "max": 58,
+        "mean": 54.56111111111111
+      },
+      "gpuFrameMs": {
+        "samples": 165,
+        "median": 6.487083,
+        "p95": 9.409114,
+        "p99": 11.617031,
+        "max": 12.75052,
+        "mean": 6.114504878787879
+      },
+      "intervalsOver25Ms": 1,
+      "intervalsOver50Ms": 0,
+      "shadowRenders": [
+        {
+          "name": "interior-design-002-floor-light_shadowMap",
+          "count": 0
+        },
+        {
+          "name": "interior-design-002-lounge-wash_shadowMap",
+          "count": 0
+        }
+      ],
+      "positionBefore": [
+        -3.1774999999999998,
+        1.7,
+        2.5105259382520737e-16
+      ],
+      "positionAfter": [
+        3.079964766245728,
+        1.7,
+        0.5040205835798508
+      ],
+      "errors": [],
+      "rawFrameCount": 360,
+      "rawGpuSampleCount": 165
+    },
+    {
+      "run": 3,
+      "design": "interior-design-002",
+      "mode": "current",
+      "environment": {
+        "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "vendor": "Google Inc. (Intel)",
+        "webglVersion": 2,
+        "antialias": true,
+        "samples": 4,
+        "hardwareScaling": 0.6666666666666666,
+        "drawingBuffer": [
+          2160,
+          1350
+        ],
+        "devicePixelRatio": 2,
+        "timerQueryAvailable": true,
+        "roomMeshes": 32,
+        "triangles": 158992,
+        "shadowSizes": [
+          2048,
+          1024
+        ],
+        "shadowRefreshRates": [
+          0,
+          0
+        ]
+      },
+      "intervalsMs": {
+        "samples": 358,
+        "median": 16.69999998807907,
+        "p95": 18.099999964237213,
+        "p99": 19.400000035762787,
+        "max": 51.90000003576279,
+        "mean": 16.760614525172965
+      },
+      "submissionMs": {
+        "samples": 358,
+        "median": 1.5,
+        "p95": 3.400000035762787,
+        "p99": 8.199999988079071,
+        "max": 49.40000003576279,
+        "mean": 2.0039106149580226
+      },
+      "drawCalls": {
+        "samples": 358,
+        "median": 54,
+        "p95": 58,
+        "p99": 58,
+        "max": 58,
+        "mean": 54.54469273743017
+      },
+      "gpuFrameMs": {
+        "samples": 129,
+        "median": 7.519895,
+        "p95": 11.809843,
+        "p99": 12.790468,
+        "max": 13.650572,
+        "mean": 8.146902364341086
+      },
+      "intervalsOver25Ms": 2,
+      "intervalsOver50Ms": 1,
+      "shadowRenders": [
+        {
+          "name": "interior-design-002-floor-light_shadowMap",
+          "count": 0
+        },
+        {
+          "name": "interior-design-002-lounge-wash_shadowMap",
+          "count": 0
+        }
+      ],
+      "positionBefore": [
+        -3.1774999999999998,
+        1.7,
+        2.5105259382520737e-16
+      ],
+      "positionAfter": [
+        3.079089053329666,
+        1.7,
+        0.5062427560573373
+      ],
+      "errors": [],
+      "rawFrameCount": 358,
+      "rawGpuSampleCount": 129
+    },
+    {
+      "run": 1,
+      "design": "interior-design-003",
+      "mode": "current",
+      "environment": {
+        "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "vendor": "Google Inc. (Intel)",
+        "webglVersion": 2,
+        "antialias": true,
+        "samples": 4,
+        "hardwareScaling": 0.6666666666666666,
+        "drawingBuffer": [
+          2160,
+          1350
+        ],
+        "devicePixelRatio": 2,
+        "timerQueryAvailable": true,
+        "roomMeshes": 41,
+        "triangles": 209512,
+        "shadowSizes": [
+          2048,
+          1024
+        ],
+        "shadowRefreshRates": [
+          0,
+          0
+        ]
+      },
+      "intervalsMs": {
+        "samples": 360,
+        "median": 16.69999998807907,
+        "p95": 17.80000001192093,
+        "p99": 18.599999964237213,
+        "max": 22.30000001192093,
+        "mean": 16.669166666766007
+      },
+      "submissionMs": {
+        "samples": 360,
+        "median": 1.699999988079071,
+        "p95": 3.200000047683716,
+        "p99": 4.199999988079071,
+        "max": 7.800000011920929,
+        "mean": 1.8019444462325838
+      },
+      "drawCalls": {
+        "samples": 360,
+        "median": 57,
+        "p95": 58,
+        "p99": 60,
+        "max": 60,
+        "mean": 55.87222222222222
+      },
+      "gpuFrameMs": {
+        "samples": 150,
+        "median": 6.053854,
+        "p95": 9.370781,
+        "p99": 10.343125,
+        "max": 10.34401,
+        "mean": 6.517113779999996
+      },
+      "intervalsOver25Ms": 0,
+      "intervalsOver50Ms": 0,
+      "shadowRenders": [
+        {
+          "name": "interior-design-003-floor-light_shadowMap",
+          "count": 0
+        },
+        {
+          "name": "interior-design-003-lounge-wash_shadowMap",
+          "count": 0
+        }
+      ],
+      "positionBefore": [
+        -3.1774999999999998,
+        1.7,
+        2.5105259382520737e-16
+      ],
+      "positionAfter": [
+        3.0790996147971588,
+        1.7,
+        0.5062160175898338
+      ],
+      "errors": [],
+      "rawFrameCount": 360,
+      "rawGpuSampleCount": 150
+    },
+    {
+      "run": 2,
+      "design": "interior-design-003",
+      "mode": "current",
+      "environment": {
+        "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "vendor": "Google Inc. (Intel)",
+        "webglVersion": 2,
+        "antialias": true,
+        "samples": 4,
+        "hardwareScaling": 0.6666666666666666,
+        "drawingBuffer": [
+          2160,
+          1350
+        ],
+        "devicePixelRatio": 2,
+        "timerQueryAvailable": true,
+        "roomMeshes": 41,
+        "triangles": 209512,
+        "shadowSizes": [
+          2048,
+          1024
+        ],
+        "shadowRefreshRates": [
+          0,
+          0
+        ]
+      },
+      "intervalsMs": {
+        "samples": 360,
+        "median": 16.600000023841858,
+        "p95": 18,
+        "p99": 19.30000001192093,
+        "max": 22.600000023841858,
+        "mean": 16.664166666567326
+      },
+      "submissionMs": {
+        "samples": 360,
+        "median": 1.5,
+        "p95": 3.300000011920929,
+        "p99": 7.599999964237213,
+        "max": 11.300000011920929,
+        "mean": 1.7911111109786564
+      },
+      "drawCalls": {
+        "samples": 360,
+        "median": 57,
+        "p95": 58,
+        "p99": 60,
+        "max": 60,
+        "mean": 55.875
+      },
+      "gpuFrameMs": {
+        "samples": 157,
+        "median": 5.881562,
+        "p95": 9.308072,
+        "p99": 10.543385,
+        "max": 10.559062,
+        "mean": 6.349218968152869
+      },
+      "intervalsOver25Ms": 0,
+      "intervalsOver50Ms": 0,
+      "shadowRenders": [
+        {
+          "name": "interior-design-003-floor-light_shadowMap",
+          "count": 0
+        },
+        {
+          "name": "interior-design-003-lounge-wash_shadowMap",
+          "count": 0
+        }
+      ],
+      "positionBefore": [
+        -3.1774999999999998,
+        1.7,
+        2.5105259382520737e-16
+      ],
+      "positionAfter": [
+        3.079976507532128,
+        1.7,
+        0.5039907185154465
+      ],
+      "errors": [],
+      "rawFrameCount": 360,
+      "rawGpuSampleCount": 157
+    },
+    {
+      "run": 3,
+      "design": "interior-design-003",
+      "mode": "current",
+      "environment": {
+        "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "vendor": "Google Inc. (Intel)",
+        "webglVersion": 2,
+        "antialias": true,
+        "samples": 4,
+        "hardwareScaling": 0.6666666666666666,
+        "drawingBuffer": [
+          2160,
+          1350
+        ],
+        "devicePixelRatio": 2,
+        "timerQueryAvailable": true,
+        "roomMeshes": 41,
+        "triangles": 209512,
+        "shadowSizes": [
+          2048,
+          1024
+        ],
+        "shadowRefreshRates": [
+          0,
+          0
+        ]
+      },
+      "intervalsMs": {
+        "samples": 360,
+        "median": 16.69999998807907,
+        "p95": 18.099999964237213,
+        "p99": 20,
+        "max": 21.19999998807907,
+        "mean": 16.67166666669978
+      },
+      "submissionMs": {
+        "samples": 360,
+        "median": 1.399999976158142,
+        "p95": 3,
+        "p99": 6.600000023841858,
+        "max": 14.899999976158142,
+        "mean": 1.676944444080194
+      },
+      "drawCalls": {
+        "samples": 360,
+        "median": 57,
+        "p95": 58,
+        "p99": 60,
+        "max": 60,
+        "mean": 55.87222222222222
+      },
+      "gpuFrameMs": {
+        "samples": 154,
+        "median": 5.845468,
+        "p95": 9.811458,
+        "p99": 12.039739,
+        "max": 16.00802,
+        "mean": 6.338812785714288
+      },
+      "intervalsOver25Ms": 0,
+      "intervalsOver50Ms": 0,
+      "shadowRenders": [
+        {
+          "name": "interior-design-003-floor-light_shadowMap",
+          "count": 0
+        },
+        {
+          "name": "interior-design-003-lounge-wash_shadowMap",
+          "count": 0
+        }
+      ],
+      "positionBefore": [
+        -3.1774999999999998,
+        1.7,
+        2.5105259382520737e-16
+      ],
+      "positionAfter": [
+        3.079099840433887,
+        1.7,
+        0.5062154463289129
+      ],
+      "errors": [],
+      "rawFrameCount": 360,
+      "rawGpuSampleCount": 154
+    }
+  ],
+  "passed": true,
+  "limitations": [
+    "Submission time measures CPU/driver submission, not pure GPU duration.",
+    "GPU durations are optional asynchronous timer-query samples, separate from frame intervals.",
+    "Real keyboard orbit preserves original per-frame camera behavior; trajectories are not identical across frame rates.",
+    "Light/relief ablations change diagnostic appearance and are not proposed production settings.",
+    "Results describe this machine, browser, viewport and DPR, not all hardware."
+  ],
+  "browserVersion": "157.0.8103.51",
+  "schemaVersion": 1,
+  "sourceReport": "reports/measurement/interior-performance-runtime-baseline-chrome.json",
+  "sourceReportSHA256": "8a3cdeb5f19a743ee14b7ef6a25b7b3f0f4eebeb3386a9539e37b1c023ba7fc6"
+}

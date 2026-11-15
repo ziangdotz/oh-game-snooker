@@ -1,0 +1,1977 @@
+{
+  "date": "2026-11-14T15:32:18.869Z",
+  "method": "Canonical renderer ThreadControllerImpl::RunTask >=50ms, excluding nested scheduler/Edge wrappers, aligned to native User Timing markers. GC/layout durations are interval unions within each task.",
+  "traces": [
+    {
+      "file": "artifacts/testing/gameplay-motion/entry-trace-chrome-chrome-interior-design-003-1.trace.json.gz",
+      "sha256": "8b98224b08ffb8635232d55e5f63932a8f2e2a3c0f75ab42941eec0d4361d5f8",
+      "eventCount": 1038439,
+      "markerCount": 50,
+      "phaseCount": 12,
+      "mainThread": {
+        "pid": 23096,
+        "tid": 22112
+      },
+      "rootTaskName": "ThreadControllerImpl::RunTask",
+      "rootTaskKinds": [
+        [
+          "ThreadControllerImpl::RunTask",
+          18393
+        ],
+        [
+          "BlinkScheduler_PerformMicrotaskCheckpoint",
+          15319
+        ],
+        [
+          "CommandBuffer::OrderingBarrier",
+          11794
+        ],
+        [
+          "GpuChannel::Flush",
+          3760
+        ],
+        [
+          "Receive mojo message",
+          443
+        ],
+        [
+          "SimpleWatcher::OnHandleReady",
+          65
+        ]
+      ],
+      "startupMs": {
+        "menu": 4618.452,
+        "practice": 1028.389
+      },
+      "longTasks": [
+        {
+          "startFromDocumentMs": 819.739,
+          "durationMs": 1136.234,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 111.54,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "XHRReadyStateChange",
+              "ms": 1133.968,
+              "url": "http://127.0.0.1:65064/assets/models/interior-design-original-room.babylon",
+              "readyState": 4
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 1133.956
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 1131.316,
+              "functionName": "p",
+              "line": 3
+            },
+            {
+              "name": "GpuChannelHost::CreateViewCommandBuffer",
+              "ms": 41.884
+            },
+            {
+              "name": "CommandBufferProxyImpl::Initialize",
+              "ms": 41.881
+            },
+            {
+              "name": "V8.GCHandleGCRequest",
+              "ms": 9.939
+            },
+            {
+              "name": "MajorGC",
+              "ms": 9.906
+            },
+            {
+              "name": "V8.GCFinalizeMC",
+              "ms": 9.764
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 1957.162,
+          "durationMs": 191.06,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 0,
+          "layoutPaintMs": 0.241,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "ProxyMain::BeginMainFrame",
+              "ms": 191.055
+            },
+            {
+              "name": "FireAnimationFrame",
+              "ms": 190.448
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 190.441
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 190.428,
+              "functionName": "n._renderLoop",
+              "line": 3
+            },
+            {
+              "name": "GLES2Implementation::GetProgramiv",
+              "ms": 74.672
+            },
+            {
+              "name": "ImplementationBase::GetBucketContents",
+              "ms": 74.638
+            },
+            {
+              "name": "ImplementationBase::WaitForCmd",
+              "ms": 74.632
+            },
+            {
+              "name": "CommandBufferHelper::Finish",
+              "ms": 74.63
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 2190.072,
+          "durationMs": 147.271,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 6.583,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "XHRReadyStateChange",
+              "ms": 146.581,
+              "url": "http://127.0.0.1:65064/assets/environments/frame-reflection.hdr",
+              "readyState": 4
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 146.569
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 146.555,
+              "functionName": "p",
+              "line": 3
+            },
+            {
+              "name": "MinorGC",
+              "ms": 1.148
+            },
+            {
+              "name": "V8.GCScavenger",
+              "ms": 1.035
+            },
+            {
+              "name": "V8.GC_SCAVENGER",
+              "ms": 1.015
+            },
+            {
+              "name": "V8.GC_SCAVENGER_SCAVENGE",
+              "ms": 1.001
+            },
+            {
+              "name": "MinorGC",
+              "ms": 0.924
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 2755.864,
+          "durationMs": 376.9,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 0,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "TimerFire",
+              "ms": 376.897
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 376.885
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 376.873,
+              "functionName": "",
+              "line": 3
+            },
+            {
+              "name": "GLES2Implementation::GetProgramiv",
+              "ms": 106.975
+            },
+            {
+              "name": "ImplementationBase::GetBucketContents",
+              "ms": 106.941
+            },
+            {
+              "name": "ImplementationBase::WaitForCmd",
+              "ms": 106.937
+            },
+            {
+              "name": "CommandBufferHelper::Finish",
+              "ms": 106.935
+            },
+            {
+              "name": "CommandBufferProxyImpl::WaitForGetOffset",
+              "ms": 106.916
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 3458.262,
+          "durationMs": 69.656,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 0,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "TimerFire",
+              "ms": 69.65
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 69.512
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 69.497,
+              "functionName": "",
+              "line": 3
+            },
+            {
+              "name": "GLES2Implementation::GetProgramiv",
+              "ms": 24.406
+            },
+            {
+              "name": "ImplementationBase::GetBucketContents",
+              "ms": 24.386
+            },
+            {
+              "name": "ImplementationBase::WaitForCmd",
+              "ms": 24.382
+            },
+            {
+              "name": "CommandBufferHelper::Finish",
+              "ms": 24.38
+            },
+            {
+              "name": "CommandBufferProxyImpl::WaitForGetOffset",
+              "ms": 24.304
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 3854.284,
+          "durationMs": 50.315,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 50.298,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "MajorGC",
+              "ms": 50.231
+            },
+            {
+              "name": "V8.GCFinalizeMC",
+              "ms": 50.082
+            },
+            {
+              "name": "V8.GC_MARK_COMPACTOR",
+              "ms": 50.067
+            },
+            {
+              "name": "V8.GC_MC_FINISH",
+              "ms": 3.176
+            },
+            {
+              "name": "V8.GC_MC_EVACUATE",
+              "ms": 2.168
+            },
+            {
+              "name": "V8.GC_MC_EVACUATE_COPY",
+              "ms": 1.295
+            },
+            {
+              "name": "MarkCompactCollector::EvacuatePagesInParallel",
+              "ms": 1.288
+            },
+            {
+              "name": "V8.GC_MC_EVACUATE_COPY_PARALLEL",
+              "ms": 1.23
+            }
+          ]
+        }
+      ],
+      "uncompressedSHA256": "4a8c0843d1c7dc93bebe8a101bb5e09fd197d2e10ff6ae999973d412de307d26",
+      "browser": "chrome",
+      "round": 1,
+      "rawBytes": 198071522,
+      "archiveBytes": 20594920
+    },
+    {
+      "file": "artifacts/testing/gameplay-motion/entry-trace-chrome-chrome-interior-design-003-2.trace.json.gz",
+      "sha256": "0f91e778306e66449de056253c575d03d7f5b82f481fee81820769be9319ff93",
+      "eventCount": 999355,
+      "markerCount": 50,
+      "phaseCount": 12,
+      "mainThread": {
+        "pid": 23608,
+        "tid": 9244
+      },
+      "rootTaskName": "ThreadControllerImpl::RunTask",
+      "rootTaskKinds": [
+        [
+          "ThreadControllerImpl::RunTask",
+          17128
+        ],
+        [
+          "BlinkScheduler_PerformMicrotaskCheckpoint",
+          13969
+        ],
+        [
+          "CommandBuffer::OrderingBarrier",
+          10769
+        ],
+        [
+          "GpuChannel::Flush",
+          3049
+        ],
+        [
+          "Receive mojo message",
+          419
+        ],
+        [
+          "SimpleWatcher::OnHandleReady",
+          64
+        ]
+      ],
+      "startupMs": {
+        "menu": 4250.715,
+        "practice": 1001.26
+      },
+      "longTasks": [
+        {
+          "startFromDocumentMs": 686.638,
+          "durationMs": 1245.494,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 108.045,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "XHRReadyStateChange",
+              "ms": 1242.635,
+              "url": "http://127.0.0.1:65064/assets/models/interior-design-original-room.babylon",
+              "readyState": 4
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 1242.618
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 1240.217,
+              "functionName": "p",
+              "line": 3
+            },
+            {
+              "name": "GpuChannelHost::CreateViewCommandBuffer",
+              "ms": 79.338
+            },
+            {
+              "name": "CommandBufferProxyImpl::Initialize",
+              "ms": 79.332
+            },
+            {
+              "name": "V8.GCHandleGCRequest",
+              "ms": 7.149
+            },
+            {
+              "name": "MajorGC",
+              "ms": 7.098
+            },
+            {
+              "name": "V8.GCFinalizeMC",
+              "ms": 6.875
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 1932.964,
+          "durationMs": 92.794,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 0,
+          "layoutPaintMs": 0.198,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "ProxyMain::BeginMainFrame",
+              "ms": 92.789
+            },
+            {
+              "name": "FireAnimationFrame",
+              "ms": 92.106
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 92.097
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 92.082,
+              "functionName": "n._renderLoop",
+              "line": 3
+            },
+            {
+              "name": "GLES2Implementation::GetShaderiv",
+              "ms": 8.07
+            },
+            {
+              "name": "ImplementationBase::WaitForCmd",
+              "ms": 8.064
+            },
+            {
+              "name": "CommandBufferHelper::Finish",
+              "ms": 8.062
+            },
+            {
+              "name": "CommandBufferProxyImpl::WaitForGetOffset",
+              "ms": 8.008
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 2077.981,
+          "durationMs": 189.823,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 9.942,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "XHRReadyStateChange",
+              "ms": 188.826,
+              "url": "http://127.0.0.1:65064/assets/environments/frame-reflection.hdr",
+              "readyState": 4
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 188.812
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 188.791,
+              "functionName": "p",
+              "line": 3
+            },
+            {
+              "name": "MinorGC",
+              "ms": 1.425
+            },
+            {
+              "name": "MinorGC",
+              "ms": 1.342
+            },
+            {
+              "name": "V8.GCScavenger",
+              "ms": 1.295
+            },
+            {
+              "name": "V8.GC_SCAVENGER",
+              "ms": 1.272
+            },
+            {
+              "name": "V8.GC_SCAVENGER_SCAVENGE",
+              "ms": 1.258
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 2719.906,
+          "durationMs": 89.286,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 0,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "TimerFire",
+              "ms": 89.28
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 89.261
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 89.245,
+              "functionName": "",
+              "line": 3
+            },
+            {
+              "name": "GLES2Implementation::GetShaderiv",
+              "ms": 8.577
+            },
+            {
+              "name": "ImplementationBase::WaitForCmd",
+              "ms": 8.571
+            },
+            {
+              "name": "CommandBufferHelper::Finish",
+              "ms": 8.569
+            },
+            {
+              "name": "CommandBufferProxyImpl::WaitForGetOffset",
+              "ms": 8.523
+            },
+            {
+              "name": "GLES2Implementation::GetShaderiv",
+              "ms": 7.865
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 3553.858,
+          "durationMs": 51.679,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 51.655,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "MajorGC",
+              "ms": 51.507
+            },
+            {
+              "name": "V8.GCFinalizeMC",
+              "ms": 51.309
+            },
+            {
+              "name": "V8.GC_MARK_COMPACTOR",
+              "ms": 51.237
+            },
+            {
+              "name": "V8.GC_MC_FINISH",
+              "ms": 3.515
+            },
+            {
+              "name": "V8.GC_MC_EVACUATE",
+              "ms": 1.821
+            },
+            {
+              "name": "V8.GC_MC_EVACUATE_UPDATE_POINTERS",
+              "ms": 1.161
+            },
+            {
+              "name": "V8.GC_MC_CLEAR",
+              "ms": 0.708
+            },
+            {
+              "name": "V8.GC_MC_CLEAR_JOIN_JOB",
+              "ms": 0.658
+            }
+          ]
+        }
+      ],
+      "uncompressedSHA256": "8a80e5e6c28bbba090390c1bab76972e34d0a8ef835ab6166999eb5c01fb4502",
+      "browser": "chrome",
+      "round": 2,
+      "rawBytes": 188886929,
+      "archiveBytes": 19981023
+    },
+    {
+      "file": "artifacts/testing/gameplay-motion/entry-trace-chrome-chrome-interior-design-003-3.trace.json.gz",
+      "sha256": "d3ca2ae913062c759a93995f49566a46c6fd0743fc280a5fa1b32b8c839d1261",
+      "eventCount": 1006825,
+      "markerCount": 50,
+      "phaseCount": 12,
+      "mainThread": {
+        "pid": 19364,
+        "tid": 22888
+      },
+      "rootTaskName": "ThreadControllerImpl::RunTask",
+      "rootTaskKinds": [
+        [
+          "ThreadControllerImpl::RunTask",
+          17030
+        ],
+        [
+          "BlinkScheduler_PerformMicrotaskCheckpoint",
+          13542
+        ],
+        [
+          "CommandBuffer::OrderingBarrier",
+          11032
+        ],
+        [
+          "GpuChannel::Flush",
+          3465
+        ],
+        [
+          "Receive mojo message",
+          422
+        ],
+        [
+          "SimpleWatcher::OnHandleReady",
+          66
+        ]
+      ],
+      "startupMs": {
+        "menu": 4025.755,
+        "practice": 990.43
+      },
+      "longTasks": [
+        {
+          "startFromDocumentMs": 659.777,
+          "durationMs": 1093.812,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 107.914,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "XHRReadyStateChange",
+              "ms": 1091.105,
+              "url": "http://127.0.0.1:65064/assets/models/interior-design-original-room.babylon",
+              "readyState": 4
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 1091.093
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 1088.619,
+              "functionName": "p",
+              "line": 3
+            },
+            {
+              "name": "V8.GCHandleGCRequest",
+              "ms": 8.638
+            },
+            {
+              "name": "MajorGC",
+              "ms": 8.595
+            },
+            {
+              "name": "V8.GCFinalizeMC",
+              "ms": 8.455
+            },
+            {
+              "name": "V8.GC_MARK_COMPACTOR",
+              "ms": 8.439
+            },
+            {
+              "name": "V8.GC_MC_EVACUATE",
+              "ms": 6.812
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 1754.183,
+          "durationMs": 83.91,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 0,
+          "layoutPaintMs": 0.164,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "ProxyMain::BeginMainFrame",
+              "ms": 83.904
+            },
+            {
+              "name": "FireAnimationFrame",
+              "ms": 83.346
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 83.338
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 83.326,
+              "functionName": "n._renderLoop",
+              "line": 3
+            },
+            {
+              "name": "GLES2Implementation::GetShaderiv",
+              "ms": 8.657
+            },
+            {
+              "name": "ImplementationBase::WaitForCmd",
+              "ms": 8.651
+            },
+            {
+              "name": "CommandBufferHelper::Finish",
+              "ms": 8.649
+            },
+            {
+              "name": "CommandBufferProxyImpl::WaitForGetOffset",
+              "ms": 8.626
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 1879.864,
+          "durationMs": 179.299,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 11.563,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "XHRReadyStateChange",
+              "ms": 177.566,
+              "url": "http://127.0.0.1:65064/assets/environments/frame-reflection.hdr",
+              "readyState": 4
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 177.53
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 177.506,
+              "functionName": "p",
+              "line": 3
+            },
+            {
+              "name": "MinorGC",
+              "ms": 3.89
+            },
+            {
+              "name": "V8.GCScavenger",
+              "ms": 3.766
+            },
+            {
+              "name": "V8.GC_SCAVENGER",
+              "ms": 3.744
+            },
+            {
+              "name": "V8.GC_SCAVENGER_SCAVENGE",
+              "ms": 3.724
+            },
+            {
+              "name": "MinorGC",
+              "ms": 1.129
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 2488.598,
+          "durationMs": 78.366,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 0.643,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "TimerFire",
+              "ms": 78.357
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 78.34
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 78.327,
+              "functionName": "",
+              "line": 3
+            },
+            {
+              "name": "GLES2Implementation::GetShaderiv",
+              "ms": 8.276
+            },
+            {
+              "name": "ImplementationBase::WaitForCmd",
+              "ms": 8.271
+            },
+            {
+              "name": "CommandBufferHelper::Finish",
+              "ms": 8.269
+            },
+            {
+              "name": "CommandBufferProxyImpl::WaitForGetOffset",
+              "ms": 8.251
+            },
+            {
+              "name": "GLES2Implementation::GetShaderiv",
+              "ms": 7.578
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 2885.981,
+          "durationMs": 55.489,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 0,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "TimerFire",
+              "ms": 55.484
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 55.455
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 55.442,
+              "functionName": "",
+              "line": 3
+            },
+            {
+              "name": "GLES2Implementation::GetShaderiv",
+              "ms": 7.327
+            },
+            {
+              "name": "ImplementationBase::WaitForCmd",
+              "ms": 7.315
+            },
+            {
+              "name": "CommandBufferHelper::Finish",
+              "ms": 7.313
+            },
+            {
+              "name": "CommandBufferProxyImpl::WaitForGetOffset",
+              "ms": 6.522
+            },
+            {
+              "name": "GLES2Implementation::GetShaderiv",
+              "ms": 2.05
+            }
+          ]
+        }
+      ],
+      "uncompressedSHA256": "f17cfd90a4bc22491d4ec9ba44fc8c4d238fdb1fed0b8596b9c4f001d5f22dab",
+      "browser": "chrome",
+      "round": 3,
+      "rawBytes": 190372383,
+      "archiveBytes": 19994814
+    },
+    {
+      "file": "artifacts/testing/gameplay-motion/entry-trace-edge-edge-interior-design-003-1.trace.json.gz",
+      "sha256": "087b3636b237e34d2f4178145ff4177cd112d2428092887bfaa3a4f2e95025da",
+      "eventCount": 1128335,
+      "markerCount": 50,
+      "phaseCount": 12,
+      "mainThread": {
+        "pid": 16196,
+        "tid": 11648
+      },
+      "rootTaskName": "ThreadControllerImpl::RunTask",
+      "rootTaskKinds": [
+        [
+          "ThreadControllerImpl::RunTask",
+          17708
+        ],
+        [
+          "Edge_RunTask",
+          17686
+        ],
+        [
+          "BlinkScheduler_PerformMicrotaskCheckpoint",
+          14190
+        ],
+        [
+          "CommandBuffer::OrderingBarrier",
+          9896
+        ],
+        [
+          "GpuChannel::Flush",
+          3062
+        ],
+        [
+          "Receive mojo message",
+          452
+        ]
+      ],
+      "startupMs": {
+        "menu": 6758.605,
+        "practice": 1004.759
+      },
+      "longTasks": [
+        {
+          "startFromDocumentMs": 1339.078,
+          "durationMs": 1964.612,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 154.865,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "XHRReadyStateChange",
+              "ms": 1962.749,
+              "url": "http://127.0.0.1:51595/assets/models/interior-design-original-room.babylon",
+              "readyState": 4
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 1962.707
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 1957.372,
+              "functionName": "p",
+              "line": 3
+            },
+            {
+              "name": "MinorGC",
+              "ms": 6.646
+            },
+            {
+              "name": "V8.GCScavenger",
+              "ms": 6.45
+            },
+            {
+              "name": "V8.GC_SCAVENGER",
+              "ms": 6.41
+            },
+            {
+              "name": "V8.GC_SCAVENGER_SCAVENGE",
+              "ms": 6.378
+            },
+            {
+              "name": "V8.GCHandleGCRequest",
+              "ms": 6.061
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 3305.097,
+          "durationMs": 383.387,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 0,
+          "layoutPaintMs": 0.207,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "ProxyMain::BeginMainFrame",
+              "ms": 383.368
+            },
+            {
+              "name": "FireAnimationFrame",
+              "ms": 382.419
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 382.394
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 382.367,
+              "functionName": "n._renderLoop",
+              "line": 3
+            },
+            {
+              "name": "GLES2Implementation::GetProgramiv",
+              "ms": 148.697
+            },
+            {
+              "name": "ImplementationBase::GetBucketContents",
+              "ms": 148.636
+            },
+            {
+              "name": "ImplementationBase::WaitForCmd",
+              "ms": 148.621
+            },
+            {
+              "name": "CommandBufferHelper::Finish",
+              "ms": 148.618
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 3773.469,
+          "durationMs": 280.26,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 17.123,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "XHRReadyStateChange",
+              "ms": 278.969,
+              "url": "http://127.0.0.1:51595/assets/environments/frame-reflection.hdr",
+              "readyState": 4
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 278.942
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 278.896,
+              "functionName": "p",
+              "line": 3
+            },
+            {
+              "name": "MinorGC",
+              "ms": 3.579
+            },
+            {
+              "name": "V8.GCScavenger",
+              "ms": 3.208
+            },
+            {
+              "name": "V8.GC_SCAVENGER",
+              "ms": 3.175
+            },
+            {
+              "name": "V8.GC_SCAVENGER_SCAVENGE",
+              "ms": 3.136
+            },
+            {
+              "name": "V8.GC_SCAVENGER_SCAVENGE_PARALLEL_PHASE",
+              "ms": 2.429
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 4055.772,
+          "durationMs": 52.569,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 0,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "XHRReadyStateChange",
+              "ms": 48.271,
+              "url": "http://127.0.0.1:51595/assets/environments/ball-reflection.hdr",
+              "readyState": 4
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 48.247
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 48.212,
+              "functionName": "p",
+              "line": 3
+            },
+            {
+              "name": "V8.DeoptimizeCode",
+              "ms": 0.097
+            },
+            {
+              "name": "XHRLoad",
+              "ms": 0.081,
+              "url": "http://127.0.0.1:51595/assets/environments/ball-reflection.hdr"
+            },
+            {
+              "name": "XHRReadyStateChange",
+              "ms": 0.071,
+              "url": "http://127.0.0.1:51595/assets/environments/ball-reflection.hdr",
+              "readyState": 2
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 0.057
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 0.049
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 4234.397,
+          "durationMs": 74.843,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 0,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "EventDispatch",
+              "ms": 74.82
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 74.785
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 74.755,
+              "functionName": "a",
+              "line": 3
+            },
+            {
+              "name": "RasterImplementation::ReadbackImagePixels",
+              "ms": 41.307
+            },
+            {
+              "name": "ImplementationBase::WaitForCmd",
+              "ms": 40.555
+            },
+            {
+              "name": "CommandBufferHelper::Finish",
+              "ms": 40.552
+            },
+            {
+              "name": "CommandBufferProxyImpl::WaitForGetOffset",
+              "ms": 40.496
+            },
+            {
+              "name": "RasterImplementation::RasterCHROMIUM",
+              "ms": 3.256
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 4402.659,
+          "durationMs": 69.943,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 0,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "EventDispatch",
+              "ms": 69.929
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 69.896
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 69.871,
+              "functionName": "a",
+              "line": 3
+            },
+            {
+              "name": "Decode Image",
+              "ms": 33.212
+            },
+            {
+              "name": "CommandBufferProxyImpl::WaitForToken",
+              "ms": 18.816
+            },
+            {
+              "name": "CommandBufferProxyImpl::WaitForToken",
+              "ms": 4.529
+            },
+            {
+              "name": "CommandBufferHelper::Flush",
+              "ms": 0.059
+            },
+            {
+              "name": "CommandBufferHelper::Flush",
+              "ms": 0.058
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 4473.466,
+          "durationMs": 59.681,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 0,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "EventDispatch",
+              "ms": 59.665
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 59.64
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 59.612,
+              "functionName": "a",
+              "line": 3
+            },
+            {
+              "name": "Decode Image",
+              "ms": 38.585
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 4573.237,
+          "durationMs": 52.001,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 0,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "EventDispatch",
+              "ms": 51.983
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 51.958
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 51.935,
+              "functionName": "a",
+              "line": 3
+            },
+            {
+              "name": "Decode Image",
+              "ms": 26.518
+            },
+            {
+              "name": "CommandBufferProxyImpl::WaitForToken",
+              "ms": 12.043
+            },
+            {
+              "name": "CommandBufferHelper::Flush",
+              "ms": 0.051
+            },
+            {
+              "name": "CommandBufferProxyImpl::Flush",
+              "ms": 0.04
+            },
+            {
+              "name": "CommandBuffer::OrderingBarrier",
+              "ms": 0.002
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 4674.038,
+          "durationMs": 59.311,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 0,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "EventDispatch",
+              "ms": 59.284
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 59.242
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 59.215,
+              "functionName": "a",
+              "line": 3
+            },
+            {
+              "name": "Decode Image",
+              "ms": 35.388
+            },
+            {
+              "name": "CommandBufferProxyImpl::WaitForToken",
+              "ms": 8.17
+            },
+            {
+              "name": "CommandBufferHelper::Flush",
+              "ms": 0.049
+            },
+            {
+              "name": "CommandBufferProxyImpl::Flush",
+              "ms": 0.037
+            },
+            {
+              "name": "CommandBuffer::OrderingBarrier",
+              "ms": 0.003
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 4772.812,
+          "durationMs": 512.439,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 0,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "TimerFire",
+              "ms": 512.432
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 512.415
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 512.4,
+              "functionName": "",
+              "line": 3
+            },
+            {
+              "name": "GLES2Implementation::GetProgramiv",
+              "ms": 130.038
+            },
+            {
+              "name": "ImplementationBase::GetBucketContents",
+              "ms": 129.854
+            },
+            {
+              "name": "ImplementationBase::WaitForCmd",
+              "ms": 129.844
+            },
+            {
+              "name": "CommandBufferHelper::Finish",
+              "ms": 129.842
+            },
+            {
+              "name": "CommandBufferProxyImpl::WaitForGetOffset",
+              "ms": 129.827
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 5601.709,
+          "durationMs": 65.805,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 0,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "TimerFire",
+              "ms": 65.797
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 65.777
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 65.762,
+              "functionName": "",
+              "line": 3
+            },
+            {
+              "name": "GLES2Implementation::GetProgramiv",
+              "ms": 27.695
+            },
+            {
+              "name": "ImplementationBase::GetBucketContents",
+              "ms": 27.676
+            },
+            {
+              "name": "ImplementationBase::WaitForCmd",
+              "ms": 27.669
+            },
+            {
+              "name": "CommandBufferHelper::Finish",
+              "ms": 27.668
+            },
+            {
+              "name": "CommandBufferProxyImpl::WaitForGetOffset",
+              "ms": 27.642
+            }
+          ]
+        }
+      ],
+      "uncompressedSHA256": "9b8e8c3926ec42edd024a465bf580ce636fe793111bac8e0159c3accec847d13",
+      "browser": "edge",
+      "round": 1,
+      "rawBytes": 223439129,
+      "archiveBytes": 23338516
+    },
+    {
+      "file": "artifacts/testing/gameplay-motion/entry-trace-edge-edge-interior-design-003-2.trace.json.gz",
+      "sha256": "524e2f78912c4f0266a9f7b3a9dd0f39f31d03eee08149dc71a3701e46ec9492",
+      "eventCount": 1099722,
+      "markerCount": 50,
+      "phaseCount": 12,
+      "mainThread": {
+        "pid": 9460,
+        "tid": 6452
+      },
+      "rootTaskName": "ThreadControllerImpl::RunTask",
+      "rootTaskKinds": [
+        [
+          "ThreadControllerImpl::RunTask",
+          17444
+        ],
+        [
+          "Edge_RunTask",
+          17300
+        ],
+        [
+          "BlinkScheduler_PerformMicrotaskCheckpoint",
+          13299
+        ],
+        [
+          "CommandBuffer::OrderingBarrier",
+          10445
+        ],
+        [
+          "GpuChannel::Flush",
+          3417
+        ],
+        [
+          "Receive mojo message",
+          432
+        ]
+      ],
+      "startupMs": {
+        "menu": 4314.924,
+        "practice": 1018.216
+      },
+      "longTasks": [
+        {
+          "startFromDocumentMs": 709.01,
+          "durationMs": 1178.172,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 103.671,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "XHRReadyStateChange",
+              "ms": 1176.681,
+              "url": "http://127.0.0.1:51595/assets/models/interior-design-original-room.babylon",
+              "readyState": 4
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 1176.656
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 1174.508,
+              "functionName": "p",
+              "line": 3
+            },
+            {
+              "name": "GpuChannelHost::CreateViewCommandBuffer",
+              "ms": 55.884
+            },
+            {
+              "name": "CommandBufferProxyImpl::Initialize",
+              "ms": 55.881
+            },
+            {
+              "name": "V8.GCHandleGCRequest",
+              "ms": 5.574
+            },
+            {
+              "name": "MajorGC",
+              "ms": 5.513
+            },
+            {
+              "name": "V8.GCFinalizeMC",
+              "ms": 5.367
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 1887.88,
+          "durationMs": 95.274,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 0,
+          "layoutPaintMs": 0.67,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "ProxyMain::BeginMainFrame",
+              "ms": 95.263
+            },
+            {
+              "name": "FireAnimationFrame",
+              "ms": 93.286
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 93.274
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 93.234,
+              "functionName": "n._renderLoop",
+              "line": 3
+            },
+            {
+              "name": "GLES2Implementation::GetShaderiv",
+              "ms": 9.408
+            },
+            {
+              "name": "ImplementationBase::WaitForCmd",
+              "ms": 9.4
+            },
+            {
+              "name": "CommandBufferHelper::Finish",
+              "ms": 9.398
+            },
+            {
+              "name": "CommandBufferProxyImpl::WaitForGetOffset",
+              "ms": 9.372
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 2036.535,
+          "durationMs": 193.994,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 13.306,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "XHRReadyStateChange",
+              "ms": 192.952,
+              "url": "http://127.0.0.1:51595/assets/environments/frame-reflection.hdr",
+              "readyState": 4
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 192.936
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 192.905,
+              "functionName": "p",
+              "line": 3
+            },
+            {
+              "name": "MinorGC",
+              "ms": 4.596
+            },
+            {
+              "name": "V8.GCScavenger",
+              "ms": 4.46
+            },
+            {
+              "name": "V8.GC_SCAVENGER",
+              "ms": 4.438
+            },
+            {
+              "name": "V8.GC_SCAVENGER_SCAVENGE",
+              "ms": 4.398
+            },
+            {
+              "name": "MinorGC",
+              "ms": 1.257
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 2792.998,
+          "durationMs": 88.363,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 0,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "TimerFire",
+              "ms": 88.347
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 88.324
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 88.308,
+              "functionName": "",
+              "line": 3
+            },
+            {
+              "name": "GLES2Implementation::GetShaderiv",
+              "ms": 8.513
+            },
+            {
+              "name": "ImplementationBase::WaitForCmd",
+              "ms": 8.507
+            },
+            {
+              "name": "CommandBufferHelper::Finish",
+              "ms": 8.505
+            },
+            {
+              "name": "CommandBufferProxyImpl::WaitForGetOffset",
+              "ms": 8.477
+            },
+            {
+              "name": "GLES2Implementation::GetShaderiv",
+              "ms": 8.128
+            }
+          ]
+        }
+      ],
+      "uncompressedSHA256": "53a726ab5ec458029a2ef98b314f956ace95b2138277872473cd90134d4bab9f",
+      "browser": "edge",
+      "round": 2,
+      "rawBytes": 216641145,
+      "archiveBytes": 22610117
+    },
+    {
+      "file": "artifacts/testing/gameplay-motion/entry-trace-edge-edge-interior-design-003-3.trace.json.gz",
+      "sha256": "dcdf9a369c025f976e3874d014e5ac810d55d020b658b41114ce5594d76ec7d5",
+      "eventCount": 1093210,
+      "markerCount": 50,
+      "phaseCount": 12,
+      "mainThread": {
+        "pid": 26060,
+        "tid": 18808
+      },
+      "rootTaskName": "ThreadControllerImpl::RunTask",
+      "rootTaskKinds": [
+        [
+          "ThreadControllerImpl::RunTask",
+          17323
+        ],
+        [
+          "Edge_RunTask",
+          17291
+        ],
+        [
+          "BlinkScheduler_PerformMicrotaskCheckpoint",
+          13676
+        ],
+        [
+          "CommandBuffer::OrderingBarrier",
+          10018
+        ],
+        [
+          "GpuChannel::Flush",
+          2654
+        ],
+        [
+          "Receive mojo message",
+          429
+        ]
+      ],
+      "startupMs": {
+        "menu": 4960.14,
+        "practice": 994.799
+      },
+      "longTasks": [
+        {
+          "startFromDocumentMs": 967.198,
+          "durationMs": 1473.963,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 112.096,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "XHRReadyStateChange",
+              "ms": 1471.092,
+              "url": "http://127.0.0.1:51595/assets/models/interior-design-original-room.babylon",
+              "readyState": 4
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 1471.051
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 1465.538,
+              "functionName": "p",
+              "line": 3
+            },
+            {
+              "name": "MinorGC",
+              "ms": 4.795
+            },
+            {
+              "name": "V8.GCScavenger",
+              "ms": 4.641
+            },
+            {
+              "name": "V8.GC_SCAVENGER",
+              "ms": 4.605
+            },
+            {
+              "name": "V8.GC_SCAVENGER_SCAVENGE",
+              "ms": 4.579
+            },
+            {
+              "name": "MinorGC",
+              "ms": 4.309
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 2442.094,
+          "durationMs": 137.584,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 0,
+          "layoutPaintMs": 0.203,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "ProxyMain::BeginMainFrame",
+              "ms": 137.565
+            },
+            {
+              "name": "FireAnimationFrame",
+              "ms": 136.763
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 136.735
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 136.712,
+              "functionName": "n._renderLoop",
+              "line": 3
+            },
+            {
+              "name": "GLES2Implementation::GetShaderiv",
+              "ms": 14.565
+            },
+            {
+              "name": "ImplementationBase::WaitForCmd",
+              "ms": 14.556
+            },
+            {
+              "name": "CommandBufferHelper::Finish",
+              "ms": 14.554
+            },
+            {
+              "name": "CommandBufferProxyImpl::WaitForGetOffset",
+              "ms": 14.521
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 2641.803,
+          "durationMs": 222.342,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 11.114,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "XHRReadyStateChange",
+              "ms": 221.161,
+              "url": "http://127.0.0.1:51595/assets/environments/frame-reflection.hdr",
+              "readyState": 4
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 221.141
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 221.11,
+              "functionName": "p",
+              "line": 3
+            },
+            {
+              "name": "MinorGC",
+              "ms": 1.74
+            },
+            {
+              "name": "MinorGC",
+              "ms": 1.591
+            },
+            {
+              "name": "V8.GCScavenger",
+              "ms": 1.565
+            },
+            {
+              "name": "V8.GC_SCAVENGER",
+              "ms": 1.545
+            },
+            {
+              "name": "V8.GC_SCAVENGER_SCAVENGE",
+              "ms": 1.515
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 3329.665,
+          "durationMs": 52.257,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 0,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "EventDispatch",
+              "ms": 52.237
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 52.212
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 52.177,
+              "functionName": "a",
+              "line": 3
+            },
+            {
+              "name": "Decode Image",
+              "ms": 32.481
+            },
+            {
+              "name": "CommandBufferProxyImpl::WaitForToken",
+              "ms": 7.587
+            },
+            {
+              "name": "CommandBufferHelper::Flush",
+              "ms": 0.036
+            },
+            {
+              "name": "CommandBufferProxyImpl::Flush",
+              "ms": 0.028
+            },
+            {
+              "name": "CommandBuffer::OrderingBarrier",
+              "ms": 0.002
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 3418,
+          "durationMs": 95.957,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 0,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "TimerFire",
+              "ms": 95.95
+            },
+            {
+              "name": "v8.callFunction",
+              "ms": 95.931
+            },
+            {
+              "name": "FunctionCall",
+              "ms": 95.915,
+              "functionName": "",
+              "line": 3
+            },
+            {
+              "name": "GLES2Implementation::GetShaderiv",
+              "ms": 9.572
+            },
+            {
+              "name": "ImplementationBase::WaitForCmd",
+              "ms": 9.566
+            },
+            {
+              "name": "CommandBufferHelper::Finish",
+              "ms": 9.564
+            },
+            {
+              "name": "CommandBufferProxyImpl::WaitForGetOffset",
+              "ms": 9.536
+            },
+            {
+              "name": "GLES2Implementation::GetShaderiv",
+              "ms": 9.317
+            }
+          ]
+        },
+        {
+          "startFromDocumentMs": 4216.833,
+          "durationMs": 65.207,
+          "phase": "startup:menu",
+          "overlaps": [],
+          "gcMs": 65.185,
+          "layoutPaintMs": 0,
+          "compileMs": 0,
+          "largestChildren": [
+            {
+              "name": "MajorGC",
+              "ms": 64.943
+            },
+            {
+              "name": "V8.GCFinalizeMC",
+              "ms": 64.776
+            },
+            {
+              "name": "V8.GC_MARK_COMPACTOR",
+              "ms": 64.755
+            },
+            {
+              "name": "V8.GC_MC_FINISH",
+              "ms": 3.267
+            },
+            {
+              "name": "V8.GC_MC_EVACUATE",
+              "ms": 1.533
+            },
+            {
+              "name": "V8.GC_MC_EVACUATE_UPDATE_POINTERS",
+              "ms": 0.917
+            },
+            {
+              "name": "V8.GC_MC_CLEAR",
+              "ms": 0.806
+            },
+            {
+              "name": "V8.GC_MC_CLEAR_JOIN_JOB",
+              "ms": 0.781
+            }
+          ]
+        }
+      ],
+      "uncompressedSHA256": "865ae94eec94dfb98385660e794121cab27588068fbc78e83348f6a37188d94c",
+      "browser": "edge",
+      "round": 3,
+      "rawBytes": 216792262,
+      "archiveBytes": 22605151
+    }
+  ],
+  "limitations": [
+    "Trace overhead differs from the untraced baseline.",
+    "Task overlap is temporal evidence, not proof that preceding input caused the task.",
+    "GPU/cc scheduling events are not hardware GPU duration measurements."
+  ]
+}

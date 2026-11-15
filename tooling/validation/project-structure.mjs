@@ -2,8 +2,8 @@ import assert from 'node:assert/strict';
 import { readdir, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { ROOT } from '../../config/project.config.mjs';
-import { filesIn } from './integrity.mjs';
-import { ARTIFACT_CATEGORIES } from './artifact-paths.mjs';
+import { filesIn } from '../lib/integrity.mjs';
+import { ARTIFACT_CATEGORIES } from '../lib/artifact-paths.mjs';
 
 const rootDirectories = new Set([
   'src',

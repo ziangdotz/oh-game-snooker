@@ -140,13 +140,15 @@ export async function waitForHome(page, id) {
       game._currentController.state === 3 &&
       menu?.isActive &&
       !menu.needsUpdate &&
+      !menu.element.inert &&
+      !game._uiLayer.isBlocked &&
       game._gView._scene.isReady() &&
       game._gView._scene.metadata.interiorDesign.id === expected
     );
   }, id);
   await page.locator('.interior-transition').waitFor({ state: 'hidden' });
   assert.equal(
-    await page.evaluate(() => window.sessionStorage.getItem('oh-my-snooker:interior-transition')),
+    await page.evaluate(() => window.sessionStorage.getItem('oh-game-snooker:interior-transition')),
     null,
   );
 }

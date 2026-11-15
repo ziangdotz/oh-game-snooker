@@ -1,4 +1,4 @@
-Oh My Snooker - retained component attribution
+Oh Game Snooker - retained component attribution
 
 Game code and game assets: Zhengxi Zhang, as credited in the local PCOL baseline.
 Rendering engine: Babylon.js, as credited by the game.

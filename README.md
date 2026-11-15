@@ -1,4 +1,4 @@
-# Oh My Snooker
+# Oh Game Snooker
 
 可离线运行的 3D 斯诺克工程。全部运行源码、资产、模板与第三方依赖位于 `src`；冻结 PCOL 仅用于完整性校验和行为对照。
 
@@ -68,3 +68,7 @@
 源码、冻结基准、测试、文档和验证摘要按[仓库维护约定](docs/development/repository-workflow.md)提交；生成输出、缓存、截图与逐帧测量数据由 `.gitignore` 排除。冻结资源、第三方依赖和资产保持原始字节。现有署名见[src/third-party/notices.txt](src/third-party/notices.txt)。
 
 功能开发前的工程审查、清理范围和验收结果见[工程规范化记录](docs/validation/project-normalization.md)。
+
+当前本机真实操作、GPU、启动/场馆切换和联网结算的测量范围、结果及复测命令见[帧耗时基线](docs/validation/frame-time-baseline.md)。
+
+基于上述基线的等待链优化、焦点修复、前后测量与时间对齐trace见[场馆切换与入场优化](docs/validation/entry-optimization.md)。

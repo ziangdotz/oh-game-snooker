@@ -224,7 +224,7 @@ try {
             sha256(JSON.stringify(baselineProfile)),
             'Original scene geometry, material, texture or light changed: ' + variant,
           );
-          assert.equal(await page.title(), 'OH MY SNOOKER');
+          assert.equal(await page.title(), 'OH GAME SNOOKER');
           assert.equal(
             await page.evaluate(
               () => window.__pcolTestGame._gView._scene.metadata.interiorDesign.id,

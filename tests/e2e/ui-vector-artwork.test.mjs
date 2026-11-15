@@ -236,7 +236,7 @@ try {
             .getByRole('button', { name: 'RESUME', exact: true })
             .click();
           await page.locator('.pause-box').waitFor({ state: 'hidden' });
-          assert.equal(await page.title(), 'OH MY SNOOKER');
+          assert.equal(await page.title(), 'OH GAME SNOOKER');
           assert.deepEqual(result.errors, []);
           result.passed = true;
           console.log(

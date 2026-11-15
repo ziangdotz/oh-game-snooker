@@ -9,12 +9,45 @@ import { ROOT } from '../../config/project.config.mjs';
 import { inspectSourceEntry } from '../../tooling/testing/runtime-inspection.mjs';
 import { waitForCamera } from '../helpers/browser-observations.mjs';
 
+const options = { runs: 1, profile: false, trace: false };
+const args = process.argv.slice(2);
+for (let i = 0; i < args.length; i += 2) {
+  const key = args[i]?.slice(2);
+  const value = args[i + 1];
+  if (
+    !['browser', 'design', 'label', 'runs', 'profile', 'trace'].includes(key) ||
+    value === undefined
+  ) {
+    throw new Error(
+      'Usage: node tests/e2e/gameplay-motion.test.mjs [--browser chrome|edge] [--design interior-design-ID] [--label LABEL] [--runs 1..5] [--profile true|false] [--trace true|false]',
+    );
+  }
+  options[key] =
+    key === 'runs' ? Number(value) : ['profile', 'trace'].includes(key) ? value === 'true' : value;
+  if (['profile', 'trace'].includes(key) && !['true', 'false'].includes(value)) {
+    throw new Error('Invalid profile option');
+  }
+}
+if (
+  (options.browser && !['chrome', 'edge'].includes(options.browser)) ||
+  (options.design && !/^interior-design-(original|00[1-3])$/.test(options.design)) ||
+  (options.label && !/^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$/.test(options.label)) ||
+  !Number.isInteger(options.runs) ||
+  options.runs < 1 ||
+  options.runs > 5
+) {
+  throw new Error('Invalid gameplay measurement options');
+}
 const probeDpr = 2;
-const reportPath = path.join(ROOT, 'reports/measurement/gameplay-motion-after.json');
+const reportPath = path.join(
+  ROOT,
+  'reports/measurement/gameplay-motion-' + (options.label || 'after') + '.json',
+);
 const output = path.join(ROOT, 'artifacts/testing/gameplay-motion');
 await mkdir(output, { recursive: true });
 const report = {
   date: new Date().toISOString(),
+  options,
   method: `Optimized source game, actual mouse/keyboard, Chrome/Edge hardware WebGL, 1440x900 DPR${probeDpr}, GPU timer queries disabled. Real aim direction changes and Alt-drag spin tip changes supplement walking and shooting. No clock, RAF or WebGL replacement. Input latency is event-to-observed-render, not display latency.`,
   scenarios: [],
   limitations: [
@@ -114,6 +147,23 @@ async function runScenario(browserName, design, round) {
   });
   const page = await context.newPage();
   page.setDefaultTimeout(45000);
+  const artifactName = [options.label, browserName, design, round]
+    .filter((value) => value !== undefined)
+    .join('-');
+  let profiler;
+  let timeline;
+  if (options.trace) {
+    timeline = await context.newCDPSession(page);
+    await timeline.send('Tracing.start', {
+      categories:
+        'toplevel,devtools.timeline,blink.user_timing,loading,v8,cc,gpu,disabled-by-default-v8.gc,disabled-by-default-devtools.timeline',
+      transferMode: 'ReturnAsStream',
+    });
+    await page.addInitScript(() => {
+      window.__frameTraceEnabled = true;
+      window.performance.mark('startup:document');
+    });
+  }
   const scenario = {
     browser: browserName,
     version: browser.version(),
@@ -145,8 +195,32 @@ async function runScenario(browserName, design, round) {
       () =>
         window.__pcolTestGame?._currentController?.state === 3 &&
         window.__pcolTestGame._currentController._homeMainMenu?.isActive &&
+        !window.__pcolTestGame._currentController._homeMainMenu.needsUpdate &&
+        !window.__pcolTestGame._currentController._homeMainMenu.element.inert &&
+        !window.__pcolTestGame._uiLayer.isBlocked &&
+        document.querySelector('.interior-transition').hidden &&
         window.__pcolTestGame._gView._scene.isReady(),
     );
+    scenario.menuEntry = await page.evaluate(() => {
+      const tween = window.__pcolTestGame._currentController._enterAnimation;
+      return {
+        originalMs: tween.totalLifeTime * 1000,
+        timeScale: tween.timeScale,
+        effectiveMs: (tween.totalLifeTime / tween.timeScale) * 1000,
+      };
+    });
+    if (options.trace) {
+      await page.evaluate(() => {
+        window.performance.mark('startup:menu-ready');
+        const button = [...document.querySelectorAll('.side-button')].find(
+          (node) => node.textContent === 'PRACTICE',
+        );
+        button.addEventListener('click', () => window.performance.mark('startup:practice-click'), {
+          once: true,
+          capture: true,
+        });
+      });
+    }
     await page.locator('.side-button').filter({ hasText: 'PRACTICE' }).click();
     await page.waitForFunction(() => {
       const g = window.__pcolTestGame;
@@ -157,6 +231,17 @@ async function runScenario(browserName, design, round) {
         g._gView._scene.isReady()
       );
     });
+    scenario.matchEntry = await page.evaluate(() => {
+      const tween = window.__pcolTestGame._currentController._enterAnimation;
+      return {
+        originalMs: tween.totalLifeTime * 1000,
+        timeScale: tween.timeScale,
+        effectiveMs: (tween.totalLifeTime / tween.timeScale) * 1000,
+      };
+    });
+    if (options.trace) {
+      await page.evaluate(() => window.performance.mark('startup:practice-ready'));
+    }
     await place(page);
     assert.equal(
       await page.evaluate(() => window.__pcolTestGame._uiLayer.isBlocked),
@@ -243,6 +328,9 @@ async function runScenario(browserName, design, round) {
       });
       const input = (event) => {
         if (trace) {
+          if (window.__frameTraceEnabled && event.type !== 'pointermove') {
+            window.performance.mark('input:' + event.type + ':' + (event.code || 'pointer'));
+          }
           trace.inputs.push({
             type: event.type,
             key: event.code || null,
@@ -254,6 +342,8 @@ async function runScenario(browserName, design, round) {
       document.addEventListener('keyup', input, true);
       document.addEventListener('pointermove', input, true);
       document.addEventListener('wheel', input, true);
+      document.addEventListener('pointerdown', input, true);
+      document.addEventListener('pointerup', input, true);
       let obs;
       try {
         obs = new window.PerformanceObserver((list) => {
@@ -270,6 +360,9 @@ async function runScenario(browserName, design, round) {
         /* Long-task observation is optional on this browser. */
       }
       window.__smoothnessStart = (name) => {
+        if (window.__frameTraceEnabled) {
+          window.performance.mark('phase:' + name + ':start');
+        }
         trace = {
           name,
           start: window.performance.now(),
@@ -285,6 +378,10 @@ async function runScenario(browserName, design, round) {
       };
       window.__smoothnessEnd = () => {
         const result = trace;
+        if (window.__frameTraceEnabled) {
+          window.performance.mark('phase:' + trace.name + ':end');
+        }
+        result.timeline = { startMs: trace.start, endMs: window.performance.now() };
         trace = null;
         result.elapsedMs = window.performance.now() - result.start;
         delete result.last;
@@ -297,13 +394,34 @@ async function runScenario(browserName, design, round) {
         e.onEndFrameObservable.remove(end);
         gpu.dispose();
         obs?.disconnect();
+        for (const type of [
+          'keydown',
+          'keyup',
+          'pointermove',
+          'pointerdown',
+          'pointerup',
+          'wheel',
+        ]) {
+          document.removeEventListener(type, input, true);
+        }
       };
     });
+    if (options.profile) {
+      profiler = await context.newCDPSession(page);
+      await profiler.send('Profiler.enable');
+      await profiler.send('Profiler.start');
+    }
     // Warm the real movement path before steady-state measurement.
+    if (options.trace) {
+      await page.evaluate(() => window.performance.mark('warmup:orbit:start'));
+    }
     await page.keyboard.down('KeyD');
     await page.waitForTimeout(1500);
     await page.keyboard.up('KeyD');
     await waitForCamera(page);
+    if (options.trace) {
+      await page.evaluate(() => window.performance.mark('warmup:orbit:end'));
+    }
     await closeGuide(page);
     await page.locator('#game-view').focus();
     for (const key of ['KeyD', 'KeyA']) {
@@ -449,18 +567,50 @@ async function runScenario(browserName, design, round) {
       .catch(() => {});
     console.log(`${browserName} ${design}: FAILED ${error.message}`);
   } finally {
+    if (profiler) {
+      const { profile } = await profiler.send('Profiler.stop');
+      scenario.cpuProfile = path
+        .relative(ROOT, path.join(output, artifactName + '.cpuprofile'))
+        .split(path.sep)
+        .join('/');
+      await writeFile(path.join(ROOT, scenario.cpuProfile), JSON.stringify(profile));
+      await profiler.detach();
+    }
+    if (timeline) {
+      const complete = new Promise((resolve) => timeline.once('Tracing.tracingComplete', resolve));
+      await timeline.send('Tracing.end');
+      const { stream } = await complete;
+      const chunks = [];
+      try {
+        for (;;) {
+          const part = await timeline.send('IO.read', { handle: stream });
+          chunks.push(Buffer.from(part.data, part.base64Encoded ? 'base64' : 'utf8'));
+          if (part.eof) {
+            break;
+          }
+        }
+      } finally {
+        await timeline.send('IO.close', { handle: stream });
+      }
+      scenario.timelineTrace = path
+        .relative(ROOT, path.join(output, artifactName + '.trace.json'))
+        .split(path.sep)
+        .join('/');
+      await writeFile(path.join(ROOT, scenario.timelineTrace), Buffer.concat(chunks));
+      await timeline.detach();
+    }
     await save();
     await context.close();
   }
 }
 try {
-  for (const name of ['chrome', 'edge']) {
+  for (const name of options.browser ? [options.browser] : ['chrome', 'edge']) {
     const executablePath =
       name === 'chrome'
         ? 'C:/Program Files/Google/Chrome/Application/chrome.exe'
         : 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe';
     browser = await chromium.launch({ executablePath, headless: true });
-    for (let round = 1; round <= 1; round++) {
+    for (let round = 1; round <= options.runs; round++) {
       const designs = [
         'interior-design-original',
         'interior-design-001',
@@ -470,14 +620,17 @@ try {
       if (round === 2) {
         designs.reverse();
       }
-      for (const design of designs) {
+      for (const design of options.design ? [options.design] : designs) {
         await runScenario(name, design, round);
       }
     }
     await browser.close();
     browser = null;
   }
-  report.passed = report.scenarios.length === 8 && report.scenarios.every((s) => s.passed);
+  report.passed =
+    report.scenarios.length ===
+      (options.browser ? 1 : 2) * (options.design ? 1 : 4) * options.runs &&
+    report.scenarios.every((s) => s.passed);
   if (!report.passed) {
     process.exitCode = 1;
   }

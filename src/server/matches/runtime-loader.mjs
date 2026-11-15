@@ -1,3 +1,4 @@
+import createFactoryLoader from '../../runtime/factory-loader.js';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -27,29 +28,7 @@ async function importFactories(catalog) {
 export async function createRuntimeCatalog() {
   const catalog = JSON.parse(await readFile(RUNTIME_CATALOG, 'utf8'));
   const factories = await importFactories(catalog);
-  function createLoader() {
-    const instances = new Map();
-    function loadModule(id) {
-      if (instances.has(id)) {
-        return instances.get(id).exports;
-      }
-      const factory = factories.get(id);
-      if (!factory) {
-        throw new Error('Unknown runtime module: ' + id);
-      }
-      const module = { id, loaded: false, exports: {} };
-      instances.set(id, module);
-      try {
-        factory.call(module.exports, module, module.exports, loadModule);
-      } catch (error) {
-        instances.delete(id);
-        throw error;
-      }
-      module.loaded = true;
-      return module.exports;
-    }
-    return loadModule;
-  }
+  const createLoader = () => createFactoryLoader(factories);
   return { catalog, createLoader };
 }
 

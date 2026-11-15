@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14T13:34:18.121Z",
+  "passed": true,
+  "sourceManifestSHA256": "431228f95333daaad0bb50d4f17c9db2a4c9554fee480156ab55afee77256937",
+  "baselineManifestSHA256": "d0ace5802ce84ee0afea98df0cad204e770aae09376e8354c77adc2234af4681",
+  "changes": [
+    "Complete ready-scene loading before restoring hotseat setup or a saved room.",
+    "Separate room request and match handoff methods from local menu UI orchestration.",
+    "Remove unread room-dialog state and redundant protocol alias.",
+    "Share factory instantiation between browser and Node while retaining isolated per-loader caches."
+  ],
+  "checks": {
+    "projectWithBrowser": true,
+    "unitAndIntegrationPassed": 202,
+    "hotseatScenarios": 24,
+    "hotseatLifecycleScenarios": 2,
+    "sourceStandalone": true,
+    "continuousPlay": true
+  },
+  "evidence": [
+    "reports/validation/hotseat-match.json",
+    "reports/validation/hotseat-lifecycle.json",
+    "artifacts/testing/continuous-play/report.json"
+  ],
+  "retainedBoundaries": [
+    "Third-party sloppy-mode adapter",
+    "Named circular factory ABI",
+    "Independent src startup",
+    "Frozen PCOL bytes",
+    "Node-only server I/O"
+  ],
+  "limitations": [
+    "No claim of improved frame time or GPU performance.",
+    "Finite play regression is not a complete physically played match or multi-hour stability proof.",
+    "Commercial deployment and cross-device verification remain separate."
+  ]
+}

@@ -49,7 +49,7 @@ async function fontFallback(browser, target, failedFont) {
       if (!window.sessionStorage.getItem('__fallbackSeeded')) {
         window.sessionStorage.setItem('__fallbackSeeded', '1');
         window.sessionStorage.setItem(
-          'oh-my-snooker:interior-transition',
+          'oh-game-snooker:interior-transition',
           JSON.stringify({
             id: 'interior-design-001',
             name: 'Modern Club',
@@ -148,7 +148,7 @@ try {
           ) {
             window.sessionStorage.setItem('__transitionFontSeeded', '1');
             window.sessionStorage.setItem(
-              'oh-my-snooker:interior-transition',
+              'oh-game-snooker:interior-transition',
               JSON.stringify({
                 id: 'interior-design-001',
                 name: 'Modern Club',

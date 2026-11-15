@@ -1,6 +1,6 @@
 /** Browser I/O for one pending interior transition; never stores a room preference. */
 export default function createInteriorDesignNavigation(browser) {
-  const key = 'oh-my-snooker:interior-transition';
+  const key = 'oh-game-snooker:interior-transition';
   function read() {
     try {
       const record = JSON.parse(browser.sessionStorage.getItem(key));

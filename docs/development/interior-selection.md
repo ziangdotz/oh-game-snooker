@@ -83,3 +83,7 @@ compose-game统一注入UiComponent、PropertyTween、Easing、DialogEvents、re
 浏览器与服务夹具由tests/helpers/runtime-fixture.mjs统一维护，专题结果只对应其实际运行版本。
 
 同机Chrome、1440×900单次前后测量中，重载切换原需4.3–5秒；同页首次准备约1.1–1.4秒，缓存后约0.52秒，其中场景就绪约65–69ms，余下主要为菜单动画。六目标960×600验证的36次缓存切换没有加载卡片闪现。条件、源码哈希、原始记录哈希与限制见[切换耗时摘要](../../reports/measurement/interior-switching-summary.json)；复测renderer为Intel Arc 140V，结果不保证其他设备耗时。
+
+## 返回动效与输入交接
+
+从抽屉返回菜单使用160ms整体恢复，不重播首次逐项入场；抽屉仍按原轨迹关闭，CLOSE之前菜单保持inert。首页与本地比赛相机仅通过既有tween缩放限制入场时长，保留目标与路径。延迟默认聚焦不抢走用户已经选择的面板控件。行为差异、回归及前后测量见[入场与焦点优化](../validation/entry-optimization.md)。

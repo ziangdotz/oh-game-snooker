@@ -1,29 +1,12 @@
+import createFactoryLoader from './factory-loader.js';
+
 /** Named factory boundary preserves cached exports and circular dependencies. */
 export default function createModuleLoader(bundlePaths, { loadFactories } = {}) {
   const factories = new Map();
-  const instances = new Map();
   const pendingBundles = new Map();
   const registeredBundles = new Set();
 
-  function requireModule(id) {
-    if (instances.has(id)) {
-      return instances.get(id).exports;
-    }
-    const factory = factories.get(id);
-    if (!factory) {
-      throw new Error(`Unknown runtime module: ${id}`);
-    }
-    const module = { id, loaded: false, exports: {} };
-    instances.set(id, module);
-    try {
-      factory.call(module.exports, module, module.exports, requireModule);
-    } catch (error) {
-      instances.delete(id);
-      throw error;
-    }
-    module.loaded = true;
-    return module.exports;
-  }
+  const requireModule = createFactoryLoader(factories);
 
   function register(bundleId, entries) {
     if (!Object.hasOwn(bundlePaths, bundleId) || registeredBundles.has(bundleId)) {

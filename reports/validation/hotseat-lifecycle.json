@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-20T07:03:41.435Z",
+  "date": "2026-11-14T14:46:53.563Z",
   "scenarios": [
     {
       "browser": "chrome",
@@ -8,6 +8,109 @@
       "errors": [],
       "refreshRestoresSetupWithoutMatch": true,
       "venueFailureCancelRetry": true,
+      "duplicateNamesRejected": true,
+      "duplicateNameTrace": [
+        {
+          "type": "focusin",
+          "time": 8234.699999988079,
+          "target": "game-view",
+          "names": [
+            "Carol",
+            "Dan"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "focusin",
+          "time": 15776.599999964237,
+          "target": "player-1",
+          "names": [
+            "Carol",
+            "Dan"
+          ],
+          "pendingFocus": true
+        },
+        {
+          "type": "input",
+          "time": 15778.399999976158,
+          "target": "player-1",
+          "names": [
+            " Alice ",
+            "Dan"
+          ],
+          "pendingFocus": true
+        },
+        {
+          "type": "focusin",
+          "time": 15785.300000011921,
+          "target": "player-2",
+          "names": [
+            " Alice ",
+            "Dan"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "input",
+          "time": 15786.300000011921,
+          "target": "player-2",
+          "names": [
+            " Alice ",
+            "alice"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "focusin",
+          "time": 15817.800000011921,
+          "target": "venue",
+          "names": [
+            " Alice ",
+            "alice"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "input",
+          "time": 15817.899999976158,
+          "target": "venue",
+          "names": [
+            " Alice ",
+            "alice"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "focusin",
+          "time": 15849.899999976158,
+          "target": "START MATCH",
+          "names": [
+            " Alice ",
+            "alice"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "submit",
+          "time": 15850.099999964237,
+          "target": "hotseat-setup-form",
+          "names": [
+            " Alice ",
+            "alice"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "focusin",
+          "time": 15850.599999964237,
+          "target": "player-2",
+          "names": [
+            " Alice ",
+            "alice"
+          ],
+          "pendingFocus": false
+        }
+      ],
       "realShots": [
         {
           "owner": 0,
@@ -43,6 +146,109 @@
       "errors": [],
       "refreshRestoresSetupWithoutMatch": true,
       "venueFailureCancelRetry": true,
+      "duplicateNamesRejected": true,
+      "duplicateNameTrace": [
+        {
+          "type": "focusin",
+          "time": 6402.700000047684,
+          "target": "game-view",
+          "names": [
+            "Carol",
+            "Dan"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "focusin",
+          "time": 13730.200000047684,
+          "target": "player-1",
+          "names": [
+            "Carol",
+            "Dan"
+          ],
+          "pendingFocus": true
+        },
+        {
+          "type": "input",
+          "time": 13732.200000047684,
+          "target": "player-1",
+          "names": [
+            " Alice ",
+            "Dan"
+          ],
+          "pendingFocus": true
+        },
+        {
+          "type": "focusin",
+          "time": 13735.200000047684,
+          "target": "player-2",
+          "names": [
+            " Alice ",
+            "Dan"
+          ],
+          "pendingFocus": true
+        },
+        {
+          "type": "input",
+          "time": 13737.700000047684,
+          "target": "player-2",
+          "names": [
+            " Alice ",
+            "alice"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "focusin",
+          "time": 13774.700000047684,
+          "target": "venue",
+          "names": [
+            " Alice ",
+            "alice"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "input",
+          "time": 13774.900000035763,
+          "target": "venue",
+          "names": [
+            " Alice ",
+            "alice"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "focusin",
+          "time": 13808.300000011921,
+          "target": "START MATCH",
+          "names": [
+            " Alice ",
+            "alice"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "submit",
+          "time": 13808.5,
+          "target": "hotseat-setup-form",
+          "names": [
+            " Alice ",
+            "alice"
+          ],
+          "pendingFocus": false
+        },
+        {
+          "type": "focusin",
+          "time": 13808.900000035763,
+          "target": "player-2",
+          "names": [
+            " Alice ",
+            "alice"
+          ],
+          "pendingFocus": false
+        }
+      ],
       "realShots": [
         {
           "owner": 0,

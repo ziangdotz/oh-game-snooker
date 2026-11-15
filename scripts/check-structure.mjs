@@ -1,4 +1,4 @@
-import { verifyProjectStructure } from '../tooling/lib/project-structure.mjs';
+import { verifyProjectStructure } from '../tooling/validation/project-structure.mjs';
 
 const result = await verifyProjectStructure();
 console.log(

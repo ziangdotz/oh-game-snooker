@@ -101,6 +101,16 @@ async function sample(browser, origin, design, mode, options) {
     await page.waitForFunction(
       () => window.__pcolTestGame._currentController._activeSubControl?.name === 'gaming',
     );
+    // The first placement exit opens the basic guide; measurement input must not
+    // be sent through this modal surface. Close it through the actual UI.
+    await page.waitForFunction(
+      () => window.__pcolTestGame._uiLayer._registeredBox.controlsNaviBox.isActive,
+    );
+    const guide = page.locator('.controls-guide-box:visible');
+    await guide.waitFor();
+    await guide.getByRole('button', { name: 'CLOSE', exact: true }).click();
+    await page.waitForFunction(() => !window.__pcolTestGame._uiLayer.isBlocked);
+    await page.locator('#game-view').focus();
     const environment = await page.evaluate((mode) => {
       const game = window.__pcolTestGame;
       const scene = game._gView._scene;
@@ -318,7 +328,9 @@ export async function measureInteriorPerformance(options) {
     date: new Date().toISOString(),
     options: { ...options, viewport: { width: 1440, height: 900 } },
     method:
-      'Actual D-key orbit; 1.5s warmup, sequential hardware runs. Redrawn restores the previous every-frame shadow policy in the warmed page; current uses maintained settings. All ablations are page-only diagnostics.',
+      options.mode === 'current'
+        ? 'Actual D-key orbit; 1.5s warmup, sequential hardware runs. Current maintained settings only; no visual ablations.'
+        : 'Actual D-key orbit; 1.5s warmup, sequential hardware runs. Redrawn restores the previous every-frame shadow policy in the warmed page; current uses maintained settings. All ablations are page-only diagnostics.',
     lightingSHA256: sha256(
       await readFile(path.join(ROOT, 'src/presentation/scenes/interior-lighting.js')),
     ),
@@ -380,7 +392,12 @@ export async function measureInteriorPerformance(options) {
         ]) {
       for (let run = 0; run < options.runs; run++) {
         // Alternate order to limit warm-cache/thermal bias.
-        const modes = run % 2 === 0 ? ['redrawn', 'current'] : ['current', 'redrawn'];
+        const modes =
+          options.mode === 'current'
+            ? ['current']
+            : run % 2 === 0
+              ? ['redrawn', 'current']
+              : ['current', 'redrawn'];
         for (const mode of modes) {
           const result = await sample(browser, origin, design, mode, report.options);
           report.samples.push({ run: run + 1, ...result });
@@ -390,7 +407,7 @@ export async function measureInteriorPerformance(options) {
           await writeFile(filename, JSON.stringify(report, null, 2) + '\n');
         }
       }
-      if (design !== 'interior-design-original') {
+      if (!options.mode && design !== 'interior-design-original') {
         for (const mode of ['cached-no-relief', 'cached-four-lights']) {
           const result = await sample(browser, origin, design, mode, report.options);
           report.samples.push({ run: 1, ...result });

@@ -6,11 +6,11 @@ for (let index = 0; index < args.length; index += 2) {
   const key = args[index]?.slice(2);
   if (
     !args[index].startsWith('--') ||
-    !['label', 'runs', 'seconds', 'browser', 'dpr', 'design', 'target'].includes(key) ||
+    !['label', 'runs', 'seconds', 'browser', 'dpr', 'design', 'target', 'mode'].includes(key) ||
     !args[index + 1]
   ) {
     throw new Error(
-      'Usage: node scripts/measure-interior-performance.mjs --label LABEL [--runs 1..10] [--seconds 3..30] [--browser chrome|edge] [--dpr 1|2] [--design interior-design-ID] [--target source|development]',
+      'Usage: node scripts/measure-interior-performance.mjs --label LABEL [--runs 1..10] [--seconds 3..30] [--browser chrome|edge] [--dpr 1|2] [--design interior-design-ID] [--target source|development] [--mode current]',
     );
   }
   options[key] = ['runs', 'seconds', 'dpr'].includes(key)
@@ -28,7 +28,8 @@ if (
   !['chrome', 'edge'].includes(options.browser) ||
   ![1, 2].includes(options.dpr) ||
   (options.design && !/^interior-design-(?:original|001|002|003)$/.test(options.design)) ||
-  (options.target && !['source', 'development'].includes(options.target))
+  (options.target && !['source', 'development'].includes(options.target)) ||
+  (options.mode && options.mode !== 'current')
 ) {
   throw new Error('Invalid interior performance options');
 }

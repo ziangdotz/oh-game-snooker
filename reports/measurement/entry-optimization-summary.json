@@ -1,0 +1,1973 @@
+{
+  "date": "2026-11-14T15:40:43.964Z",
+  "passed": true,
+  "sourceBeforeSHA256": "431228f95333daaad0bb50d4f17c9db2a4c9554fee480156ab55afee77256937",
+  "sourceAfterSHA256": "01dd7282bd2f99c7b12fa78302d886d572ae230d8976156b808516745553656f",
+  "baselineManifestSHA256": "d0ace5802ce84ee0afea98df0cad204e770aae09376e8354c77adc2234af4681",
+  "changes": {
+    "homeCameraEntryMaxMs": 600,
+    "localMatchCameraEntryMaxMs": 450,
+    "dialogMenuReturnMs": 160,
+    "reducedMotionBudgetMs": 16,
+    "cameraEndpointsAndPhysicsPreserved": true,
+    "modalInputGate": "Input remains inert until drawer CLOSE and UI stack release.",
+    "focusFix": "Deferred default focus never steals a field already focused within the panel."
+  },
+  "comparison": [
+    {
+      "browser": "chrome",
+      "menuReady": {
+        "beforeMs": 4067.800000011921,
+        "afterMs": 1852.4000000357628,
+        "reductionPercent": 54.461871281028216
+      },
+      "practiceEntry": {
+        "beforeMs": 1806.2999999523163,
+        "afterMs": 983.1999999880791,
+        "reductionPercent": 45.568288766315995
+      },
+      "cachedSwitch": {
+        "beforeMs": 476.2999999523163,
+        "afterMs": 280.9000000357628,
+        "reductionPercent": 41.0245643367868
+      },
+      "afterSceneReady": {
+        "beforeMs": 447.39999997615814,
+        "afterMs": 257.60000002384186,
+        "reductionPercent": 42.42288778775831
+      },
+      "cachedSceneReadyMs": {
+        "samples": 15,
+        "median": 24.399999976158142,
+        "p95": 34.80000001192093,
+        "max": 34.80000001192093
+      }
+    },
+    {
+      "browser": "edge",
+      "menuReady": {
+        "beforeMs": 4585,
+        "afterMs": 1969.699999988079,
+        "reductionPercent": 57.04034896427308
+      },
+      "practiceEntry": {
+        "beforeMs": 1783.699999988079,
+        "afterMs": 983.5,
+        "reductionPercent": 44.86180411467326
+      },
+      "cachedSwitch": {
+        "beforeMs": 467.19999998807907,
+        "afterMs": 281.5,
+        "reductionPercent": 39.74743150531193
+      },
+      "afterSceneReady": {
+        "beforeMs": 440.89999997615814,
+        "afterMs": 256.60000002384186,
+        "reductionPercent": 41.800861864886
+      },
+      "cachedSceneReadyMs": {
+        "samples": 15,
+        "median": 24.399999976158142,
+        "p95": 30.5,
+        "max": 30.5
+      }
+    }
+  ],
+  "sourceReports": [
+    {
+      "file": "reports/measurement/frame-time-baseline-summary.json",
+      "sha256": "743c615cc6cd34873f7e7a0ea185c5bfcb854e852470d42df80aa1e771492079"
+    },
+    {
+      "file": "reports/measurement/loading-entry-after.json",
+      "sha256": "76a21a93a89c9eac050be7e6403cd9c0e16a792f11b1c605c758f337dac08996"
+    },
+    {
+      "file": "reports/measurement/venue-switching-entry-after-summary.json",
+      "sha256": "bd884c7963868a390a850e180359bbb15906a022bb15c5e075bdff992c25634b"
+    },
+    {
+      "file": "reports/measurement/gameplay-motion-entry-after.json",
+      "sha256": "ee55717414877840cbb354d22b5760149e2b23680461909875946c7f2b665669"
+    },
+    {
+      "file": "reports/measurement/gameplay-motion-entry-trace-chrome.json",
+      "sha256": "05175728cd7a146d87b25a225a12e65e1c763a1180f63f798d1de736f1bdfff8"
+    },
+    {
+      "file": "reports/measurement/gameplay-motion-entry-trace-edge.json",
+      "sha256": "d0a8f37bc422b9cd9fafc6e00c58e9daea2b5ac0b1599a5ef8dbe7becdecff07"
+    },
+    {
+      "file": "reports/measurement/entry-trace-analysis-summary.json",
+      "sha256": "cf5f35271ef1488c2571725b4b8afdcb5c02488516a5efbc82678efb6ee117aa"
+    },
+    {
+      "file": "artifacts/testing/hotseat-lifecycle/entry-focus-before.json",
+      "sha256": "215442c805673ac7549c07658252bf028381a1971c84521a36cbc13f25653c40"
+    }
+  ],
+  "untracedOperations": [
+    {
+      "browser": "chrome",
+      "design": "interior-design-original",
+      "menuEntry": {
+        "originalMs": 2802.472504882085,
+        "timeScale": 4.670787508136808,
+        "effectiveMs": 600
+      },
+      "matchEntry": {
+        "originalMs": 1264.2483545615567,
+        "timeScale": 2.80944078791457,
+        "effectiveMs": 450.00000000000006
+      },
+      "phases": [
+        {
+          "name": "orbit-clockwise",
+          "intervalMs": {
+            "samples": 240,
+            "median": 16.69999998807907,
+            "p95": 17.600000023841858,
+            "max": 19.19999998807907
+          },
+          "submissionMs": {
+            "samples": 241,
+            "median": 1.899999976158142,
+            "p95": 4.399999976158142,
+            "max": 6.100000023841858
+          },
+          "longTasks": []
+        },
+        {
+          "name": "orbit-release-KeyD",
+          "intervalMs": {
+            "samples": 22,
+            "median": 16.600000023841858,
+            "p95": 17.600000023841858,
+            "max": 18
+          },
+          "submissionMs": {
+            "samples": 23,
+            "median": 2.199999988079071,
+            "p95": 5.300000011920929,
+            "max": 6.399999976158142
+          },
+          "longTasks": []
+        },
+        {
+          "name": "orbit-counterclockwise",
+          "intervalMs": {
+            "samples": 240,
+            "median": 16.69999998807907,
+            "p95": 17.900000035762787,
+            "max": 19.19999998807907
+          },
+          "submissionMs": {
+            "samples": 241,
+            "median": 2,
+            "p95": 4.600000023841858,
+            "max": 8.199999988079071
+          },
+          "longTasks": []
+        },
+        {
+          "name": "orbit-release-KeyA",
+          "intervalMs": {
+            "samples": 21,
+            "median": 16.80000001192093,
+            "p95": 17.700000047683716,
+            "max": 20.900000035762787
+          },
+          "submissionMs": {
+            "samples": 22,
+            "median": 1.300000011920929,
+            "p95": 3.100000023841858,
+            "max": 4.099999964237213
+          },
+          "longTasks": []
+        },
+        {
+          "name": "standing-mouse-look",
+          "intervalMs": {
+            "samples": 143,
+            "median": 16.69999998807907,
+            "p95": 17.899999976158142,
+            "max": 22.900000035762787
+          },
+          "submissionMs": {
+            "samples": 144,
+            "median": 1.9000000357627869,
+            "p95": 4.399999976158142,
+            "max": 7.599999964237213
+          },
+          "longTasks": []
+        },
+        {
+          "name": "crouch-and-rise",
+          "intervalMs": {
+            "samples": 72,
+            "median": 16.69999998807907,
+            "p95": 17.80000001192093,
+            "max": 117
+          },
+          "submissionMs": {
+            "samples": 73,
+            "median": 2,
+            "p95": 5.800000011920929,
+            "max": 6.600000023841858
+          },
+          "longTasks": []
+        },
+        {
+          "name": "enter-aim",
+          "intervalMs": {
+            "samples": 59,
+            "median": 16.69999998807907,
+            "p95": 18.299999952316284,
+            "max": 21.5
+          },
+          "submissionMs": {
+            "samples": 60,
+            "median": 2.300000011920929,
+            "p95": 4.199999988079071,
+            "max": 5.699999988079071
+          },
+          "longTasks": []
+        },
+        {
+          "name": "aim-mouse-look",
+          "intervalMs": {
+            "samples": 86,
+            "median": 16.600000023841858,
+            "p95": 19.099999964237213,
+            "max": 21.5
+          },
+          "submissionMs": {
+            "samples": 87,
+            "median": 2.100000023841858,
+            "p95": 4.800000011920929,
+            "max": 6.800000011920929
+          },
+          "longTasks": []
+        },
+        {
+          "name": "aim-direction-prediction",
+          "intervalMs": {
+            "samples": 205,
+            "median": 16.69999998807907,
+            "p95": 19.5,
+            "max": 23.19999998807907
+          },
+          "submissionMs": {
+            "samples": 206,
+            "median": 0.9000000357627869,
+            "p95": 2.100000023841858,
+            "max": 5.5
+          },
+          "longTasks": []
+        },
+        {
+          "name": "spin-tip-prediction",
+          "intervalMs": {
+            "samples": 85,
+            "median": 16.899999976158142,
+            "p95": 20.600000023841858,
+            "max": 22.099999964237213
+          },
+          "submissionMs": {
+            "samples": 86,
+            "median": 1.199999988079071,
+            "p95": 4,
+            "max": 4.899999976158142
+          },
+          "longTasks": []
+        },
+        {
+          "name": "strike-and-roll",
+          "intervalMs": {
+            "samples": 367,
+            "median": 16.69999998807907,
+            "p95": 17.900000035762787,
+            "max": 21.099999964237213
+          },
+          "submissionMs": {
+            "samples": 368,
+            "median": 1.9000000357627869,
+            "p95": 5,
+            "max": 7.5
+          },
+          "longTasks": []
+        }
+      ]
+    },
+    {
+      "browser": "chrome",
+      "design": "interior-design-001",
+      "menuEntry": {
+        "originalMs": 2802.472504882085,
+        "timeScale": 4.670787508136808,
+        "effectiveMs": 600
+      },
+      "matchEntry": {
+        "originalMs": 1264.2483545615567,
+        "timeScale": 2.80944078791457,
+        "effectiveMs": 450.00000000000006
+      },
+      "phases": [
+        {
+          "name": "orbit-clockwise",
+          "intervalMs": {
+            "samples": 240,
+            "median": 16.69999998807907,
+            "p95": 17.80000001192093,
+            "max": 18.400000035762787
+          },
+          "submissionMs": {
+            "samples": 241,
+            "median": 3.300000011920929,
+            "p95": 6.399999976158142,
+            "max": 9.900000035762787
+          },
+          "longTasks": []
+        },
+        {
+          "name": "orbit-release-KeyD",
+          "intervalMs": {
+            "samples": 21,
+            "median": 16.899999976158142,
+            "p95": 17.400000035762787,
+            "max": 17.600000023841858
+          },
+          "submissionMs": {
+            "samples": 22,
+            "median": 2.800000011920929,
+            "p95": 6.699999988079071,
+            "max": 7.799999952316284
+          },
+          "longTasks": []
+        },
+        {
+          "name": "orbit-counterclockwise",
+          "intervalMs": {
+            "samples": 240,
+            "median": 16.600000023841858,
+            "p95": 17.69999998807907,
+            "max": 18.30000001192093
+          },
+          "submissionMs": {
+            "samples": 241,
+            "median": 2.800000011920929,
+            "p95": 6.699999988079071,
+            "max": 8.199999988079071
+          },
+          "longTasks": []
+        },
+        {
+          "name": "orbit-release-KeyA",
+          "intervalMs": {
+            "samples": 21,
+            "median": 16.700000047683716,
+            "p95": 17.399999976158142,
+            "max": 17.799999952316284
+          },
+          "submissionMs": {
+            "samples": 22,
+            "median": 2.900000035762787,
+            "p95": 6,
+            "max": 6.5
+          },
+          "longTasks": []
+        },
+        {
+          "name": "standing-mouse-look",
+          "intervalMs": {
+            "samples": 141,
+            "median": 16.600000023841858,
+            "p95": 17.80000001192093,
+            "max": 24.30000001192093
+          },
+          "submissionMs": {
+            "samples": 142,
+            "median": 2.099999964237213,
+            "p95": 4.899999976158142,
+            "max": 6.900000035762787
+          },
+          "longTasks": []
+        },
+        {
+          "name": "crouch-and-rise",
+          "intervalMs": {
+            "samples": 72,
+            "median": 16.69999998807907,
+            "p95": 17.69999998807907,
+            "max": 132.19999998807907
+          },
+          "submissionMs": {
+            "samples": 73,
+            "median": 2.099999964237213,
+            "p95": 4.300000011920929,
+            "max": 7.699999988079071
+          },
+          "longTasks": []
+        },
+        {
+          "name": "enter-aim",
+          "intervalMs": {
+            "samples": 58,
+            "median": 16.600000023841858,
+            "p95": 17.599999964237213,
+            "max": 18.5
+          },
+          "submissionMs": {
+            "samples": 59,
+            "median": 2.099999964237213,
+            "p95": 4.899999976158142,
+            "max": 5.400000035762787
+          },
+          "longTasks": []
+        },
+        {
+          "name": "aim-mouse-look",
+          "intervalMs": {
+            "samples": 86,
+            "median": 16.69999998807907,
+            "p95": 18.099999964237213,
+            "max": 19.100000023841858
+          },
+          "submissionMs": {
+            "samples": 87,
+            "median": 2.100000023841858,
+            "p95": 5.400000035762787,
+            "max": 6.399999976158142
+          },
+          "longTasks": []
+        },
+        {
+          "name": "aim-direction-prediction",
+          "intervalMs": {
+            "samples": 204,
+            "median": 16.600000023841858,
+            "p95": 19.19999998807907,
+            "max": 22.099999964237213
+          },
+          "submissionMs": {
+            "samples": 205,
+            "median": 1.2999999523162842,
+            "p95": 3.300000011920929,
+            "max": 6.899999976158142
+          },
+          "longTasks": []
+        },
+        {
+          "name": "spin-tip-prediction",
+          "intervalMs": {
+            "samples": 82,
+            "median": 16.600000023841858,
+            "p95": 18.600000023841858,
+            "max": 19.5
+          },
+          "submissionMs": {
+            "samples": 83,
+            "median": 1.300000011920929,
+            "p95": 4.300000011920929,
+            "max": 5.200000047683716
+          },
+          "longTasks": []
+        },
+        {
+          "name": "strike-and-roll",
+          "intervalMs": {
+            "samples": 366,
+            "median": 16.69999998807907,
+            "p95": 17.899999976158142,
+            "max": 24.599999964237213
+          },
+          "submissionMs": {
+            "samples": 367,
+            "median": 1.4000000357627869,
+            "p95": 5,
+            "max": 10
+          },
+          "longTasks": []
+        }
+      ]
+    },
+    {
+      "browser": "chrome",
+      "design": "interior-design-002",
+      "menuEntry": {
+        "originalMs": 2802.472504882085,
+        "timeScale": 4.670787508136808,
+        "effectiveMs": 600
+      },
+      "matchEntry": {
+        "originalMs": 1264.2483545615567,
+        "timeScale": 2.80944078791457,
+        "effectiveMs": 450.00000000000006
+      },
+      "phases": [
+        {
+          "name": "orbit-clockwise",
+          "intervalMs": {
+            "samples": 240,
+            "median": 16.69999998807907,
+            "p95": 17.69999998807907,
+            "max": 18.5
+          },
+          "submissionMs": {
+            "samples": 241,
+            "median": 2.600000023841858,
+            "p95": 6.100000023841858,
+            "max": 12.699999988079071
+          },
+          "longTasks": []
+        },
+        {
+          "name": "orbit-release-KeyD",
+          "intervalMs": {
+            "samples": 21,
+            "median": 16.80000001192093,
+            "p95": 17.80000001192093,
+            "max": 17.899999976158142
+          },
+          "submissionMs": {
+            "samples": 22,
+            "median": 1.5,
+            "p95": 4.699999988079071,
+            "max": 5.199999988079071
+          },
+          "longTasks": []
+        },
+        {
+          "name": "orbit-counterclockwise",
+          "intervalMs": {
+            "samples": 240,
+            "median": 16.69999998807907,
+            "p95": 17.80000001192093,
+            "max": 19.5
+          },
+          "submissionMs": {
+            "samples": 241,
+            "median": 2.200000047683716,
+            "p95": 7.300000011920929,
+            "max": 10.300000011920929
+          },
+          "longTasks": []
+        },
+        {
+          "name": "orbit-release-KeyA",
+          "intervalMs": {
+            "samples": 22,
+            "median": 16.600000023841858,
+            "p95": 17.700000047683716,
+            "max": 18
+          },
+          "submissionMs": {
+            "samples": 23,
+            "median": 1.300000011920929,
+            "p95": 3.400000035762787,
+            "max": 4.600000023841858
+          },
+          "longTasks": []
+        },
+        {
+          "name": "standing-mouse-look",
+          "intervalMs": {
+            "samples": 141,
+            "median": 16.5,
+            "p95": 18.5,
+            "max": 19.900000035762787
+          },
+          "submissionMs": {
+            "samples": 142,
+            "median": 2.599999964237213,
+            "p95": 5.199999988079071,
+            "max": 9.599999964237213
+          },
+          "longTasks": []
+        },
+        {
+          "name": "crouch-and-rise",
+          "intervalMs": {
+            "samples": 73,
+            "median": 16.599999964237213,
+            "p95": 17.69999998807907,
+            "max": 115.89999997615814
+          },
+          "submissionMs": {
+            "samples": 74,
+            "median": 2,
+            "p95": 3.600000023841858,
+            "max": 5.100000023841858
+          },
+          "longTasks": []
+        },
+        {
+          "name": "enter-aim",
+          "intervalMs": {
+            "samples": 59,
+            "median": 16.600000023841858,
+            "p95": 18.400000035762787,
+            "max": 19.400000035762787
+          },
+          "submissionMs": {
+            "samples": 60,
+            "median": 1.899999976158142,
+            "p95": 4.699999988079071,
+            "max": 10.299999952316284
+          },
+          "longTasks": []
+        },
+        {
+          "name": "aim-mouse-look",
+          "intervalMs": {
+            "samples": 85,
+            "median": 16.80000001192093,
+            "p95": 18.19999998807907,
+            "max": 19.5
+          },
+          "submissionMs": {
+            "samples": 86,
+            "median": 2,
+            "p95": 4.199999988079071,
+            "max": 9.100000023841858
+          },
+          "longTasks": []
+        },
+        {
+          "name": "aim-direction-prediction",
+          "intervalMs": {
+            "samples": 205,
+            "median": 16.799999952316284,
+            "p95": 18.30000001192093,
+            "max": 22.600000023841858
+          },
+          "submissionMs": {
+            "samples": 206,
+            "median": 1,
+            "p95": 2.699999988079071,
+            "max": 8.599999964237213
+          },
+          "longTasks": []
+        },
+        {
+          "name": "spin-tip-prediction",
+          "intervalMs": {
+            "samples": 87,
+            "median": 16.599999964237213,
+            "p95": 18.399999976158142,
+            "max": 19.69999998807907
+          },
+          "submissionMs": {
+            "samples": 88,
+            "median": 1.4000000357627869,
+            "p95": 2.699999988079071,
+            "max": 6.5
+          },
+          "longTasks": []
+        },
+        {
+          "name": "strike-and-roll",
+          "intervalMs": {
+            "samples": 367,
+            "median": 16.69999998807907,
+            "p95": 18.399999976158142,
+            "max": 39.30000001192093
+          },
+          "submissionMs": {
+            "samples": 368,
+            "median": 1.899999976158142,
+            "p95": 3.5,
+            "max": 6.200000047683716
+          },
+          "longTasks": []
+        }
+      ]
+    },
+    {
+      "browser": "chrome",
+      "design": "interior-design-003",
+      "menuEntry": {
+        "originalMs": 2802.472504882085,
+        "timeScale": 4.670787508136808,
+        "effectiveMs": 600
+      },
+      "matchEntry": {
+        "originalMs": 1264.2483545615567,
+        "timeScale": 2.80944078791457,
+        "effectiveMs": 450.00000000000006
+      },
+      "phases": [
+        {
+          "name": "orbit-clockwise",
+          "intervalMs": {
+            "samples": 240,
+            "median": 16.69999998807907,
+            "p95": 17.30000001192093,
+            "max": 18.19999998807907
+          },
+          "submissionMs": {
+            "samples": 241,
+            "median": 2.199999988079071,
+            "p95": 3.5,
+            "max": 5.5
+          },
+          "longTasks": []
+        },
+        {
+          "name": "orbit-release-KeyD",
+          "intervalMs": {
+            "samples": 22,
+            "median": 16.80000001192093,
+            "p95": 17.100000023841858,
+            "max": 17.600000023841858
+          },
+          "submissionMs": {
+            "samples": 23,
+            "median": 1.899999976158142,
+            "p95": 2.5,
+            "max": 2.5
+          },
+          "longTasks": []
+        },
+        {
+          "name": "orbit-counterclockwise",
+          "intervalMs": {
+            "samples": 240,
+            "median": 16.600000023841858,
+            "p95": 18.399999976158142,
+            "max": 20
+          },
+          "submissionMs": {
+            "samples": 241,
+            "median": 1.899999976158142,
+            "p95": 3.900000035762787,
+            "max": 5.400000035762787
+          },
+          "longTasks": []
+        },
+        {
+          "name": "orbit-release-KeyA",
+          "intervalMs": {
+            "samples": 22,
+            "median": 16.69999998807907,
+            "p95": 17.099999964237213,
+            "max": 17.200000047683716
+          },
+          "submissionMs": {
+            "samples": 23,
+            "median": 1.5999999642372131,
+            "p95": 2.100000023841858,
+            "max": 2.300000011920929
+          },
+          "longTasks": []
+        },
+        {
+          "name": "standing-mouse-look",
+          "intervalMs": {
+            "samples": 140,
+            "median": 16.69999998807907,
+            "p95": 18.100000023841858,
+            "max": 20.099999964237213
+          },
+          "submissionMs": {
+            "samples": 141,
+            "median": 1.699999988079071,
+            "p95": 3.399999976158142,
+            "max": 3.800000011920929
+          },
+          "longTasks": []
+        },
+        {
+          "name": "crouch-and-rise",
+          "intervalMs": {
+            "samples": 71,
+            "median": 16.69999998807907,
+            "p95": 18.69999998807907,
+            "max": 133.0999999642372
+          },
+          "submissionMs": {
+            "samples": 72,
+            "median": 1.600000023841858,
+            "p95": 3.599999964237213,
+            "max": 4.800000011920929
+          },
+          "longTasks": []
+        },
+        {
+          "name": "enter-aim",
+          "intervalMs": {
+            "samples": 58,
+            "median": 16.69999998807907,
+            "p95": 19.100000023841858,
+            "max": 19.30000001192093
+          },
+          "submissionMs": {
+            "samples": 59,
+            "median": 1.5999999642372131,
+            "p95": 4.099999964237213,
+            "max": 4.5
+          },
+          "longTasks": []
+        },
+        {
+          "name": "aim-mouse-look",
+          "intervalMs": {
+            "samples": 85,
+            "median": 16.5,
+            "p95": 18.600000023841858,
+            "max": 19.69999998807907
+          },
+          "submissionMs": {
+            "samples": 86,
+            "median": 1.5,
+            "p95": 3.899999976158142,
+            "max": 4.300000011920929
+          },
+          "longTasks": []
+        },
+        {
+          "name": "aim-direction-prediction",
+          "intervalMs": {
+            "samples": 205,
+            "median": 16.600000023841858,
+            "p95": 19.19999998807907,
+            "max": 21.299999952316284
+          },
+          "submissionMs": {
+            "samples": 206,
+            "median": 1,
+            "p95": 2.699999988079071,
+            "max": 3.5
+          },
+          "longTasks": []
+        },
+        {
+          "name": "spin-tip-prediction",
+          "intervalMs": {
+            "samples": 81,
+            "median": 16.69999998807907,
+            "p95": 18.400000035762787,
+            "max": 19.899999976158142
+          },
+          "submissionMs": {
+            "samples": 82,
+            "median": 1.399999976158142,
+            "p95": 3.300000011920929,
+            "max": 4.699999988079071
+          },
+          "longTasks": []
+        },
+        {
+          "name": "strike-and-roll",
+          "intervalMs": {
+            "samples": 449,
+            "median": 16.69999998807907,
+            "p95": 18.5,
+            "max": 21.69999998807907
+          },
+          "submissionMs": {
+            "samples": 450,
+            "median": 1.4000000357627869,
+            "p95": 3.100000023841858,
+            "max": 4.900000035762787
+          },
+          "longTasks": []
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "design": "interior-design-original",
+      "menuEntry": {
+        "originalMs": 2802.472504882085,
+        "timeScale": 4.670787508136808,
+        "effectiveMs": 600
+      },
+      "matchEntry": {
+        "originalMs": 1264.2483545615567,
+        "timeScale": 2.80944078791457,
+        "effectiveMs": 450.00000000000006
+      },
+      "phases": [
+        {
+          "name": "orbit-clockwise",
+          "intervalMs": {
+            "samples": 240,
+            "median": 16.600000023841858,
+            "p95": 18.600000023841858,
+            "max": 20.80000001192093
+          },
+          "submissionMs": {
+            "samples": 241,
+            "median": 1.0999999642372131,
+            "p95": 3.399999976158142,
+            "max": 4
+          },
+          "longTasks": []
+        },
+        {
+          "name": "orbit-release-KeyD",
+          "intervalMs": {
+            "samples": 21,
+            "median": 17,
+            "p95": 18.899999976158142,
+            "max": 19.30000001192093
+          },
+          "submissionMs": {
+            "samples": 22,
+            "median": 1,
+            "p95": 2.199999988079071,
+            "max": 3.300000011920929
+          },
+          "longTasks": []
+        },
+        {
+          "name": "orbit-counterclockwise",
+          "intervalMs": {
+            "samples": 240,
+            "median": 16.600000023841858,
+            "p95": 18.899999976158142,
+            "max": 20.30000001192093
+          },
+          "submissionMs": {
+            "samples": 241,
+            "median": 1,
+            "p95": 2.800000011920929,
+            "max": 3.699999988079071
+          },
+          "longTasks": []
+        },
+        {
+          "name": "orbit-release-KeyA",
+          "intervalMs": {
+            "samples": 22,
+            "median": 16.599999964237213,
+            "p95": 18.400000035762787,
+            "max": 19.30000001192093
+          },
+          "submissionMs": {
+            "samples": 23,
+            "median": 1,
+            "p95": 2.5,
+            "max": 3.400000035762787
+          },
+          "longTasks": []
+        },
+        {
+          "name": "standing-mouse-look",
+          "intervalMs": {
+            "samples": 140,
+            "median": 16.69999998807907,
+            "p95": 18.5,
+            "max": 19.5
+          },
+          "submissionMs": {
+            "samples": 141,
+            "median": 0.8999999761581421,
+            "p95": 2.699999988079071,
+            "max": 4.599999964237213
+          },
+          "longTasks": []
+        },
+        {
+          "name": "crouch-and-rise",
+          "intervalMs": {
+            "samples": 73,
+            "median": 16.69999998807907,
+            "p95": 19.900000035762787,
+            "max": 118.69999998807907
+          },
+          "submissionMs": {
+            "samples": 74,
+            "median": 0.8999999761581421,
+            "p95": 3.5,
+            "max": 4.099999964237213
+          },
+          "longTasks": []
+        },
+        {
+          "name": "enter-aim",
+          "intervalMs": {
+            "samples": 59,
+            "median": 16.69999998807907,
+            "p95": 19.30000001192093,
+            "max": 20.5
+          },
+          "submissionMs": {
+            "samples": 60,
+            "median": 0.8999999761581421,
+            "p95": 2.800000011920929,
+            "max": 3.400000035762787
+          },
+          "longTasks": []
+        },
+        {
+          "name": "aim-mouse-look",
+          "intervalMs": {
+            "samples": 84,
+            "median": 16.69999998807907,
+            "p95": 18.80000001192093,
+            "max": 20.399999976158142
+          },
+          "submissionMs": {
+            "samples": 85,
+            "median": 0.7000000476837158,
+            "p95": 3.100000023841858,
+            "max": 3.799999952316284
+          },
+          "longTasks": []
+        },
+        {
+          "name": "aim-direction-prediction",
+          "intervalMs": {
+            "samples": 205,
+            "median": 16.5,
+            "p95": 20.100000023841858,
+            "max": 23.899999976158142
+          },
+          "submissionMs": {
+            "samples": 206,
+            "median": 0.5,
+            "p95": 1.600000023841858,
+            "max": 2.900000035762787
+          },
+          "longTasks": []
+        },
+        {
+          "name": "spin-tip-prediction",
+          "intervalMs": {
+            "samples": 85,
+            "median": 16.69999998807907,
+            "p95": 19.899999976158142,
+            "max": 22.5
+          },
+          "submissionMs": {
+            "samples": 86,
+            "median": 0.6000000238418579,
+            "p95": 1.899999976158142,
+            "max": 2.899999976158142
+          },
+          "longTasks": []
+        },
+        {
+          "name": "strike-and-roll",
+          "intervalMs": {
+            "samples": 365,
+            "median": 16.600000023841858,
+            "p95": 19.100000023841858,
+            "max": 20.30000001192093
+          },
+          "submissionMs": {
+            "samples": 366,
+            "median": 0.699999988079071,
+            "p95": 2.699999988079071,
+            "max": 4
+          },
+          "longTasks": []
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "design": "interior-design-001",
+      "menuEntry": {
+        "originalMs": 2802.472504882085,
+        "timeScale": 4.670787508136808,
+        "effectiveMs": 600
+      },
+      "matchEntry": {
+        "originalMs": 1264.2483545615567,
+        "timeScale": 2.80944078791457,
+        "effectiveMs": 450.00000000000006
+      },
+      "phases": [
+        {
+          "name": "orbit-clockwise",
+          "intervalMs": {
+            "samples": 240,
+            "median": 16.600000023841858,
+            "p95": 18.80000001192093,
+            "max": 20.099999964237213
+          },
+          "submissionMs": {
+            "samples": 241,
+            "median": 1.5,
+            "p95": 4.399999976158142,
+            "max": 5.600000023841858
+          },
+          "longTasks": []
+        },
+        {
+          "name": "orbit-release-KeyD",
+          "intervalMs": {
+            "samples": 22,
+            "median": 16.69999998807907,
+            "p95": 17.30000001192093,
+            "max": 17.600000023841858
+          },
+          "submissionMs": {
+            "samples": 23,
+            "median": 1.5,
+            "p95": 3.599999964237213,
+            "max": 3.800000011920929
+          },
+          "longTasks": []
+        },
+        {
+          "name": "orbit-counterclockwise",
+          "intervalMs": {
+            "samples": 240,
+            "median": 16.69999998807907,
+            "p95": 18.5,
+            "max": 20.400000035762787
+          },
+          "submissionMs": {
+            "samples": 241,
+            "median": 1.5999999642372131,
+            "p95": 4.199999988079071,
+            "max": 5.100000023841858
+          },
+          "longTasks": []
+        },
+        {
+          "name": "orbit-release-KeyA",
+          "intervalMs": {
+            "samples": 22,
+            "median": 16.700000047683716,
+            "p95": 19.400000035762787,
+            "max": 20
+          },
+          "submissionMs": {
+            "samples": 23,
+            "median": 1.300000011920929,
+            "p95": 3.799999952316284,
+            "max": 4.100000023841858
+          },
+          "longTasks": []
+        },
+        {
+          "name": "standing-mouse-look",
+          "intervalMs": {
+            "samples": 140,
+            "median": 16.69999998807907,
+            "p95": 18.80000001192093,
+            "max": 19.5
+          },
+          "submissionMs": {
+            "samples": 141,
+            "median": 1.300000011920929,
+            "p95": 3.800000011920929,
+            "max": 6.299999952316284
+          },
+          "longTasks": []
+        },
+        {
+          "name": "crouch-and-rise",
+          "intervalMs": {
+            "samples": 72,
+            "median": 16.599999964237213,
+            "p95": 19.100000023841858,
+            "max": 100.80000001192093
+          },
+          "submissionMs": {
+            "samples": 73,
+            "median": 1.5,
+            "p95": 4.300000011920929,
+            "max": 5.099999964237213
+          },
+          "longTasks": []
+        },
+        {
+          "name": "enter-aim",
+          "intervalMs": {
+            "samples": 58,
+            "median": 16.600000023841858,
+            "p95": 17.799999952316284,
+            "max": 18.400000035762787
+          },
+          "submissionMs": {
+            "samples": 59,
+            "median": 1.199999988079071,
+            "p95": 2,
+            "max": 2.299999952316284
+          },
+          "longTasks": []
+        },
+        {
+          "name": "aim-mouse-look",
+          "intervalMs": {
+            "samples": 84,
+            "median": 16.600000023841858,
+            "p95": 17.69999998807907,
+            "max": 18.69999998807907
+          },
+          "submissionMs": {
+            "samples": 85,
+            "median": 1,
+            "p95": 2.100000023841858,
+            "max": 3.699999988079071
+          },
+          "longTasks": []
+        },
+        {
+          "name": "aim-direction-prediction",
+          "intervalMs": {
+            "samples": 205,
+            "median": 16.69999998807907,
+            "p95": 17.900000035762787,
+            "max": 47.59999996423721
+          },
+          "submissionMs": {
+            "samples": 206,
+            "median": 0.7999999523162842,
+            "p95": 1.4000000357627869,
+            "max": 2.800000011920929
+          },
+          "longTasks": []
+        },
+        {
+          "name": "spin-tip-prediction",
+          "intervalMs": {
+            "samples": 85,
+            "median": 16.599999964237213,
+            "p95": 19,
+            "max": 21.100000023841858
+          },
+          "submissionMs": {
+            "samples": 86,
+            "median": 1.100000023841858,
+            "p95": 2.5,
+            "max": 4.300000011920929
+          },
+          "longTasks": []
+        },
+        {
+          "name": "strike-and-roll",
+          "intervalMs": {
+            "samples": 367,
+            "median": 16.69999998807907,
+            "p95": 19,
+            "max": 21.80000001192093
+          },
+          "submissionMs": {
+            "samples": 368,
+            "median": 1.300000011920929,
+            "p95": 3.699999988079071,
+            "max": 5.5
+          },
+          "longTasks": []
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "design": "interior-design-002",
+      "menuEntry": {
+        "originalMs": 2802.472504882085,
+        "timeScale": 4.670787508136808,
+        "effectiveMs": 600
+      },
+      "matchEntry": {
+        "originalMs": 1264.2483545615567,
+        "timeScale": 2.80944078791457,
+        "effectiveMs": 450.00000000000006
+      },
+      "phases": [
+        {
+          "name": "orbit-clockwise",
+          "intervalMs": {
+            "samples": 240,
+            "median": 16.69999998807907,
+            "p95": 17.299999952316284,
+            "max": 18.30000001192093
+          },
+          "submissionMs": {
+            "samples": 241,
+            "median": 2.5,
+            "p95": 5,
+            "max": 8.699999988079071
+          },
+          "longTasks": []
+        },
+        {
+          "name": "orbit-release-KeyD",
+          "intervalMs": {
+            "samples": 22,
+            "median": 16.600000023841858,
+            "p95": 17.200000047683716,
+            "max": 18
+          },
+          "submissionMs": {
+            "samples": 23,
+            "median": 2.199999988079071,
+            "p95": 2.800000011920929,
+            "max": 3
+          },
+          "longTasks": []
+        },
+        {
+          "name": "orbit-counterclockwise",
+          "intervalMs": {
+            "samples": 240,
+            "median": 16.69999998807907,
+            "p95": 17.600000023841858,
+            "max": 26.30000001192093
+          },
+          "submissionMs": {
+            "samples": 241,
+            "median": 1.699999988079071,
+            "p95": 4,
+            "max": 6.799999952316284
+          },
+          "longTasks": []
+        },
+        {
+          "name": "orbit-release-KeyA",
+          "intervalMs": {
+            "samples": 22,
+            "median": 16.600000023841858,
+            "p95": 17.5,
+            "max": 17.69999998807907
+          },
+          "submissionMs": {
+            "samples": 23,
+            "median": 1.5,
+            "p95": 4.199999988079071,
+            "max": 4.5
+          },
+          "longTasks": []
+        },
+        {
+          "name": "standing-mouse-look",
+          "intervalMs": {
+            "samples": 142,
+            "median": 16.700000047683716,
+            "p95": 18.400000035762787,
+            "max": 19.700000047683716
+          },
+          "submissionMs": {
+            "samples": 143,
+            "median": 1.5999999642372131,
+            "p95": 4.699999988079071,
+            "max": 6.300000011920929
+          },
+          "longTasks": []
+        },
+        {
+          "name": "crouch-and-rise",
+          "intervalMs": {
+            "samples": 73,
+            "median": 16.69999998807907,
+            "p95": 18.100000023841858,
+            "max": 116.89999997615814
+          },
+          "submissionMs": {
+            "samples": 74,
+            "median": 1.899999976158142,
+            "p95": 3.800000011920929,
+            "max": 4.800000011920929
+          },
+          "longTasks": []
+        },
+        {
+          "name": "enter-aim",
+          "intervalMs": {
+            "samples": 59,
+            "median": 16.69999998807907,
+            "p95": 18.900000035762787,
+            "max": 20.100000023841858
+          },
+          "submissionMs": {
+            "samples": 60,
+            "median": 1.4000000357627869,
+            "p95": 4.200000047683716,
+            "max": 6.600000023841858
+          },
+          "longTasks": []
+        },
+        {
+          "name": "aim-mouse-look",
+          "intervalMs": {
+            "samples": 85,
+            "median": 16.69999998807907,
+            "p95": 17.600000023841858,
+            "max": 20
+          },
+          "submissionMs": {
+            "samples": 86,
+            "median": 1.800000011920929,
+            "p95": 3.800000011920929,
+            "max": 4.600000023841858
+          },
+          "longTasks": []
+        },
+        {
+          "name": "aim-direction-prediction",
+          "intervalMs": {
+            "samples": 205,
+            "median": 16.69999998807907,
+            "p95": 18.5,
+            "max": 21.399999976158142
+          },
+          "submissionMs": {
+            "samples": 206,
+            "median": 0.8999999761581421,
+            "p95": 2.399999976158142,
+            "max": 5.300000011920929
+          },
+          "longTasks": []
+        },
+        {
+          "name": "spin-tip-prediction",
+          "intervalMs": {
+            "samples": 84,
+            "median": 16.600000023841858,
+            "p95": 19.19999998807907,
+            "max": 19.69999998807907
+          },
+          "submissionMs": {
+            "samples": 85,
+            "median": 1.4000000357627869,
+            "p95": 2.600000023841858,
+            "max": 5
+          },
+          "longTasks": []
+        },
+        {
+          "name": "strike-and-roll",
+          "intervalMs": {
+            "samples": 365,
+            "median": 16.69999998807907,
+            "p95": 18.100000023841858,
+            "max": 47.5
+          },
+          "submissionMs": {
+            "samples": 366,
+            "median": 1.5,
+            "p95": 3,
+            "max": 6.100000023841858
+          },
+          "longTasks": []
+        }
+      ]
+    },
+    {
+      "browser": "edge",
+      "design": "interior-design-003",
+      "menuEntry": {
+        "originalMs": 2802.472504882085,
+        "timeScale": 4.670787508136808,
+        "effectiveMs": 600
+      },
+      "matchEntry": {
+        "originalMs": 1264.2483545615567,
+        "timeScale": 2.80944078791457,
+        "effectiveMs": 450.00000000000006
+      },
+      "phases": [
+        {
+          "name": "orbit-clockwise",
+          "intervalMs": {
+            "samples": 240,
+            "median": 16.69999998807907,
+            "p95": 17.599999964237213,
+            "max": 19.099999964237213
+          },
+          "submissionMs": {
+            "samples": 241,
+            "median": 1.899999976158142,
+            "p95": 2.600000023841858,
+            "max": 3.600000023841858
+          },
+          "longTasks": []
+        },
+        {
+          "name": "orbit-release-KeyD",
+          "intervalMs": {
+            "samples": 22,
+            "median": 16.80000001192093,
+            "p95": 17.19999998807907,
+            "max": 17.399999976158142
+          },
+          "submissionMs": {
+            "samples": 23,
+            "median": 2.100000023841858,
+            "p95": 2.900000035762787,
+            "max": 4
+          },
+          "longTasks": []
+        },
+        {
+          "name": "orbit-counterclockwise",
+          "intervalMs": {
+            "samples": 240,
+            "median": 16.69999998807907,
+            "p95": 17.80000001192093,
+            "max": 19.80000001192093
+          },
+          "submissionMs": {
+            "samples": 241,
+            "median": 2.100000023841858,
+            "p95": 4.400000035762787,
+            "max": 6.800000011920929
+          },
+          "longTasks": []
+        },
+        {
+          "name": "orbit-release-KeyA",
+          "intervalMs": {
+            "samples": 22,
+            "median": 16.69999998807907,
+            "p95": 17.899999976158142,
+            "max": 18.19999998807907
+          },
+          "submissionMs": {
+            "samples": 23,
+            "median": 1.5999999642372131,
+            "p95": 2.600000023841858,
+            "max": 2.800000011920929
+          },
+          "longTasks": []
+        },
+        {
+          "name": "standing-mouse-look",
+          "intervalMs": {
+            "samples": 140,
+            "median": 16.69999998807907,
+            "p95": 18.599999964237213,
+            "max": 18.80000001192093
+          },
+          "submissionMs": {
+            "samples": 141,
+            "median": 1.800000011920929,
+            "p95": 3.800000011920929,
+            "max": 7
+          },
+          "longTasks": []
+        },
+        {
+          "name": "crouch-and-rise",
+          "intervalMs": {
+            "samples": 72,
+            "median": 16.69999998807907,
+            "p95": 17.399999976158142,
+            "max": 116.90000003576279
+          },
+          "submissionMs": {
+            "samples": 73,
+            "median": 2.199999988079071,
+            "p95": 4.300000011920929,
+            "max": 4.800000011920929
+          },
+          "longTasks": []
+        },
+        {
+          "name": "enter-aim",
+          "intervalMs": {
+            "samples": 58,
+            "median": 16.69999998807907,
+            "p95": 18.69999998807907,
+            "max": 20.19999998807907
+          },
+          "submissionMs": {
+            "samples": 59,
+            "median": 1.699999988079071,
+            "p95": 4.099999964237213,
+            "max": 4.599999964237213
+          },
+          "longTasks": []
+        },
+        {
+          "name": "aim-mouse-look",
+          "intervalMs": {
+            "samples": 84,
+            "median": 16.599999964237213,
+            "p95": 18.599999964237213,
+            "max": 19.899999976158142
+          },
+          "submissionMs": {
+            "samples": 85,
+            "median": 2.100000023841858,
+            "p95": 3.5,
+            "max": 4.300000011920929
+          },
+          "longTasks": []
+        },
+        {
+          "name": "aim-direction-prediction",
+          "intervalMs": {
+            "samples": 204,
+            "median": 16.69999998807907,
+            "p95": 18.19999998807907,
+            "max": 21.19999998807907
+          },
+          "submissionMs": {
+            "samples": 205,
+            "median": 0.9000000357627869,
+            "p95": 2,
+            "max": 2.5
+          },
+          "longTasks": []
+        },
+        {
+          "name": "spin-tip-prediction",
+          "intervalMs": {
+            "samples": 90,
+            "median": 16.69999998807907,
+            "p95": 18.600000023841858,
+            "max": 19.80000001192093
+          },
+          "submissionMs": {
+            "samples": 91,
+            "median": 2,
+            "p95": 3.100000023841858,
+            "max": 11.5
+          },
+          "longTasks": []
+        },
+        {
+          "name": "strike-and-roll",
+          "intervalMs": {
+            "samples": 369,
+            "median": 16.69999998807907,
+            "p95": 17.80000001192093,
+            "max": 21.099999964237213
+          },
+          "submissionMs": {
+            "samples": 370,
+            "median": 2.199999988079071,
+            "p95": 3.900000035762787,
+            "max": 7.800000011920929
+          },
+          "longTasks": []
+        }
+      ]
+    }
+  ],
+  "traceEvidence": {
+    "traces": [
+      {
+        "browser": "chrome",
+        "round": 1,
+        "file": "artifacts/testing/gameplay-motion/entry-trace-chrome-chrome-interior-design-003-1.trace.json.gz",
+        "sha256": "8b98224b08ffb8635232d55e5f63932a8f2e2a3c0f75ab42941eec0d4361d5f8",
+        "uncompressedSHA256": "4a8c0843d1c7dc93bebe8a101bb5e09fd197d2e10ff6ae999973d412de307d26",
+        "phaseCount": 12,
+        "mainThreadLongTasks": 6,
+        "operationLongTasks": 0
+      },
+      {
+        "browser": "chrome",
+        "round": 2,
+        "file": "artifacts/testing/gameplay-motion/entry-trace-chrome-chrome-interior-design-003-2.trace.json.gz",
+        "sha256": "0f91e778306e66449de056253c575d03d7f5b82f481fee81820769be9319ff93",
+        "uncompressedSHA256": "8a80e5e6c28bbba090390c1bab76972e34d0a8ef835ab6166999eb5c01fb4502",
+        "phaseCount": 12,
+        "mainThreadLongTasks": 5,
+        "operationLongTasks": 0
+      },
+      {
+        "browser": "chrome",
+        "round": 3,
+        "file": "artifacts/testing/gameplay-motion/entry-trace-chrome-chrome-interior-design-003-3.trace.json.gz",
+        "sha256": "d3ca2ae913062c759a93995f49566a46c6fd0743fc280a5fa1b32b8c839d1261",
+        "uncompressedSHA256": "f17cfd90a4bc22491d4ec9ba44fc8c4d238fdb1fed0b8596b9c4f001d5f22dab",
+        "phaseCount": 12,
+        "mainThreadLongTasks": 5,
+        "operationLongTasks": 0
+      },
+      {
+        "browser": "edge",
+        "round": 1,
+        "file": "artifacts/testing/gameplay-motion/entry-trace-edge-edge-interior-design-003-1.trace.json.gz",
+        "sha256": "087b3636b237e34d2f4178145ff4177cd112d2428092887bfaa3a4f2e95025da",
+        "uncompressedSHA256": "9b8e8c3926ec42edd024a465bf580ce636fe793111bac8e0159c3accec847d13",
+        "phaseCount": 12,
+        "mainThreadLongTasks": 11,
+        "operationLongTasks": 0
+      },
+      {
+        "browser": "edge",
+        "round": 2,
+        "file": "artifacts/testing/gameplay-motion/entry-trace-edge-edge-interior-design-003-2.trace.json.gz",
+        "sha256": "524e2f78912c4f0266a9f7b3a9dd0f39f31d03eee08149dc71a3701e46ec9492",
+        "uncompressedSHA256": "53a726ab5ec458029a2ef98b314f956ace95b2138277872473cd90134d4bab9f",
+        "phaseCount": 12,
+        "mainThreadLongTasks": 4,
+        "operationLongTasks": 0
+      },
+      {
+        "browser": "edge",
+        "round": 3,
+        "file": "artifacts/testing/gameplay-motion/entry-trace-edge-edge-interior-design-003-3.trace.json.gz",
+        "sha256": "dcdf9a369c025f976e3874d014e5ac810d55d020b658b41114ce5594d76ec7d5",
+        "uncompressedSHA256": "865ae94eec94dfb98385660e794121cab27588068fbc78e83348f6a37188d94c",
+        "phaseCount": 12,
+        "mainThreadLongTasks": 6,
+        "operationLongTasks": 0
+      }
+    ],
+    "modelCompletionTasks": [
+      {
+        "browser": "chrome",
+        "round": 1,
+        "taskMs": 1136.234,
+        "gcMs": 111.54
+      },
+      {
+        "browser": "chrome",
+        "round": 2,
+        "taskMs": 1245.494,
+        "gcMs": 108.045
+      },
+      {
+        "browser": "chrome",
+        "round": 3,
+        "taskMs": 1093.812,
+        "gcMs": 107.914
+      },
+      {
+        "browser": "edge",
+        "round": 1,
+        "taskMs": 1964.612,
+        "gcMs": 154.865
+      },
+      {
+        "browser": "edge",
+        "round": 2,
+        "taskMs": 1178.172,
+        "gcMs": 103.671
+      },
+      {
+        "browser": "edge",
+        "round": 3,
+        "taskMs": 1473.963,
+        "gcMs": 112.096
+      }
+    ],
+    "crouchIdleGaps": [
+      {
+        "browser": "chrome",
+        "design": "interior-design-original",
+        "round": 1,
+        "traced": false,
+        "gapMs": 117,
+        "previousRenderMs": 589.5,
+        "keyUpMs": 705.5,
+        "nextRenderMs": 706.5,
+        "keyUpToRenderMs": 1,
+        "previousCameraHeight": 1,
+        "nextCameraHeight": 1.0011238835928238,
+        "isStaticHoldGap": true
+      },
+      {
+        "browser": "chrome",
+        "design": "interior-design-001",
+        "round": 1,
+        "traced": false,
+        "gapMs": 132.19999998807907,
+        "previousRenderMs": 587.3000000119209,
+        "keyUpMs": 708.3000000119209,
+        "nextRenderMs": 719.5,
+        "keyUpToRenderMs": 11.199999988079071,
+        "previousCameraHeight": 1,
+        "nextCameraHeight": 1.0008749844233888,
+        "isStaticHoldGap": true
+      },
+      {
+        "browser": "chrome",
+        "design": "interior-design-002",
+        "round": 1,
+        "traced": false,
+        "gapMs": 115.89999997615814,
+        "previousRenderMs": 605.6000000238419,
+        "keyUpMs": 716.3999999761581,
+        "nextRenderMs": 721.5,
+        "keyUpToRenderMs": 5.100000023841858,
+        "previousCameraHeight": 1,
+        "nextCameraHeight": 1.0008750122388632,
+        "isStaticHoldGap": true
+      },
+      {
+        "browser": "chrome",
+        "design": "interior-design-003",
+        "round": 1,
+        "traced": false,
+        "gapMs": 133.0999999642372,
+        "previousRenderMs": 586,
+        "keyUpMs": 713,
+        "nextRenderMs": 719.0999999642372,
+        "keyUpToRenderMs": 6.099999964237213,
+        "previousCameraHeight": 1,
+        "nextCameraHeight": 1.0008749844233888,
+        "isStaticHoldGap": true
+      },
+      {
+        "browser": "edge",
+        "design": "interior-design-original",
+        "round": 1,
+        "traced": false,
+        "gapMs": 118.69999998807907,
+        "previousRenderMs": 605.6000000238419,
+        "keyUpMs": 711.5,
+        "nextRenderMs": 724.3000000119209,
+        "keyUpToRenderMs": 12.800000011920929,
+        "previousCameraHeight": 1,
+        "nextCameraHeight": 1.0008750122388632,
+        "isStaticHoldGap": true
+      },
+      {
+        "browser": "edge",
+        "design": "interior-design-001",
+        "round": 1,
+        "traced": false,
+        "gapMs": 100.80000001192093,
+        "previousRenderMs": 610.8999999761581,
+        "keyUpMs": 705.8999999761581,
+        "nextRenderMs": 711.6999999880791,
+        "keyUpToRenderMs": 5.800000011920929,
+        "previousCameraHeight": 1,
+        "nextCameraHeight": 1.0011238835928238,
+        "isStaticHoldGap": true
+      },
+      {
+        "browser": "edge",
+        "design": "interior-design-002",
+        "round": 1,
+        "traced": false,
+        "gapMs": 116.89999997615814,
+        "previousRenderMs": 613.9000000357628,
+        "keyUpMs": 717,
+        "nextRenderMs": 730.8000000119209,
+        "keyUpToRenderMs": 13.800000011920929,
+        "previousCameraHeight": 1,
+        "nextCameraHeight": 1.0011238835928238,
+        "isStaticHoldGap": true
+      },
+      {
+        "browser": "edge",
+        "design": "interior-design-003",
+        "round": 1,
+        "traced": false,
+        "gapMs": 116.90000003576279,
+        "previousRenderMs": 593,
+        "keyUpMs": 707.8000000119209,
+        "nextRenderMs": 709.9000000357628,
+        "keyUpToRenderMs": 2.100000023841858,
+        "previousCameraHeight": 1,
+        "nextCameraHeight": 1.0011239151172049,
+        "isStaticHoldGap": true
+      },
+      {
+        "browser": "chrome",
+        "design": "interior-design-003",
+        "round": 1,
+        "traced": true,
+        "gapMs": 116.5,
+        "previousRenderMs": 615.5,
+        "keyUpMs": 719,
+        "nextRenderMs": 732,
+        "keyUpToRenderMs": 13,
+        "previousCameraHeight": 1,
+        "nextCameraHeight": 1.0009955595906617,
+        "isStaticHoldGap": true
+      },
+      {
+        "browser": "chrome",
+        "design": "interior-design-003",
+        "round": 2,
+        "traced": true,
+        "gapMs": 133.10000002384186,
+        "previousRenderMs": 585.7999999523163,
+        "keyUpMs": 717,
+        "nextRenderMs": 718.8999999761581,
+        "keyUpToRenderMs": 1.899999976158142,
+        "previousCameraHeight": 1,
+        "nextCameraHeight": 1.0009955595906617,
+        "isStaticHoldGap": true
+      },
+      {
+        "browser": "chrome",
+        "design": "interior-design-003",
+        "round": 3,
+        "traced": true,
+        "gapMs": 100.19999998807907,
+        "previousRenderMs": 614.3999999761581,
+        "keyUpMs": 708.2999999523163,
+        "nextRenderMs": 714.5999999642372,
+        "keyUpToRenderMs": 6.300000011920929,
+        "previousCameraHeight": 1,
+        "nextCameraHeight": 1.0009955595906617,
+        "isStaticHoldGap": true
+      },
+      {
+        "browser": "edge",
+        "design": "interior-design-003",
+        "round": 1,
+        "traced": true,
+        "gapMs": 98.80000001192093,
+        "previousRenderMs": 614.7999999523163,
+        "keyUpMs": 709.2999999523163,
+        "nextRenderMs": 713.5999999642372,
+        "keyUpToRenderMs": 4.300000011920929,
+        "previousCameraHeight": 1,
+        "nextCameraHeight": 1.0012599842453496,
+        "isStaticHoldGap": true
+      },
+      {
+        "browser": "edge",
+        "design": "interior-design-003",
+        "round": 2,
+        "traced": true,
+        "gapMs": 119.09999996423721,
+        "previousRenderMs": 596.8000000119209,
+        "keyUpMs": 711.1999999880791,
+        "nextRenderMs": 715.8999999761581,
+        "keyUpToRenderMs": 4.699999988079071,
+        "previousCameraHeight": 1,
+        "nextCameraHeight": 1.0015555525885702,
+        "isStaticHoldGap": true
+      },
+      {
+        "browser": "edge",
+        "design": "interior-design-003",
+        "round": 3,
+        "traced": true,
+        "gapMs": 116.30000001192093,
+        "previousRenderMs": 598.5,
+        "keyUpMs": 713.7000000476837,
+        "nextRenderMs": 714.8000000119209,
+        "keyUpToRenderMs": 1.0999999642372131,
+        "previousCameraHeight": 1,
+        "nextCameraHeight": 1.0011238835928238,
+        "isStaticHoldGap": true
+      }
+    ],
+    "keyUpToRenderMs": {
+      "samples": 14,
+      "median": 5.100000023841858,
+      "p95": 13.800000011920929,
+      "max": 13.800000011920929
+    },
+    "archiveBytes": 129124541,
+    "uncompressedBytes": 1234203370
+  },
+  "validation": {
+    "unitAndIntegrationPassed": 205,
+    "wholeBrowserCheck": true,
+    "hotseatScenarios": 24,
+    "hotseatLifecycleScenarios": 2,
+    "interiorSixSuites": true,
+    "drawerMotion": true,
+    "sourceStandalone": true
+  },
+  "limitations": [
+    "Three loading runs per browser, 15 cached switch observations per browser; no universal performance guarantee.",
+    "Source operation/trace versus development loading/switching; same viewport and renderer, OS/thermal state not locked.",
+    "Broad traces are diagnostic and include overhead; use untraced runs for timing comparisons.",
+    "No stable reproduction of earlier in-play 51–103ms long tasks; absence in six traces is not proof of elimination.",
+    "Model completion callback task includes chained initialization and GC, not just JSON parsing or network transfer.",
+    "Static crouch hold gaps are on-demand rendering; do not force RAF/WebGL redraw to remove them."
+  ]
+}

@@ -1,8 +1,8 @@
 import path from 'node:path';
 import { readdir } from 'node:fs/promises';
 import { ROOT } from '../../config/project.config.mjs';
-import { filesIn } from './integrity.mjs';
-import { ARTIFACT_CATEGORIES } from './artifact-paths.mjs';
+import { filesIn } from '../lib/integrity.mjs';
+import { ARTIFACT_CATEGORIES } from '../lib/artifact-paths.mjs';
 
 const maintainedRoots = [
   'src',
